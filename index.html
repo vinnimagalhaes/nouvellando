@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nouvellando · Novelos artesanais degradê</title>
+<meta name="description" content="Mais de 600 novelos artesanais degradê, xales prontos e videoaulas de crochê. Nouvellando, por Claudia Gerth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="announce">✿ Férias Nouvellando! Pedidos retomados em 01/12 · envios a partir de 18/12</div>
+
+<header class="header">
+  <div class="wrap header__row">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <a href="#top" class="logo">Nouvellando<sup>®</sup></a>
+    <nav class="nav" id="nav">
+      <a href="#fios">Nossos fios</a>
+      <a href="#loja">Loja</a>
+      <a href="#xales">Xales</a>
+      <a href="#videoaulas">Videoaulas</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <div class="header__actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Buscar">⌕</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Carrinho">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+  <div class="searchbar" id="searchbar">
+    <div class="wrap"><input id="globalSearch" type="search" placeholder="Buscar fios, cores, xales…" autocomplete="off"></div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <span class="eyebrow">Feito à mão em São Carlos, SP</span>
+        <h1>Cores que se<br><em>transformam</em> em fio.</h1>
+        <p>Mais de 600 novelos artesanais degradê, tingidos um a um por Claudia Gerth. Pioneira no segmento e referência para quem ama crochê e tricô.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#loja">Comprar novelos</a>
+          <a class="btn btn--ghost" href="#videoaulas">Aprender a crochetar</a>
+        </div>
+        <ul class="hero__perks">
+          <li><b>600+</b> cores degradê</li>
+          <li><b>100%</b> artesanal</li>
+          <li><b>12x</b> sem juros</li>
+        </ul>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="yarn y1"></div><div class="yarn y2"></div><div class="yarn y3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERKS -->
+  <section class="strip">
+    <div class="wrap strip__grid">
+      <div><span>🚚</span><b>Envio para todo o Brasil</b><small>Frete grátis acima de R$ 299</small></div>
+      <div><span>💳</span><b>Até 12x sem juros</b><small>Pix com 5% de desconto</small></div>
+      <div><span>🧶</span><b>Lote garantido</b><small>Cores idênticas na mesma compra</small></div>
+      <div><span>💬</span><b>Atendimento no WhatsApp</b><small>Ajuda para escolher suas cores</small></div>
+    </div>
+  </section>
+
+  <!-- FIOS -->
+  <section class="section" id="fios">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Nossos fios</h2>
+        <p>Escolha a textura ideal para o seu próximo projeto.</p>
+      </div>
+      <div class="lines" id="lines"></div>
+    </div>
+  </section>
+
+  <!-- LOJA -->
+  <section class="section section--tint" id="loja">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Novelos degradê</h2>
+        <p id="resultInfo"></p>
+      </div>
+      <div class="toolbar">
+        <div class="chips" id="chips"></div>
+        <select id="sort" aria-label="Ordenar">
+          <option value="rel">Mais relevantes</option>
+          <option value="asc">Menor preço</option>
+          <option value="desc">Maior preço</option>
+          <option value="az">A–Z</option>
+        </select>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- XALES -->
+  <section class="section" id="xales">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Xales à pronta-entrega</h2>
+        <p>Peças únicas, feitas à mão, prontas para chegar até você.</p>
+      </div>
+      <div class="grid grid--shawl" id="shawls"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOAULAS -->
+  <section class="section section--dark" id="videoaulas">
+    <div class="wrap lessons">
+      <div class="lessons__text">
+        <span class="eyebrow eyebrow--light">Videoaulas</span>
+        <h2>Aprenda a crochetar xales, echarpes e mantas</h2>
+        <p>Passo a passo completo, no seu ritmo. Escolha a aula, compre o fio na cor que combina e comece hoje.</p>
+        <a class="btn btn--light" href="#" data-toast="Redireciona para a Hotmart na versão final">Ver todas as aulas</a>
+      </div>
+      <div class="lessons__list" id="lessons"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="wrap about">
+      <div class="about__img"><div class="yarn y2"></div></div>
+      <div>
+        <span class="eyebrow">Sobre</span>
+        <h2>Pioneira em novelos degradê artesanais</h2>
+        <p>A Nouvellando nasceu do amor pelo crochê e pela cor. Criada pela artesã Claudia Gerth, é referência no mercado brasileiro de fios degradê feitos à mão, com mais de 600 combinações para inspirar seus projetos.</p>
+        <p>Cada novelo é tingido artesanalmente, o que faz de cada peça algo único.</p>
+        <a class="btn btn--primary" href="https://api.whatsapp.com/send?phone=5516988081463" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="news">
+    <div class="wrap news__row">
+      <div><h3>Receba lançamentos e cores novas</h3><p>Entre para a lista e saiba primeiro das novidades.</p></div>
+      <form id="newsForm"><input type="email" required placeholder="Seu melhor e-mail"><button class="btn btn--primary">Inscrever</button></form>
+    </div>
+  </section>
+</main>
+<div id="page" hidden></div>
+
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <a href="#top" class="logo">Nouvellando<sup>®</sup></a>
+      <p>Novelos artesanais degradê, xales e videoaulas de crochê.</p>
+    </div>
+    <div><h4>Loja</h4><a href="#fios">Novelos degradê</a><a href="#xales">Xales</a><a href="#videoaulas">Videoaulas</a></div>
+    <div><h4>Contato</h4><a href="mailto:nouvellando@gmail.com">nouvellando@gmail.com</a><span>São Carlos, SP · Brasil</span></div>
+    <div><h4>Redes</h4><a href="https://instagram.com/nouvellando" target="_blank" rel="noopener">Instagram</a><a href="https://facebook.com/Nouvellando" target="_blank" rel="noopener">Facebook</a><a href="https://api.whatsapp.com/send?phone=5516988081463" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+  <div class="wrap footer__copy">© 2026 Nouvellando. Todos os direitos reservados.</div>
+</footer>
+
+<a class="wa-float" href="https://api.whatsapp.com/send?phone=5516988081463" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true">
+    <button class="modal__x" data-close aria-label="Fechar">✕</button>
+    <div class="modal__media" id="mMedia"></div>
+    <div class="modal__info">
+      <span class="eyebrow" id="mCat"></span>
+      <h3 id="mName"></h3>
+      <div class="price" id="mPrice"></div>
+      <p id="mDesc"></p>
+      <div id="mVariants"></div>
+      <div class="qty-row">
+        <div class="qty"><button id="qMinus">−</button><span id="qVal">1</span><button id="qPlus">+</button></div>
+        <button class="btn btn--primary btn--block" id="mAdd">Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div class="drawer" id="drawer" hidden>
+  <div class="modal__backdrop" data-close-cart></div>
+  <aside class="drawer__panel">
+    <div class="drawer__head"><h3>Seu carrinho</h3><button class="icon-btn" data-close-cart aria-label="Fechar">✕</button></div>
+    <div class="ship" id="ship"></div>
+    <div class="drawer__items" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="row"><span>Subtotal</span><b id="subtotal">R$ 0,00</b></div>
+      <small>Pix com 5% de desconto · frete calculado no checkout</small>
+      <button class="btn btn--primary btn--block" id="checkout">Finalizar compra</button>
+    </div>
+  </aside>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>
