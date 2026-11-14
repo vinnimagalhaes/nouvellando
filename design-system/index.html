@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nouvellando · Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<style>
+  /* estilos só da documentação */
+  .ds{display:grid;grid-template-columns:220px 1fr;gap:var(--space-10);padding:var(--space-10) 0 120px}
+  .ds > main{min-width:0}
+  .ds-nav{position:sticky;top:var(--space-6);align-self:start;display:flex;flex-direction:column;gap:2px;font-size:var(--text-sm)}
+  .ds-nav b{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--color-muted);margin:var(--space-4) 0 var(--space-1)}
+  .ds-nav a{padding:6px 10px;border-radius:var(--radius-sm);color:var(--color-muted)}
+  .ds-nav a:hover{background:var(--color-tint);color:var(--color-ink)}
+  .ds-head{padding:var(--space-12) 0 var(--space-8);border-bottom:1px solid var(--color-line);margin-bottom:var(--space-10)}
+  .ds-head h1{font-size:var(--text-display);margin-bottom:var(--space-3)}
+  .ds-head p{color:var(--color-muted);max-width:640px;font-size:var(--text-md)}
+  .ds section{margin-bottom:72px;scroll-margin-top:var(--space-6)}
+  .ds h2{font-size:var(--text-xl);margin-bottom:var(--space-2)}
+  .ds h3.ds-sub{font:var(--weight-semibold) var(--text-sm) var(--font-body);letter-spacing:0;text-transform:uppercase;color:var(--color-muted);margin:var(--space-8) 0 var(--space-3)}
+  .ds-lead{color:var(--color-muted);margin-bottom:var(--space-6);max-width:640px}
+  .demo{background:var(--color-surface);border:1px solid var(--color-line);border-radius:var(--radius-lg);padding:var(--space-8);display:flex;flex-wrap:wrap;gap:var(--space-4);align-items:center;position:relative}
+  .demo--dark{background:var(--color-dark);color:var(--color-on-dark)}
+  .demo--col{flex-direction:column;align-items:stretch}
+  pre{background:var(--color-dark);color:var(--color-on-dark);border-radius:0 0 var(--radius-lg) var(--radius-lg);padding:var(--space-4) var(--space-5);font-size:.8rem;overflow:auto;margin-top:-1px;line-height:1.5}
+  .demo + pre{border-top-left-radius:0}
+  .demo:has(+ pre){border-bottom-left-radius:0;border-bottom-right-radius:0}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  p code,td code,li code{background:var(--color-tint);padding:1px 6px;border-radius:6px;font-size:.85em}
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:var(--space-3)}
+  .sw{border:1px solid var(--color-line);border-radius:var(--radius-md);overflow:hidden;background:var(--color-surface);font-size:.8rem}
+  .sw i{display:block;height:72px;border-bottom:1px solid var(--color-line)}
+  .sw div{padding:10px var(--space-3)}
+  .sw b{display:block;font-family:ui-monospace,Menlo,monospace;font-size:.76rem;font-weight:500}
+  .sw span{color:var(--color-muted)}
+  .yarns{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:var(--space-4)}
+  .yarns figure{text-align:center;font-size:.8rem}
+  .yarns .ball{width:100%;aspect-ratio:1;position:relative;margin-bottom:var(--space-2)}
+  .yarns .yarn{inset:0;width:100%;height:100%}
+  .yarns figcaption b{display:block;font-family:ui-monospace,Menlo,monospace;font-weight:500;color:var(--color-muted)}
+  table{width:100%;border-collapse:collapse;font-size:var(--text-sm);background:var(--color-surface);border:1px solid var(--color-line);border-radius:var(--radius-lg);overflow:hidden}
+  th,td{text-align:left;padding:var(--space-3) var(--space-4);border-bottom:1px solid var(--color-line);vertical-align:middle}
+  th{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.08em;color:var(--color-muted);background:var(--color-bg)}
+  tr:last-child td{border-bottom:0}
+  .bar-demo{height:16px;background:var(--color-brand);border-radius:4px}
+  .rad{width:72px;height:72px;background:var(--color-tint);border:1.5px solid var(--color-brand)}
+  .sh{width:120px;height:80px;background:var(--color-surface);border-radius:var(--radius-lg)}
+  .ds-card{max-width:270px}
+  .dont{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+  .dont div{padding:var(--space-5);border-radius:var(--radius-md);background:var(--color-surface);border:1px solid var(--color-line);font-size:var(--text-sm)}
+  .dont b{display:block;margin-bottom:6px}
+  .do b{color:var(--color-success)} .no b{color:var(--color-danger)}
+  .static-toast{position:static;transform:none}
+  @media(max-width:900px){.ds{grid-template-columns:1fr}.ds-nav{display:none}.dont{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="ds-head">
+    <a class="logo" href="../">Nouvellando<sup>®</sup></a>
+    <h1 style="margin-top:var(--space-6)">Design System</h1>
+    <p>Tokens, componentes e regras visuais do site da Nouvellando. Tudo aqui é o mesmo CSS que o site usa: mudou um token, muda no site inteiro.</p>
+  </header>
+
+  <div class="ds">
+    <nav class="ds-nav">
+      <b>Começo</b><a href="#uso">Como usar</a><a href="#principios">Princípios</a>
+      <b>Fundamentos</b><a href="#cores">Cores</a><a href="#fios">Degradês dos fios</a><a href="#tipografia">Tipografia</a><a href="#espacos">Espaçamento</a><a href="#raios">Raios e sombras</a><a href="#movimento">Movimento</a>
+      <b>Componentes</b><a href="#botoes">Botões</a><a href="#rotulos">Rótulos e badges</a><a href="#chips">Chips</a><a href="#campos">Campos</a><a href="#opcoes">Opções e abas</a><a href="#quantidade">Quantidade e preço</a><a href="#cores-produto">Seletor de cor</a><a href="#card">Card de produto</a><a href="#item">Item de carrinho</a><a href="#box">Caixa e resumo</a><a href="#nav-aux">Breadcrumb e acordeão</a><a href="#feedback">Feedback</a><a href="#overlays">Modal e gaveta</a>
+    </nav>
+
+    <main>
+      <!-- USO -->
+      <section id="uso">
+        <h2>Como usar</h2>
+        <p class="ds-lead">Carregue as fontes e os três arquivos nesta ordem. Depois, o CSS da página (layout das seções) vem por último.</p>
+        <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="design-system/tokens.css"&gt;      &lt;!-- variáveis --&gt;
+&lt;link rel="stylesheet" href="design-system/base.css"&gt;        &lt;!-- reset e tipografia --&gt;
+&lt;link rel="stylesheet" href="design-system/components.css"&gt;  &lt;!-- componentes --&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;                    &lt;!-- layout da página --&gt;</code></pre>
+      </section>
+
+      <!-- PRINCÍPIOS -->
+      <section id="principios">
+        <h2>Princípios</h2>
+        <p class="ds-lead">A marca é artesanal e colorida. A interface fica neutra e quente para o produto (o fio) ser a cor da página.</p>
+        <div class="dont">
+          <div class="do"><b>Faça</b>Deixe a cor vir das fotos e dos degradês dos fios. Use o ameixa (<code>--color-brand</code>) só para ação e preço.</div>
+          <div class="no"><b>Evite</b>Fundos coloridos atrás de produto, ou mais de um botão primário no mesmo bloco.</div>
+          <div class="do"><b>Faça</b>Títulos em Fraunces, interface em Inter. Cantos arredondados e generosos.</div>
+          <div class="no"><b>Evite</b>Valores soltos (<code>#8e2f5b</code>, <code>18px</code>). Use sempre o token.</div>
+        </div>
+      </section>
+
+      <!-- CORES -->
+      <section id="cores">
+        <h2>Cores</h2>
+        <p class="ds-lead">Os valores abaixo são lidos direto de <code>tokens.css</code>.</p>
+        <h3 class="ds-sub">Marca</h3>
+        <div class="swatches" data-swatches="brand,brand-strong,brand-soft,accent"></div>
+        <h3 class="ds-sub">Neutros</h3>
+        <div class="swatches" data-swatches="bg,surface,tint,ink,muted,line,line-strong,dark,on-dark,on-dark-muted"></div>
+        <h3 class="ds-sub">Feedback</h3>
+        <div class="swatches" data-swatches="success,danger,whatsapp"></div>
+      </section>
+
+      <!-- FIOS -->
+      <section id="fios">
+        <h2>Degradês dos fios</h2>
+        <p class="ds-lead">Usados quando não há foto do produto. Cada token tem 3 tons; passe como <code>--c1</code>, <code>--c2</code>, <code>--c3</code> para <code>.skein</code> (preenche o pai) ou <code>.yarn</code> (novelo redondo).</p>
+        <div class="yarns" id="yarns"></div>
+        <pre><code>&lt;div class="card__img"&gt;
+  &lt;div class="skein" style="--c1:#8e2f5b;--c2:#d9578a;--c3:#f3a9b8"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+
+      <!-- TIPOGRAFIA -->
+      <section id="tipografia">
+        <h2>Tipografia</h2>
+        <p class="ds-lead"><b>Fraunces</b> (<code>--font-display</code>) para títulos, logo e nome de produto. <b>Inter</b> (<code>--font-body</code>) para texto e interface.</p>
+        <table>
+          <tr><th>Token</th><th>Tamanho</th><th>Exemplo</th></tr>
+          <tr><td><code>--text-display</code></td><td>2.6–4.6rem</td><td><h1 style="font-size:var(--text-display)">Novelos</h1></td></tr>
+          <tr><td><code>--text-2xl</code></td><td>2–2.9rem</td><td><h2 style="font-size:var(--text-2xl);margin:0">Nossos fios</h2></td></tr>
+          <tr><td><code>--text-xl</code></td><td>2rem</td><td><h3 style="font-size:var(--text-xl)">Fio Original</h3></td></tr>
+          <tr><td><code>--text-lg</code></td><td>1.4rem</td><td><h3 style="font-size:var(--text-lg)">Seu carrinho</h3></td></tr>
+          <tr><td><code>--text-md</code></td><td>1.1rem</td><td style="font-size:var(--text-md)">Texto de destaque e preço no card</td></tr>
+          <tr><td><code>--text-base</code></td><td>.95rem</td><td style="font-size:var(--text-base)">Texto de interface padrão</td></tr>
+          <tr><td><code>--text-sm</code></td><td>.88rem</td><td style="font-size:var(--text-sm)">Chips, botões pequenos, apoio</td></tr>
+          <tr><td><code>--text-xs</code></td><td>.78rem</td><td><span class="eyebrow" style="margin:0">Eyebrow</span></td></tr>
+        </table>
+      </section>
+
+      <!-- ESPAÇOS -->
+      <section id="espacos">
+        <h2>Espaçamento</h2>
+        <p class="ds-lead">Escala de 4 em 4 px. Seções usam <code>--space-section</code> (90px, 64px no celular).</p>
+        <table id="spaceTable"><tr><th>Token</th><th>Valor</th><th></th></tr></table>
+      </section>
+
+      <!-- RAIOS -->
+      <section id="raios">
+        <h2>Raios e sombras</h2>
+        <div class="demo">
+          <div style="text-align:center"><div class="rad" style="border-radius:var(--radius-sm)"></div><small>sm · 12</small></div>
+          <div style="text-align:center"><div class="rad" style="border-radius:var(--radius-md)"></div><small>md · 14</small></div>
+          <div style="text-align:center"><div class="rad" style="border-radius:var(--radius-lg)"></div><small>lg · 18</small></div>
+          <div style="text-align:center"><div class="rad" style="border-radius:var(--radius-xl)"></div><small>xl · 24</small></div>
+          <div style="text-align:center"><div class="rad" style="border-radius:var(--radius-pill);width:120px"></div><small>pill</small></div>
+          <div style="text-align:center;margin-left:var(--space-8)"><div class="sh" style="box-shadow:var(--shadow-md)"></div><small>--shadow-md (hover de card)</small></div>
+          <div style="text-align:center"><div class="sh" style="box-shadow:var(--focus-ring)"></div><small>--focus-ring (teclado)</small></div>
+        </div>
+      </section>
+
+      <!-- MOVIMENTO -->
+      <section id="movimento">
+        <h2>Movimento</h2>
+        <p class="ds-lead">Transições curtas e suaves. Tudo é desligado quando o sistema pede movimento reduzido.</p>
+        <table>
+          <tr><th>Token</th><th>Valor</th><th>Uso</th></tr>
+          <tr><td><code>--dur-fast</code></td><td>.2s</td><td>hover de botão, chip, link</td></tr>
+          <tr><td><code>--dur</code></td><td>.3s</td><td>card, modal, gaveta, toast</td></tr>
+          <tr><td><code>--dur-slow</code></td><td>.5s</td><td>zoom de foto no card</td></tr>
+        </table>
+      </section>
+
+      <!-- BOTÕES -->
+      <section id="botoes">
+        <h2>Botões</h2>
+        <p class="ds-lead">Um primário por bloco. <code>ghost</code> para ação secundária, <code>light</code> sobre fundo escuro.</p>
+        <div class="demo">
+          <button class="btn btn--primary">Adicionar ao carrinho</button>
+          <button class="btn btn--ghost">Comprar agora</button>
+          <button class="btn btn--primary btn--sm">Pequeno</button>
+          <button class="btn btn--primary" disabled>Desabilitado</button>
+        </div>
+        <div class="demo demo--dark" style="margin-top:var(--space-3)"><button class="btn btn--light">Ver todas as aulas</button></div>
+        <pre><code>&lt;button class="btn btn--primary"&gt;Adicionar ao carrinho&lt;/button&gt;
+&lt;button class="btn btn--ghost"&gt;Comprar agora&lt;/button&gt;
+&lt;button class="btn btn--light"&gt;Sobre fundo escuro&lt;/button&gt;
+&lt;!-- modificadores: btn--sm · btn--lg · btn--block --&gt;</code></pre>
+        <h3 class="ds-sub">Botão de ícone com badge</h3>
+        <div class="demo">
+          <button class="icon-btn" aria-label="Buscar">⌕</button>
+          <button class="icon-btn" aria-label="Carrinho">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+            <span class="badge">3</span>
+          </button>
+        </div>
+        <pre><code>&lt;button class="icon-btn" aria-label="Carrinho"&gt;…svg…&lt;span class="badge"&gt;3&lt;/span&gt;&lt;/button&gt;</code></pre>
+      </section>
+
+      <!-- RÓTULOS -->
+      <section id="rotulos">
+        <h2>Rótulos e badges</h2>
+        <div class="demo">
+          <span class="eyebrow" style="margin:0">Feito à mão</span>
+          <span class="tag tag--static">Mais vendido</span>
+          <span class="tag tag--static">Pronta-entrega</span>
+          <span class="stars">★★★★★ <small>4,9 · 128 avaliações</small></span>
+        </div>
+        <div class="demo demo--dark" style="margin-top:var(--space-3)"><span class="eyebrow eyebrow--light" style="margin:0">Videoaulas</span><span class="pill">a partir de R$ 49,90</span></div>
+        <pre><code>&lt;span class="eyebrow"&gt;Feito à mão&lt;/span&gt;
+&lt;span class="tag"&gt;Mais vendido&lt;/span&gt;   &lt;!-- absoluta no canto da mídia; use tag--static fora dela --&gt;
+&lt;span class="pill"&gt;a partir de R$ 49,90&lt;/span&gt;   &lt;!-- sobre fundo colorido --&gt;</code></pre>
+      </section>
+
+      <!-- CHIPS -->
+      <section id="chips">
+        <h2>Chips</h2>
+        <p class="ds-lead">Filtros de categoria. <code>.on</code> marca o ativo; <code>chips--scroll</code> rola na horizontal no celular.</p>
+        <div class="demo"><div class="chips" id="chipDemo"><button class="chip on">Todos</button><button class="chip">Original</button><button class="chip">Twinkle</button><button class="chip">Bouclé</button></div></div>
+        <pre><code>&lt;div class="chips"&gt;&lt;button class="chip on"&gt;Todos&lt;/button&gt;&lt;button class="chip"&gt;Original&lt;/button&gt;&lt;/div&gt;</code></pre>
+      </section>
+
+      <!-- CAMPOS -->
+      <section id="campos">
+        <h2>Campos</h2>
+        <div class="demo demo--col">
+          <div class="form-row">
+            <label class="field">E-mail<input class="input" type="email" placeholder="voce@email.com"></label>
+            <label class="field">CPF<input class="input" placeholder="000.000.000-00"></label>
+          </div>
+          <div class="form-row form-row--3">
+            <label class="field">CEP<input class="input" placeholder="00000-000"></label>
+            <label class="field span2">Endereço<input class="input"></label>
+          </div>
+          <label class="field">Parcelas<select class="input"><option>1x sem juros</option><option>12x sem juros</option></select></label>
+          <div class="input-group"><input class="input" placeholder="Cupom de desconto"><button class="btn btn--ghost btn--sm">Aplicar</button></div>
+          <input class="input input--pill" placeholder="Buscar fios, cores, xales…">
+          <span class="field-error">Digite um CEP válido.</span>
+        </div>
+        <pre><code>&lt;div class="form-row"&gt;        &lt;!-- 2 colunas; form-row--3 para 3; span2 ocupa 2 --&gt;
+  &lt;label class="field"&gt;E-mail&lt;input class="input" type="email"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="input-group"&gt;&lt;input class="input"&gt;&lt;button class="btn btn--ghost btn--sm"&gt;Aplicar&lt;/button&gt;&lt;/div&gt;
+&lt;input class="input input--pill" placeholder="Buscar…"&gt;
+&lt;span class="field-error"&gt;Mensagem de erro&lt;/span&gt;</code></pre>
+      </section>
+
+      <!-- OPÇÕES -->
+      <section id="opcoes">
+        <h2>Opções e abas</h2>
+        <div class="demo demo--col">
+          <div class="opts" id="optDemo">
+            <label class="opt on"><input type="radio" name="d" checked><span>PAC · 5 a 8 dias úteis</span><b>R$ 24,90</b></label>
+            <label class="opt"><input type="radio" name="d"><span>SEDEX · 2 a 3 dias úteis</span><b>R$ 39,90</b></label>
+          </div>
+          <div class="tabs" id="tabDemo" style="margin:var(--space-4) 0 0"><button class="on">Pix <small>−5%</small></button><button>Cartão</button><button>Boleto</button></div>
+        </div>
+        <pre><code>&lt;div class="opts"&gt;
+  &lt;label class="opt on"&gt;&lt;input type="radio" name="ship" checked&gt;&lt;span&gt;PAC&lt;/span&gt;&lt;b&gt;R$ 24,90&lt;/b&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="tabs"&gt;&lt;button class="on"&gt;Pix&lt;/button&gt;&lt;button&gt;Cartão&lt;/button&gt;&lt;/div&gt;
+&lt;div class="panel"&gt;…&lt;/div&gt;&lt;div class="panel" hidden&gt;…&lt;/div&gt;</code></pre>
+      </section>
+
+      <!-- QUANTIDADE E PREÇO -->
+      <section id="quantidade">
+        <h2>Quantidade e preço</h2>
+        <div class="demo">
+          <div class="qty" id="qtyDemo"><button>−</button><span>1</span><button>+</button></div>
+          <div class="qty qty--sm"><button>−</button><span>2</span><button>+</button></div>
+          <div class="price" style="margin:0;padding:0">R$ 49,90<small>ou 12x de R$ 4,16</small></div>
+          <div class="price price--lg" style="margin:0">R$ 49,90</div>
+        </div>
+        <pre><code>&lt;div class="qty"&gt;&lt;button&gt;−&lt;/button&gt;&lt;span&gt;1&lt;/span&gt;&lt;button&gt;+&lt;/button&gt;&lt;/div&gt;   &lt;!-- qty--sm no carrinho --&gt;
+&lt;div class="price"&gt;R$ 49,90&lt;small&gt;ou 12x de R$ 4,16&lt;/small&gt;&lt;/div&gt;            &lt;!-- price--lg na página de produto --&gt;</code></pre>
+      </section>
+
+      <!-- SELETOR DE COR -->
+      <section id="cores-produto">
+        <h2>Seletor de cor</h2>
+        <p class="ds-lead"><code>.dots</code> é a prévia no card (até 5 cores). <code>.var</code> é o seletor clicável na página de produto.</p>
+        <div class="demo demo--col">
+          <div class="dots" id="dotsDemo"></div>
+          <div><div class="vlabel">Cor: <b id="varName">Aurora</b></div><div class="variants" id="varDemo" style="margin:0"></div></div>
+        </div>
+        <pre><code>&lt;div class="variants"&gt;
+  &lt;button class="var on" style="--c1:…;--c2:…;--c3:…" aria-label="Aurora"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+
+      <!-- CARD -->
+      <section id="card">
+        <h2>Card de produto</h2>
+        <p class="ds-lead">Dentro de <code>.grid</code> (colunas automáticas a partir de 250px). A mídia pode ser foto ou <code>.skein</code>.</p>
+        <div class="demo">
+          <article class="card ds-card">
+            <div class="card__img"><span class="tag">Mais vendido</span><div class="skein" style="--c1:#8e2f5b;--c2:#d9578a;--c3:#f3a9b8"></div></div>
+            <div class="card__body">
+              <span class="card__cat">Fio Original</span>
+              <h3 class="card__name">Aurora</h3>
+              <div class="dots"><i style="--c1:#8e2f5b;--c2:#d9578a"></i><i style="--c1:#1f6f78;--c2:#58b6a8"></i><i style="--c1:#e8a04c;--c2:#e86a4c"></i></div>
+              <div class="price">R$ 49,90<small>ou 12x de R$ 4,16</small></div>
+            </div>
+            <button class="card__add">Adicionar</button>
+          </article>
+        </div>
+        <pre><code>&lt;article class="card"&gt;
+  &lt;div class="card__img"&gt;&lt;span class="tag"&gt;Mais vendido&lt;/span&gt;&lt;img src="…" alt="…"&gt;&lt;/div&gt;
+  &lt;div class="card__body"&gt;
+    &lt;span class="card__cat"&gt;Fio Original&lt;/span&gt;
+    &lt;h3 class="card__name"&gt;Aurora&lt;/h3&gt;
+    &lt;div class="price"&gt;R$ 49,90&lt;small&gt;ou 12x de R$ 4,16&lt;/small&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="card__add"&gt;Adicionar&lt;/button&gt;
+&lt;/article&gt;</code></pre>
+      </section>
+
+      <!-- ITEM -->
+      <section id="item">
+        <h2>Item de carrinho</h2>
+        <div class="demo demo--col" style="max-width:430px">
+          <div class="item">
+            <div class="item__img"><div class="skein" style="--c1:#5b4b9a;--c2:#a58ad6;--c3:#e6d3f2"></div></div>
+            <div><b>Twinkle</b><small>Lavanda</small><div class="qty qty--sm"><button>−</button><span>2</span><button>+</button></div></div>
+            <div class="item__p">R$ 109,80<button class="item__rm">remover</button></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOX -->
+      <section id="box">
+        <h2>Caixa e resumo</h2>
+        <p class="ds-lead">Agrupa etapas do checkout e resumos de pedido. <code>.step-num</code> numera as etapas; <code>.row</code> alinha rótulo e valor.</p>
+        <div class="box" style="max-width:430px">
+          <h2><i class="step-num">1</i> Resumo</h2>
+          <div class="row"><span>Subtotal</span><span>R$ 104,80</span></div>
+          <div class="row"><span>Frete</span><span>R$ 24,90</span></div>
+          <div class="row ok"><span>Descontos</span><span>− R$ 5,24</span></div>
+          <div class="row total"><span>Total</span><b>R$ 124,46</b></div>
+        </div>
+        <h3 class="ds-sub">Barra de progresso</h3>
+        <div class="demo demo--col" style="max-width:430px"><span style="font-size:.85rem">Faltam <b>R$ 120,00</b> para o frete grátis</span><div class="bar"><i style="width:60%"></i></div></div>
+        <pre><code>&lt;div class="bar"&gt;&lt;i style="width:60%"&gt;&lt;/i&gt;&lt;/div&gt;</code></pre>
+      </section>
+
+      <!-- NAV AUX -->
+      <section id="nav-aux">
+        <h2>Breadcrumb e acordeão</h2>
+        <div class="demo demo--col">
+          <nav class="crumbs" style="margin:0"><a href="#">Início</a><i>/</i><a href="#">Nossos fios</a><i>/</i><span>Fio Original</span></nav>
+          <div>
+            <details open><summary>Descrição</summary><p>Novelo artesanal tingido à mão, com degradê único.</p></details>
+            <details><summary>Cuidados</summary><p>Lavar à mão com água fria e sabão neutro.</p></details>
+          </div>
+        </div>
+        <pre><code>&lt;nav class="crumbs"&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;i&gt;/&lt;/i&gt;&lt;span&gt;Fio Original&lt;/span&gt;&lt;/nav&gt;
+&lt;details open&gt;&lt;summary&gt;Descrição&lt;/summary&gt;&lt;p&gt;…&lt;/p&gt;&lt;/details&gt;</code></pre>
+      </section>
+
+      <!-- FEEDBACK -->
+      <section id="feedback">
+        <h2>Feedback</h2>
+        <p class="ds-lead">Toast confirma ações rápidas (item adicionado, cupom aplicado) e some sozinho.</p>
+        <div class="demo">
+          <div class="toast static-toast">Twinkle adicionado ao carrinho</div>
+          <span class="text-success">✓ Cupom aplicado</span>
+          <span class="field-error">Cupom inválido</span>
+        </div>
+        <pre><code>&lt;div class="toast show"&gt;Twinkle adicionado ao carrinho&lt;/div&gt;</code></pre>
+      </section>
+
+      <!-- OVERLAYS -->
+      <section id="overlays">
+        <h2>Modal e gaveta</h2>
+        <p class="ds-lead">Modal para escolha rápida de produto; gaveta lateral para o carrinho. Ambos fecham com Esc e clique no fundo.</p>
+        <div class="demo"><button class="btn btn--ghost" id="openModal">Abrir modal</button><button class="btn btn--ghost" id="openDrawer">Abrir gaveta</button></div>
+        <pre><code>&lt;div class="modal" hidden&gt;
+  &lt;div class="modal__backdrop"&gt;&lt;/div&gt;
+  &lt;div class="modal__box" role="dialog" aria-modal="true"&gt;
+    &lt;button class="modal__x"&gt;✕&lt;/button&gt;
+    &lt;div class="modal__media"&gt;…&lt;/div&gt;&lt;div class="modal__info"&gt;…&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="drawer" hidden&gt;
+  &lt;div class="modal__backdrop"&gt;&lt;/div&gt;
+  &lt;aside class="drawer__panel"&gt;&lt;div class="drawer__head"&gt;…&lt;/div&gt;&lt;div class="drawer__items"&gt;…&lt;/div&gt;&lt;div class="drawer__foot"&gt;…&lt;/div&gt;&lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+      </section>
+    </main>
+  </div>
+</div>
+
+<div class="modal" id="dsModal" hidden>
+  <div class="modal__backdrop" data-x></div>
+  <div class="modal__box" role="dialog" aria-modal="true">
+    <button class="modal__x" data-x aria-label="Fechar">✕</button>
+    <div class="modal__media"><div class="skein" style="--c1:#1f6f78;--c2:#58b6a8;--c3:#e8d98a"></div></div>
+    <div class="modal__info"><span class="eyebrow">Breezy</span><h3>Mar Aberto</h3><div class="price">R$ 51,90<small>ou 12x de R$ 4,33</small></div><p>Exemplo de modal de produto.</p><button class="btn btn--primary btn--block" data-x>Adicionar ao carrinho</button></div>
+  </div>
+</div>
+<div class="drawer" id="dsDrawer" hidden>
+  <div class="modal__backdrop" data-x></div>
+  <aside class="drawer__panel">
+    <div class="drawer__head"><h3>Seu carrinho</h3><button class="icon-btn" data-x aria-label="Fechar">✕</button></div>
+    <div class="drawer__items"><p class="drawer__empty">Seu carrinho está vazio.</p></div>
+    <div class="drawer__foot"><div class="row"><span>Subtotal</span><b>R$ 0,00</b></div><button class="btn btn--primary btn--block" data-x>Finalizar compra</button></div>
+  </aside>
+</div>
+
+<script>
+  const css = getComputedStyle(document.documentElement);
+  const tok = n => css.getPropertyValue(n).trim();
+
+  document.querySelectorAll('[data-swatches]').forEach(el => {
+    el.innerHTML = el.dataset.swatches.split(',').map(n =>
+      `<div class="sw"><i style="background:var(--color-${n})"></i><div><b>--color-${n}</b><span>${tok('--color-' + n)}</span></div></div>`).join('');
+  });
+
+  const YARNS = ['aurora', 'mar-aberto', 'por-do-sol', 'jardim', 'lavanda', 'terra', 'glacial', 'framboesa'];
+  const tones = n => tok('--yarn-' + n).split(',').map(s => s.trim());
+  const vars = c => `--c1:${c[0]};--c2:${c[1]};--c3:${c[2]}`;
+  const label = n => n.replace('-', ' ').replace(/^./, s => s.toUpperCase()).replace('Por do', 'Pôr do');
+  document.getElementById('yarns').innerHTML = YARNS.map(n =>
+    `<figure><div class="ball"><div class="yarn" style="${vars(tones(n))}"></div></div><figcaption>${label(n)}<b>--yarn-${n}</b></figcaption></figure>`).join('');
+  document.getElementById('dotsDemo').innerHTML = YARNS.slice(0, 5).map(n => `<i style="${vars(tones(n))}"></i>`).join('');
+  const varDemo = document.getElementById('varDemo');
+  varDemo.innerHTML = YARNS.map((n, i) => `<button class="var ${i ? '' : 'on'}" data-n="${label(n)}" style="${vars(tones(n))}" aria-label="${label(n)}"></button>`).join('');
+  varDemo.addEventListener('click', e => {
+    const b = e.target.closest('.var'); if (!b) return;
+    varDemo.querySelectorAll('.var').forEach(x => x.classList.toggle('on', x === b));
+    document.getElementById('varName').textContent = b.dataset.n;
+  });
+
+  const spaces = ['1', '2', '3', '4', '5', '6', '7', '8', '10', '12', '16', 'section'];
+  document.getElementById('spaceTable').insertAdjacentHTML('beforeend', spaces.map(s =>
+    `<tr><td><code>--space-${s}</code></td><td>${tok('--space-' + s)}</td><td><div class="bar-demo" style="width:var(--space-${s})"></div></td></tr>`).join(''));
+
+  // estados interativos das demos
+  const group = (id, sel) => document.getElementById(id).addEventListener('click', e => {
+    const t = e.target.closest(sel); if (!t) return;
+    document.querySelectorAll(`#${id} ${sel}`).forEach(x => x.classList.toggle('on', x === t));
+  });
+  group('chipDemo', '.chip'); group('optDemo', '.opt'); group('tabDemo', 'button');
+  const q = document.getElementById('qtyDemo');
+  q.addEventListener('click', e => {
+    const s = q.querySelector('span'); const d = e.target.textContent === '+' ? 1 : e.target.textContent === '−' ? -1 : 0;
+    s.textContent = Math.max(1, +s.textContent + d);
+  });
+  const show = id => { document.getElementById(id).hidden = false; };
+  document.getElementById('openModal').onclick = () => show('dsModal');
+  document.getElementById('openDrawer').onclick = () => show('dsDrawer');
+  const hide = () => { dsModal.hidden = true; dsDrawer.hidden = true; };
+  document.querySelectorAll('[data-x]').forEach(b => b.addEventListener('click', hide));
+  addEventListener('keydown', e => e.key === 'Escape' && hide());
+</script>
+</body>
+</html>

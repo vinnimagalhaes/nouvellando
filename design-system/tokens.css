@@ -1,0 +1,85 @@
+/* =========================================================
+   Nouvellando Design System · Tokens
+   Fonte única de cores, tipografia, espaçamento e movimento.
+   Use sempre var(--token) em vez de valores soltos.
+   ========================================================= */
+:root{
+  /* ---- Cor · marca ---- */
+  --color-brand:#8e2f5b;          /* ameixa: CTAs, preços, links ativos */
+  --color-brand-strong:#6f2347;   /* hover de CTA */
+  --color-brand-soft:#fdf3f7;     /* fundo de opção selecionada */
+  --color-accent:#e8a04c;         /* âmbar: estrelas, destaques sobre escuro */
+
+  /* ---- Cor · neutros ---- */
+  --color-bg:#fbf8f4;             /* fundo da página (creme) */
+  --color-surface:#ffffff;        /* cards, campos, caixas */
+  --color-tint:#f4ede4;           /* seções alternadas, fundos de mídia */
+  --color-ink:#2b2227;            /* texto principal */
+  --color-muted:#7a6d73;          /* texto secundário */
+  --color-line:#e6dcd2;           /* bordas e divisórias */
+  --color-line-strong:#e0d4c8;    /* trilhos (barra de progresso) */
+  --color-dark:#2a1b25;           /* rodapé, faixa de aviso, seção escura */
+  --color-on-dark:#f6e7d8;        /* texto sobre escuro */
+  --color-on-dark-muted:#cdbcc4;  /* texto secundário sobre escuro */
+  --color-overlay:rgba(30,15,25,.55);
+
+  /* ---- Cor · feedback ---- */
+  --color-success:#2c8a4a;
+  --color-danger:#b3261e;
+  --color-whatsapp:#25d366;
+
+  /* ---- Cor · degradês dos fios (exemplos para mídia sem foto) ---- */
+  --yarn-aurora:#8e2f5b,#d9578a,#f3a9b8;
+  --yarn-mar-aberto:#1f6f78,#58b6a8,#e8d98a;
+  --yarn-por-do-sol:#e8a04c,#e86a4c,#7a2d5b;
+  --yarn-jardim:#3f7d4e,#9bc47a,#f2e29b;
+  --yarn-lavanda:#5b4b9a,#a58ad6,#e6d3f2;
+  --yarn-terra:#5a3a2a,#b2704a,#f0c9a0;
+  --yarn-glacial:#2c5a8f,#7fb2e0,#e4f1fa;
+  --yarn-framboesa:#a3123f,#e0426b,#ffb3c1;
+
+  /* ---- Tipografia ---- */
+  --font-display:Fraunces,Georgia,serif;   /* títulos, logo, nomes de produto */
+  --font-body:Inter,system-ui,sans-serif;  /* texto e interface */
+  --weight-regular:400; --weight-medium:500; --weight-semibold:600;
+  --text-2xs:.7rem;   /* contadores */
+  --text-xs:.78rem;   /* eyebrow, legendas */
+  --text-sm:.88rem;   /* chips, botões pequenos, apoio */
+  --text-base:.95rem; /* interface padrão */
+  --text-md:1.1rem;   /* lead, preço no card */
+  --text-lg:1.4rem;   /* títulos de painel */
+  --text-xl:2rem;     /* títulos de bloco */
+  --text-2xl:clamp(2rem,4vw,2.9rem);     /* títulos de seção */
+  --text-display:clamp(2.6rem,6vw,4.6rem); /* hero */
+  --leading-tight:1.1; --leading-body:1.6;
+  --tracking-tight:-.01em; --tracking-caps:.14em;
+
+  /* ---- Espaçamento (base 4px) ---- */
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:20px;
+  --space-6:24px; --space-7:28px; --space-8:32px; --space-10:40px; --space-12:48px;
+  --space-16:64px; --space-section:90px;
+
+  /* ---- Raios ---- */
+  --radius-sm:12px;   /* campos, miniaturas */
+  --radius-md:14px;   /* blocos internos */
+  --radius-lg:18px;   /* cards */
+  --radius-xl:24px;   /* modais, mídia grande */
+  --radius-pill:999px;
+
+  /* ---- Sombras ---- */
+  --shadow-md:0 10px 30px -12px rgba(60,30,50,.25);
+  --shadow-inset-yarn:inset -18px -18px 40px rgba(0,0,0,.18);
+  --focus-ring:0 0 0 3px rgba(142,47,91,.35);
+
+  /* ---- Layout ---- */
+  --container:1200px;
+  --gutter:20px;
+  --header-h:68px;
+
+  /* ---- Movimento ---- */
+  --dur-fast:.2s; --dur:.3s; --dur-slow:.5s;
+  --ease:cubic-bezier(.2,.7,.3,1);
+
+  /* ---- Camadas ---- */
+  --z-float:20; --z-header:30; --z-overlay:50; --z-toast:90;
+}

@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="design-system/tokens.css">
+<link rel="stylesheet" href="design-system/base.css">
+<link rel="stylesheet" href="design-system/components.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -34,7 +37,7 @@
     </div>
   </div>
   <div class="searchbar" id="searchbar">
-    <div class="wrap"><input id="globalSearch" type="search" placeholder="Buscar fios, cores, xales…" autocomplete="off"></div>
+    <div class="wrap"><input class="input input--pill" id="globalSearch" type="search" placeholder="Buscar fios, cores, xales…" autocomplete="off"></div>
   </div>
 </header>
 
@@ -92,7 +95,7 @@
       </div>
       <div class="toolbar">
         <div class="chips" id="chips"></div>
-        <select id="sort" aria-label="Ordenar">
+        <select class="input" id="sort" aria-label="Ordenar">
           <option value="rel">Mais relevantes</option>
           <option value="asc">Menor preço</option>
           <option value="desc">Maior preço</option>
@@ -145,7 +148,7 @@
   <section class="news">
     <div class="wrap news__row">
       <div><h3>Receba lançamentos e cores novas</h3><p>Entre para a lista e saiba primeiro das novidades.</p></div>
-      <form id="newsForm"><input type="email" required placeholder="Seu melhor e-mail"><button class="btn btn--primary">Inscrever</button></form>
+      <form id="newsForm"><input class="input input--pill" type="email" required placeholder="Seu melhor e-mail"><button class="btn btn--primary">Inscrever</button></form>
     </div>
   </section>
 </main>

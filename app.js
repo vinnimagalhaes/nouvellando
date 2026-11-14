@@ -165,7 +165,7 @@ function renderCart() {
     return `<div class="item">
       <div class="item__img">${media(p, v)}</div>
       <div><b>${p.name}</b><small>${p.type === 'fio' ? v.n : 'Pronta-entrega'}</small>
-        <div class="qty"><button data-dec="${idx}">−</button><span>${i.q}</span><button data-inc="${idx}">+</button></div></div>
+        <div class="qty qty--sm"><button data-dec="${idx}">−</button><span>${i.q}</span><button data-inc="${idx}">+</button></div></div>
       <div class="item__p">${brl(p.price * i.q)}<button class="item__rm" data-rm="${idx}">remover</button></div>
     </div>`;
   }).join('') : '<p class="drawer__empty">Seu carrinho está vazio.<br>Que tal escolher algumas cores?</p>';

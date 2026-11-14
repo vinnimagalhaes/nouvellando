@@ -83,7 +83,7 @@ function productPage(p, v0) {
           <button class="btn btn--ghost btn--block" data-pbuy>Comprar agora</button>
           <ul class="trust"><li>🧶 Mesmo lote de cor na mesma compra</li><li>🚚 Envio em até 3 dias úteis</li><li>↩ 7 dias para troca</li></ul>
           <div class="cep"><b>Calcular frete</b>
-            <div><input id="cepIn" inputmode="numeric" maxlength="9" placeholder="00000-000"><button class="btn btn--ghost" data-cep>Calcular</button></div>
+            <div class="input-group"><input class="input" id="cepIn" inputmode="numeric" maxlength="9" placeholder="00000-000"><button class="btn btn--ghost btn--sm" data-cep>Calcular</button></div>
             <div id="cepOut"></div></div>
           <details open><summary>Descrição</summary><p>${isYarn ? 'Novelo artesanal tingido à mão, com degradê único. Cada novelo pode variar levemente de tom, por isso recomendamos comprar toda a quantidade do projeto de uma só vez.' : 'Peça única crochetada à mão com fios degradê Nouvellando. Dimensões e tonalidade podem variar levemente por serem peças artesanais.'}</p></details>
           <details><summary>${isYarn ? 'Composição e metragem' : 'Medidas e composição'}</summary><p>${isYarn ? 'Composição e metragem variam por linha. (Dados de exemplo.)' : 'Aprox. 180 x 80 cm. Fio degradê Nouvellando. (Dados de exemplo.)'}</p></details>
@@ -103,7 +103,7 @@ function productPage(p, v0) {
     if (t.closest('[data-pbuy]')) { addToCart(p.id, S.v, S.q); location.hash = '#/checkout'; return; }
     if (t.closest('[data-cep]')) {
       const d = $('#cepIn').value.replace(/\D/g, '');
-      if (d.length !== 8) return ($('#cepOut').innerHTML = '<small class="err">Digite um CEP válido.</small>');
+      if (d.length !== 8) return ($('#cepOut').innerHTML = '<small class="field-error">Digite um CEP válido.</small>');
       const base = 18 + (+d[0] * 2);
       $('#cepOut').innerHTML = `<div class="ship-opt"><span>PAC · 5 a 8 dias úteis</span><b>${brl(base)}</b></div><div class="ship-opt"><span>SEDEX · 2 a 3 dias úteis</span><b>${brl(base + 14)}</b></div>`;
       return;
@@ -138,27 +138,27 @@ function checkoutPage() {
       <ol class="steps"><li class="done">Carrinho</li><li class="on">Dados e pagamento</li><li>Confirmação</li></ol></div>
     <form class="co__grid" id="coForm">
       <div class="co__main">
-        <section class="box"><h2><i>1</i> Contato</h2>
-          <div class="f2"><label>E-mail<input type="email" required placeholder="voce@email.com"></label>
-          <label>Celular / WhatsApp<input required inputmode="tel" placeholder="(16) 90000-0000"></label></div></section>
-        <section class="box"><h2><i>2</i> Entrega</h2>
-          <div class="f2"><label>Nome completo<input required></label><label>CPF<input required inputmode="numeric" maxlength="14" id="cpf" placeholder="000.000.000-00"></label></div>
-          <div class="f3"><label>CEP<input required id="cep" inputmode="numeric" maxlength="9" placeholder="00000-000"></label>
-          <label class="span2">Endereço<input required></label></div>
-          <div class="f3"><label>Número<input required></label><label>Complemento<input></label><label>Bairro<input required></label></div>
-          <div class="f3"><label class="span2">Cidade<input required></label><label>UF<input required maxlength="2" style="text-transform:uppercase"></label></div>
+        <section class="box"><h2><i class="step-num">1</i> Contato</h2>
+          <div class="form-row"><label class="field">E-mail<input class="input" type="email" required placeholder="voce@email.com"></label>
+          <label class="field">Celular / WhatsApp<input class="input" required inputmode="tel" placeholder="(16) 90000-0000"></label></div></section>
+        <section class="box"><h2><i class="step-num">2</i> Entrega</h2>
+          <div class="form-row"><label class="field">Nome completo<input class="input" required></label><label class="field">CPF<input class="input" required inputmode="numeric" maxlength="14" id="cpf" placeholder="000.000.000-00"></label></div>
+          <div class="form-row form-row--3"><label class="field">CEP<input class="input" required id="cep" inputmode="numeric" maxlength="9" placeholder="00000-000"></label>
+          <label class="field span2">Endereço<input class="input" required></label></div>
+          <div class="form-row form-row--3"><label class="field">Número<input class="input" required></label><label class="field">Complemento<input class="input"></label><label class="field">Bairro<input class="input" required></label></div>
+          <div class="form-row form-row--3"><label class="field span2">Cidade<input class="input" required></label><label class="field">UF<input class="input" required maxlength="2" style="text-transform:uppercase"></label></div>
           <div class="opts" id="shipOpts"></div></section>
-        <section class="box"><h2><i>3</i> Pagamento</h2>
+        <section class="box"><h2><i class="step-num">3</i> Pagamento</h2>
           <div class="tabs" id="payTabs">
             <button type="button" class="on" data-pay="pix">Pix <small>−5%</small></button>
             <button type="button" data-pay="card">Cartão</button>
             <button type="button" data-pay="boleto">Boleto</button></div>
           <div data-panel="pix" class="panel"><div class="qr" aria-hidden="true"></div><p>O código Pix será exibido após finalizar o pedido. Aprovação imediata e <b>5% de desconto</b>.</p></div>
           <div data-panel="card" class="panel" hidden>
-            <label>Número do cartão<input required id="cc" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000" disabled></label>
-            <label>Nome impresso<input required disabled></label>
-            <div class="f3"><label>Validade<input required maxlength="5" id="exp" placeholder="MM/AA" disabled></label><label>CVV<input required maxlength="4" inputmode="numeric" disabled></label>
-            <label>Parcelas<select disabled id="inst"></select></label></div></div>
+            <label class="field">Número do cartão<input class="input" required id="cc" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000" disabled></label>
+            <label class="field">Nome impresso<input class="input" required disabled></label>
+            <div class="form-row form-row--3"><label class="field">Validade<input class="input" required maxlength="5" id="exp" placeholder="MM/AA" disabled></label><label class="field">CVV<input class="input" required maxlength="4" inputmode="numeric" disabled></label>
+            <label class="field">Parcelas<select class="input" disabled id="inst"></select></label></div></div>
           <div data-panel="boleto" class="panel" hidden><p>O boleto vence em 2 dias úteis. O pedido é liberado após a compensação.</p></div>
         </section>
         <button class="btn btn--primary btn--block btn--lg" id="coSubmit">Finalizar pedido</button>
@@ -167,7 +167,7 @@ function checkoutPage() {
       <aside class="co__side"><div class="box sticky">
         <h2>Resumo do pedido</h2>
         <div id="coItems"></div>
-        <div class="coupon"><input id="cpIn" placeholder="Cupom de desconto"><button type="button" class="btn btn--ghost" id="cpBtn">Aplicar</button></div>
+        <div class="coupon input-group"><input class="input" id="cpIn" placeholder="Cupom de desconto"><button type="button" class="btn btn--ghost btn--sm" id="cpBtn">Aplicar</button></div>
         <div id="coTotals"></div>
       </div></aside>
     </form>
