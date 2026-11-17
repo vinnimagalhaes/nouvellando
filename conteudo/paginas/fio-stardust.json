@@ -1,0 +1,434 @@
+{
+ "url": "/fio-stardust/",
+ "slug": "fio-stardust",
+ "title": "Fio Stardust – Nouvellando®",
+ "description": "Stardust 718S | 200m+ Stardust 717S | 1000m+Stardust 717US | 1000m+ Stardust 716S | 1000m+Stardust 716US | 1000m+ Stardust 706S | 1000m+Stardust 706US | 1000m+ Stardust 473S | 1100m+ Stardust 440S | 1000m+ Stardust 439S | 200m+ Stardust 438S | 200m+ Stardust 435S | 1000m+Stardust 435US | 1000m+ Stardust 412S | 1000m+ Stardust 401S |…",
+ "og_title": "Fio Stardust",
+ "og_type": "article",
+ "og_image": "https://s0.wp.com/_si/",
+ "publicado": "2023-05-22T23:09:53+00:00",
+ "modificado": "2025-08-30T13:57:33+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/08/Stardust-731S.jpg",
+         "alt": "Stardust 731S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-731s-731us/",
+         "legenda": "Stardust 731S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/08/Stardust-731US.jpg",
+         "alt": "Stardust 731US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-731s-731us/",
+         "legenda": "Stardust 731US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/08/Stardust-730S.jpg",
+        "alt": "Stardust 730S",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-730s-2/",
+       "legenda": "Stardust 730S | 200m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/07/Stardust-718S.jpg",
+        "alt": "Original 718S | 200m+",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-718s-2/",
+       "legenda": "Stardust 718S | 200m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/07/Stardust-717S.jpg",
+         "alt": "Stardust 717S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-717s-717us/",
+         "legenda": "Stardust 717S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Stardust-717SU.jpg",
+         "alt": "Stardust 717US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-717s-717us/",
+         "legenda": "Stardust 717US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/07/Stardust-716S.jpg",
+         "alt": "Stardust 716S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-716s-716us/",
+         "legenda": "Stardust 716S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Stardust-716SU.jpg",
+         "alt": "Stardust 716US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-716s-716us/",
+         "legenda": "Stardust 716US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/05/Stardust-706.jpg",
+         "alt": "Stardust 706S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-706s-706us/",
+         "legenda": "Stardust 706S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/Stardust-706U.jpg",
+         "alt": "Stardust 706US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-706s-706us/",
+         "legenda": "Stardust 706US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/473sn.jpg",
+        "alt": "473SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-473s/",
+       "legenda": "Stardust 473S | 1100m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/440sn.jpg",
+        "alt": "440SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-440s/",
+       "legenda": "Stardust 440S | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/439sn.jpg",
+        "alt": "439SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-439s/",
+       "legenda": "Stardust 439S | 200m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/438sn.jpg",
+        "alt": "438SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-438s/",
+       "legenda": "Stardust 438S | 200m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/435sn.jpg",
+         "alt": "Stardust 435S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-435s-435us/",
+         "legenda": "Stardust 435S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/435usn.jpg",
+         "alt": "Stardust 435US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-435s-435us/",
+         "legenda": "Stardust 435US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/412sn.jpg",
+        "alt": "412SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-401s/",
+       "legenda": "Stardust 412S | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/401sn.jpg",
+        "alt": "401SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-401s/",
+       "legenda": "Stardust 401S | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/399sn.jpg",
+        "alt": "399SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-399s/",
+       "legenda": "Stardust 399S | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/398sn.jpg",
+         "alt": "Stardust 398S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-398s-398us/",
+         "legenda": "Stardust 398S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/398usn.jpg",
+         "alt": "Stardust 398US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-398s-398us/",
+         "legenda": "Stardust 398US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/393sn.jpg",
+        "alt": "393SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-393s/",
+       "legenda": "Stardust 393S | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/392sn.jpg",
+         "alt": "Stardust 392S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-392s-392us/",
+         "legenda": "Stardust 392S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/392usn.jpg",
+         "alt": "Stardust 392US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-392s-392us/",
+         "legenda": "Stardust 392US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/391sn.jpg",
+         "alt": "Stardust 391S | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-391s-391us/",
+         "legenda": "Stardust 391S | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/391usn.jpg",
+         "alt": "Stardust 391US | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/stardust-391s-391us/",
+         "legenda": "Stardust 391US | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/387sn.jpg",
+        "alt": "387SN",
+        "w": null,
+        "h": null
+       },
+       "link": "/stardust-387s/",
+       "legenda": "Stardust 387S | 200m+"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

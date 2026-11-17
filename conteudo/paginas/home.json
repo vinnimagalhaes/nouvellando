@@ -1,0 +1,521 @@
+{
+ "url": "/",
+ "slug": "home",
+ "title": "Nouvellando®",
+ "description": "Novelos artesanais degradê by Claudia Gerth OriginalTwinkleStardustBreezeBoucléKonfettiPaillettesFluffinhoPelucheIceSem degradê Mais de 600 novelos artesanais degradê! Novelos artesanais produzidos com cores únicas e degradê com diversos tipos de composições, por uma artesã apaixonada pelo crochê e suas infinitas possibilidades em cada ponto. Conheça os Fios Nouvellando Videoaulas de Xales, Echarpes e Mantas​ Videoaulas com parcerias exclusivas!Aprenda a…",
+ "og_title": "Nouvellando®",
+ "og_type": "website",
+ "og_image": "/wp-content/uploads/2022/12/cropped-novo-logo-espero-que-esse-esteja-certo.png",
+ "publicado": "",
+ "modificado": "",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "image-carousel",
+     "oculto": [
+      "desktop"
+     ],
+     "slides": [
+      {
+       "src": "/wp-content/uploads/2026/10/Calendario-do-Advento-Nouvellando-mobile.png",
+       "alt": "Calendário do Advento Nouvellando mobile",
+       "w": null,
+       "h": null,
+       "link": "https://www.instagram.com/nouvellando"
+      },
+      {
+       "src": "/wp-content/uploads/2026/10/Passo-a-passo-para-comprar-na-Nouvellando.png",
+       "alt": "Passo a passo para comprar na Nouvellando",
+       "w": null,
+       "h": null,
+       "link": "https://www.instagram.com/nouvellando"
+      }
+     ],
+     "por_tela": {
+      "desktop": 1
+     },
+     "autoplay": 5000
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "image-carousel",
+     "oculto": [
+      "tablet",
+      "mobile"
+     ],
+     "slides": [
+      {
+       "src": "/wp-content/uploads/2026/10/Calendario-do-Advento-Nouvellando-7.png",
+       "alt": "Calendário do Advento Nouvellando (7)",
+       "w": null,
+       "h": null,
+       "link": "https://www.instagram.com/nouvellando"
+      },
+      {
+       "src": "/wp-content/uploads/2026/10/1900X600.png",
+       "alt": "1900X600",
+       "w": null,
+       "h": null,
+       "link": "https://www.instagram.com/nouvellando"
+      }
+     ],
+     "por_tela": {
+      "desktop": 1
+     },
+     "autoplay": 5000
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h1",
+       "texto": "Novelos artesanais degradê"
+      },
+      {
+       "tipo": "heading",
+       "tag": "h1",
+       "texto": "by Claudia Gerth"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/04/552U.jpg",
+         "alt": "Original",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Original"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/403T.jpg",
+         "alt": "Twinkle",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Twinkle"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/391S.jpg",
+         "alt": "Stardust",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Stardust"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/532Y.jpg",
+         "alt": "Breeze",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Breeze"
+        },
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle.jpg",
+         "alt": "Bouclé",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Bouclé"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/K.jpg",
+         "alt": "Konfetti",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Konfetti"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/549P.jpg",
+         "alt": "Paillettes",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Paillettes"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/475F.jpg",
+         "alt": "Fluffinho",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Fluffinho"
+        },
+        {
+         "src": "/wp-content/uploads/2024/07/Peluche.jpeg",
+         "alt": "Peluche",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Peluche"
+        },
+        {
+         "src": "/wp-content/uploads/2024/07/Ice.jpeg",
+         "alt": "Ice",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Ice"
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Original-286.jpg",
+         "alt": "Sem degradê",
+         "w": null,
+         "h": null,
+         "link": "/fios-nouvellando/",
+         "legenda": "Sem degradê"
+        }
+       ],
+       "por_tela": {
+        "desktop": 2
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Mais de 600 novelos artesanais degradê!</strong></p>\n<p>Novelos artesanais produzidos com cores únicas e degradê com diversos tipos de composições, por uma artesã apaixonada pelo crochê e suas infinitas possibilidades em cada ponto.</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Conheça os Fios Nouvellando",
+       "link": "/fios-nouvellando/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h2",
+       "texto": "Videoaulas de Xales, Echarpes e Mantas​"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/01/Xale-Tarragona-1-rotated.jpg",
+         "alt": "Xale Tarragona (1)",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-9-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time.jpg",
+         "alt": "Xale Wheel of Time",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-10-rotated.jpg",
+         "alt": "Xale Wheel of Time",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-7-1-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Citylights-1-2-rotated.jpg",
+         "alt": "Xale Citylights",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kira-3-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-17-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-andromeda-2.jpeg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160952-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-15-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-7-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-2-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 2
+       },
+       "autoplay": 5000
+      }
+     ],
+     "oculto": [
+      "desktop"
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Videoaulas com parcerias exclusivas!</strong></p><p><a href=\"/cursos/\">Aprenda</a> a crochetar Xales, Echarpes e Mantas em videoaulas produzidas com muito carinho, profissionalismo e personalidade.</p><p>Videoaulas disponíveis para compra na plataforma Hotmart.</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Aprenda a crochetar",
+       "link": "/cursos/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/01/Xale-Tarragona-1-rotated.jpg",
+         "alt": "Xale Tarragona (1)",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-9-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time.jpg",
+         "alt": "Xale Wheel of Time",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-10-rotated.jpg",
+         "alt": "Xale Wheel of Time",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-7-1-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Citylights-1-2-rotated.jpg",
+         "alt": "Xale Citylights",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kira-3-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-17-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-andromeda-2.jpeg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160952-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-15-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-7-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-2-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 2
+       },
+       "autoplay": 5000
+      }
+     ],
+     "oculto": [
+      "mobile"
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h2",
+       "texto": "Xales à pronta-entrega!"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-9-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-7-1-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Bayka-1-rotated.jpg",
+         "alt": "Xale \"Bayka\"",
+         "w": null,
+         "h": null,
+         "legenda": "Xale \"Bayka\""
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Citylights-5-2-rotated.jpg",
+         "alt": "Xale Citylights",
+         "w": null,
+         "h": null,
+         "legenda": "Xale Citylights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Outlander-6-1-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-4-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null,
+         "legenda": "Xale Kicia"
+        }
+       ],
+       "por_tela": {
+        "desktop": 2
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "text-editor",
+       "html": "<p>Além de comprar novelos e aprender nas videoaulas, você também pode garantir seu xale pronto, feito à mão, com toda a qualidade Nouvellando. 🧶 </p><p><strong>Uma seleção de peças exclusivas, perfeitas para presentear ou para se presentear — com beleza, aconchego e muito estilo.</strong></p><p>Descubra a coleção de xales disponíveis e leve para casa um abraço em forma de crochê.</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Escolha seu Xale aqui",
+       "link": "http://instagram.com/recanto.dos.xales"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

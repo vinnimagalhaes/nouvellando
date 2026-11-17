@@ -1,0 +1,171 @@
+{
+ "url": "/videoaula-xale-kicia/",
+ "slug": "videoaula-xale-kicia",
+ "title": "Videoaula Xale Kicia – Nouvellando®",
+ "description": "Xale Kicia Em parceria com a designer polonesa Agnieszka Reduch, apresento a videoaula do Xale Kicia, com seu toque de romantismo e elegância casual, ele transmite alegria e leveza em uma peça contagiante!Comprando esta videoaula, você estará ajudando muitos gatinhos do @projeto.lar.temporario, de São Carlos/SP, com alimentação, vacinas e cuidados veterinários.Saiba mais dessa história na…",
+ "og_title": "Videoaula Xale Kicia",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/11/Xale-Kicia-8-rotated.jpg",
+ "publicado": "2023-11-12T17:53:52+00:00",
+ "modificado": "2026-01-20T23:23:55+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-4-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-3-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-1-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-2-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-10-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-5-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kicia-9-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Kicia"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Em parceria com a designer polonesa Agnieszka Reduch, apresento a videoaula do Xale Kicia, com seu toque de romantismo e elegância casual, ele transmite alegria e leveza em uma peça contagiante!</p><p>Comprando esta videoaula, você estará ajudando muitos gatinhos do <a href=\"https://www.instagram.com/projeto.lar.temporario/\" target=\"_blank\">@projeto.lar.temporario</a>, de São Carlos/SP, com alimentação, vacinas e cuidados veterinários.</p><p>Saiba mais dessa história na <a href=\"https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-kicia/I78012100U?sck=HOTMART_SITE&amp;search=49c404ee-e34b-47ac-aa84-2978fa87aca2&amp;hotfeature=33\" target=\"_blank\">plataforma hotmart</a>.</p><p><strong>R$ 45,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-kicia/I78012100U?sck=HOTMART_SITE&search=49c404ee-e34b-47ac-aa84-2978fa87aca2&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "divider"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "text-editor",
+               "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale Kicia</strong> e viva uma experiência completa.</p>"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "image-carousel",
+               "slides": [
+                {
+                 "src": "/wp-content/uploads/2022/12/201n.jpg",
+                 "alt": "Original 201 | 1000m+",
+                 "w": null,
+                 "h": null,
+                 "legenda": "Original 201 | 1000m+"
+                }
+               ],
+               "por_tela": {
+                "desktop": 1
+               },
+               "autoplay": 5000
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "button",
+               "texto": "Compre pelo WhatsApp",
+               "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

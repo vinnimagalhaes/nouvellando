@@ -1,0 +1,66 @@
+{
+ "dominio": "https://nouvellando.com.br",
+ "nome": "Nouvellando®",
+ "aviso": {
+  "titulo": "Férias Nouvellando!",
+  "texto": "Os pedidos serão retomados em 01/12 e enviados a partir de 18/12."
+ },
+ "whatsapp": "https://api.whatsapp.com/send?phone=%2B5516988081463",
+ "menu": [
+  {"texto": "Home", "link": "/"},
+  {"texto": "Nossos fios", "link": "/fios-nouvellando/", "submenu": [
+   {"texto": "Fio Original", "link": "/fio-original/"},
+   {"texto": "Fio Twinkle", "link": "/fio-twinkle/"},
+   {"texto": "Fio Stardust", "link": "/fio-stardust/"},
+   {"texto": "Fio Fluffinho", "link": "/fio-fluffinho/"},
+   {"texto": "Fio Peluche", "link": "/fio-peluche/"},
+   {"texto": "Fio Breezy", "link": "/fio-breezy/"},
+   {"texto": "Fio Paillettes", "link": "/fio-paillettes/"},
+   {"texto": "Fio Bouclé", "link": "/fio-boucle/"},
+   {"texto": "Fio Ice", "link": "/fio-ice/"},
+   {"texto": "Fio Cor Única", "link": "/fio-cor-unica/"},
+   {"texto": "Fio Aura", "link": "/fio-aura/"},
+   {"texto": "Sem degradê", "link": "/novelos-sem-degrade/"}
+  ]},
+  {"texto": "Videoaulas", "link": "/cursos/"},
+  {"texto": "Sobre", "link": "/sobre-a-nouvellando/"}
+ ],
+ "rodape": {
+  "sobre": "A Nouvellando é pioneira em novelos artesanais degradê e referência no mercado brasileiro, com a maior coleção de fios feitos à mão.",
+  "redes": [
+   {"texto": "Facebook", "link": "https://www.facebook.com/Nouvellando"},
+   {"texto": "Instagram", "link": "https://www.instagram.com/nouvellando/"},
+   {"texto": "WhatsApp", "link": "https://api.whatsapp.com/send?phone=%2B5516988081463"},
+   {"texto": "Hotmart", "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-september/C85300414S?sck=HOTMART_MEM_CA"}
+  ],
+  "produtos_titulo": "Produtos",
+  "produtos": ["Novelos degradê", "Xales", "Videoaulas"],
+  "contato_titulo": "Contato",
+  "cidade": "São Carlos, SP Brasil",
+  "email": "nouvellando@gmail.com",
+  "copyright": "© 2026 All Rights Reserved."
+ },
+ "linhas": {
+  "Original": "fio-original",
+  "Original (Coleção Jeans)": "fio-original",
+  "Twinkle": "fio-twinkle",
+  "Stardust": "fio-stardust",
+  "Breezy": "fio-breezy",
+  "Aura": "fio-aura",
+  "Fluffinho": "fio-fluffinho",
+  "Bouclé": "fio-boucle",
+  "Peluche": "fio-peluche",
+  "Paillettes": "fio-paillettes"
+ },
+ "nomes_linhas": {
+  "fio-original": "Fio Original",
+  "fio-twinkle": "Fio Twinkle",
+  "fio-stardust": "Fio Stardust",
+  "fio-breezy": "Fio Breezy",
+  "fio-aura": "Fio Aura",
+  "fio-fluffinho": "Fio Fluffinho",
+  "fio-boucle": "Fio Bouclé",
+  "fio-peluche": "Fio Peluche",
+  "fio-paillettes": "Fio Paillettes"
+ }
+}

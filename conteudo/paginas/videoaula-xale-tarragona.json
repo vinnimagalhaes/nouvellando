@@ -1,0 +1,176 @@
+{
+ "url": "/videoaula-xale-tarragona/",
+ "slug": "videoaula-xale-tarragona",
+ "title": "Videoaula Xale Tarragona – Nouvellando®",
+ "description": "Xale Tarragona 🌿 Explore a magia do Xale Tarragona numa videoaula exclusiva 🌿A videoaula detalhada irá te guiar passo a passo na criação desse lindo xale.O que você pode esperar?Passo a passo detalhado: Cada ponto, cada carreira será minuciosamente explicado para garantir que todos possam seguir, desde iniciantes até os mais experientes.Dicas exclusivas: Compartilharei dicas…",
+ "og_title": "Videoaula Xale Tarragona",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/12/Xale-tarragona-6-rotated.jpg",
+ "publicado": "2023-11-12T17:37:13+00:00",
+ "modificado": "2026-01-17T18:43:28+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-1-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-3-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-9-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-4-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-5-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-6-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-11-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Tarragona"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>🌿 Explore a magia do Xale Tarragona numa videoaula exclusiva 🌿</p><p>A videoaula detalhada irá te guiar passo a passo na criação desse lindo xale.</p><p>O que você pode esperar?<br/><strong>Passo a passo detalhado</strong>: Cada ponto, cada carreira será minuciosamente explicado para garantir que todos possam seguir, desde iniciantes até os mais experientes.<br/><strong>Dicas exclusivas</strong>: Compartilharei dicas e truques que aprimorarão suas habilidades de crochê, permitindo que você crie não apenas um xale, mas uma peça única e personalizada.<br/><strong>Versatilidade em cada ponto</strong>: O “Xale Tarragona” é mais do que uma peça, é uma expressão de estilo. Explore maneiras de personalizar e adaptar o xale ao seu gosto pessoal.</p><p><strong>R$ 79,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-tarragona/M89332075M"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "divider"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "text-editor",
+                 "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale Tarragona</strong> e viva uma experiência completa.</p>"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "image-carousel",
+                 "slides": [
+                  {
+                   "src": "/wp-content/uploads/2023/12/Original-621.jpg",
+                   "alt": "Original 621 | 200m+",
+                   "w": null,
+                   "h": null,
+                   "legenda": "Original 621 | 200m+"
+                  }
+                 ],
+                 "por_tela": {
+                  "desktop": 1
+                 },
+                 "autoplay": 5000
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "button",
+                 "texto": "Compre pelo WhatsApp",
+                 "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

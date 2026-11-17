@@ -1,0 +1,2412 @@
+{
+ "url": "/cursos/",
+ "slug": "cursos",
+ "title": "Videoaulas – Nouvellando®",
+ "description": "Videoaulas Nouvellando by Claudia Gerth Xale EireneXale EireneXale EireneXale EireneXale EireneXale Eirene R$ 105,00 Comprar Xale XecaraXale XecaraXale XecaraXale XecaraXale XecaraXale Xecara R$ 95,00 Comprar Xale CytrusXale CytrusXale CytrusXale CytrusXale CytrusXale CytrusXale Cytrus R$ 95,00 Comprar Xale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale KastalyaXale Kastalya R$ 95,00 Comprar Xale PomeranoXale PomeranoXale…",
+ "og_title": "Videoaulas",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2024/02/Manta-Tarragona-3-rotated.jpg",
+ "publicado": "2022-12-27T21:42:09+00:00",
+ "modificado": "2026-04-26T17:10:49+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "heading",
+     "tag": "h1",
+     "texto": "Videoaulas Nouvellando"
+    },
+    {
+     "tipo": "heading",
+     "tag": "h1",
+     "texto": "by Claudia Gerth"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_1_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eirene/",
+         "legenda": "Xale Eirene"
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_6_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eirene/",
+         "legenda": "Xale Eirene"
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_5_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eirene/",
+         "legenda": "Xale Eirene"
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_4_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eirene/",
+         "legenda": "Xale Eirene"
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_3_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eirene/",
+         "legenda": "Xale Eirene"
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_2_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eirene/",
+         "legenda": "Xale Eirene"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 105,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-eirene/G104323202U?sck=HOTMART_SITE&search=7ff4dbeb-8fa5-4eb2-bc6f-ae039779fd48&hotfeature=33"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Xecara-4.jpg",
+         "alt": "Xale Xecara",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-xecara/",
+         "legenda": "Xale Xecara"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Xecara-6.jpg",
+         "alt": "Xale Xecara",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-xecara/",
+         "legenda": "Xale Xecara"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Xecara-2.jpg",
+         "alt": "Xale Xecara",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-xecara/",
+         "legenda": "Xale Xecara"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Xecara-3.jpg",
+         "alt": "Xale Xecara",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-xecara/",
+         "legenda": "Xale Xecara"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Xecara-7.jpg",
+         "alt": "Xale Xecara",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-xecara/",
+         "legenda": "Xale Xecara"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Xecara-8.jpg",
+         "alt": "Xale Xecara",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-xecara/",
+         "legenda": "Xale Xecara"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-xecara/X102701934P?sck=HOTMART_SITE&search=11f490ae-8122-4b0e-a632-f2f550e0c316&hotfeature=33"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-5.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-1.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-8.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-11.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-10.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-9.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        },
+        {
+         "src": "/wp-content/uploads/2025/11/Xale-Cytrus-2.jpg",
+         "alt": "Xale Cytrus",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-cytrus/",
+         "legenda": "Xale Cytrus"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-cytrus/B101546710K?sck=HOTMART_SITE&search=ebafc45a-56b4-4e69-8102-091583e63257&hotfeature=33"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-8-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-2-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-6-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-4-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-9-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-4.jpeg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-5-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-3.jpeg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-3-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-2.jpeg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-1-rotated.jpg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        },
+        {
+         "src": "/wp-content/uploads/2025/07/Kastalya-1.jpeg",
+         "alt": "Xale Kastalya",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kastalya/",
+         "legenda": "Xale Kastalya"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-kastalya/S100464814L?fbclid=PAZXh0bgNhZW0CMTEAAac35WSh3kEIP_rGYuSAwh1UxyWDdQAvfExWiNp-qV7wsPHQXFn91e8VfWbJeA_aem_OFXuyjWG463dZxkOixzI-g"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-4-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-1-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-7-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-9-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-5-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-10-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-11-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-3-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        },
+        {
+         "src": "/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-8-rotated.jpg",
+         "alt": "Xale Pomerano",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-pomerano/",
+         "legenda": "Xale Pomerano"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 85,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-pomerano/O100133801Q"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/05/Xale-Brinco-de-Princesa-3-rotated.jpg",
+         "alt": "Xale Brinco de Princesa",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-brinco-de-princesa/",
+         "legenda": "Xale Brinco de Princesa"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/Xale-Brinco-de-Princesa-6-rotated.jpg",
+         "alt": "Xale Brinco de Princesa",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-brinco-de-princesa/",
+         "legenda": "Xale Brinco de Princesa"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/Xale-Brinco-de-Princesa-5-rotated.jpg",
+         "alt": "Xale Brinco de Princesa",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-brinco-de-princesa/",
+         "legenda": "Xale Brinco de Princesa"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/Xale-Brinco-de-Princesa-2-rotated.jpg",
+         "alt": "Xale Brinco de Princesa",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-brinco-de-princesa/",
+         "legenda": "Xale Brinco de Princesa"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 49,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-brinco-de-princesa/I98894425A"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/03/Xale-Epiona-6-rotated.jpg",
+         "alt": "Xale Epiona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-epiona/",
+         "legenda": "Xale Epiona"
+        },
+        {
+         "src": "/wp-content/uploads/2025/03/Xale-Epiona-5-rotated.jpg",
+         "alt": "Xale Epiona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-epiona/",
+         "legenda": "Xale Epiona"
+        },
+        {
+         "src": "/wp-content/uploads/2025/03/Xale-Epiona-4-rotated.jpg",
+         "alt": "Xale Epiona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-epiona/",
+         "legenda": "Xale Epiona"
+        },
+        {
+         "src": "/wp-content/uploads/2025/03/Xale-Epiona-2.jpg",
+         "alt": "Xale Epiona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-epiona/",
+         "legenda": "Xale Epiona"
+        },
+        {
+         "src": "/wp-content/uploads/2025/03/Xale-Epiona-3-rotated.jpg",
+         "alt": "Xale Epiona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-epiona/",
+         "legenda": "Xale Epiona"
+        },
+        {
+         "src": "/wp-content/uploads/2025/03/Xale-Epiona-1-rotated.jpg",
+         "alt": "Xale Epiona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-epiona/",
+         "legenda": "Xale Epiona"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 109,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-epiona/A98488160V?sck=HOTMART_SITE&search=b018b844-07a0-4859-957a-d535a454ff71&hotfeature=33"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-1.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        },
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-5.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        },
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-3.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        },
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-2.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        },
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-4.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        },
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-7.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        },
+        {
+         "src": "/wp-content/uploads/2024/12/Xale-Eternal-Flame-6.jpeg",
+         "alt": "Xale Eternal Flame",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-eternal-flame/",
+         "legenda": "Xale Eternal Flame"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 99,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/hagsxd-xale-eternal-flame-jmavl/K96775155Y?sck=HOTMART_SITE&search=4a41fae1-7ac8-4a70-bf74-e72c15d2603e&hotfeature=33"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-3.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-4.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-2.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-1.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-5.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-6.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-7.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-aelita/",
+         "legenda": "Xale Aelita"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 99,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-aelita/U95889178O"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-1-rotated.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-2-rotated.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-3-rotated.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-5-rotated.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-18.jpeg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-9-rotated.jpg",
+         "alt": "Manta Pampuch (ideia de aplicação)",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch (ideia de aplicação)"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-19.jpeg",
+         "alt": "Manta Pampuch (ideia de aplicação)",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch (ideia de aplicação)"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-12.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-11.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-17.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Manta-Pampuch-15.jpg",
+         "alt": "Manta Pampuch",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-pampuch/",
+         "legenda": "Manta Pampuch"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 119,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/manta-pampuch/H95260398X?sck=HOTMART_SITE&search=05955bf5-6e36-493f-9707-4595a9bcef56&hotfeature=33"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-17-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-19-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-21-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-16-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-15-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-6-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-12-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/xale-wheel-of-time-13-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-1-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-8-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-7-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-6-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-5-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-3-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-wheel-of-time/",
+         "legenda": "Xale Wheel of Time + aula bônus Echarpe"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 89,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-wheel-of-time/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/09/Xale-Thelma-7.png",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Xale-Thelma-10.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Xale-Thelma-12.png",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Xale-Thelma-13.png",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/09/Xale-Thelma-11.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/Xale-Thelma-3-rotated.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/Xale-Thelma-5-rotated.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/Xale-Thelma-4-rotated.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/Xale-Thelma-1-rotated.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        },
+        {
+         "src": "/wp-content/uploads/2024/04/Xale-Thelma-2-rotated.jpg",
+         "alt": "Xale Thelma",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thelma/",
+         "legenda": "Xale Thelma"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://go.hotmart.com/T92403676J"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-1-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-14-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-5-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-2-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-11-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-8-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-3-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-12-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-6-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-9-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-10-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-7-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2024/02/Manta-Tarragona-4-rotated.jpg",
+         "alt": "Manta Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-tarragona/",
+         "legenda": "Manta Tarragona"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 99,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "https://go.hotmart.com/W91203816L?dp=1"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/01/Manta-esperanca-5-rotated.jpg",
+         "alt": "Manta Esperança",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-esperanca/",
+         "legenda": "Manta Esperança"
+        },
+        {
+         "src": "/wp-content/uploads/2024/01/Manta-esperanca-4-rotated.jpg",
+         "alt": "Manta Esperança",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-esperanca/",
+         "legenda": "Manta Esperança"
+        },
+        {
+         "src": "/wp-content/uploads/2024/01/Manta-esperanca-6-rotated.jpg",
+         "alt": "Manta Esperança",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-esperanca/",
+         "legenda": "Manta Esperança"
+        },
+        {
+         "src": "/wp-content/uploads/2024/01/Manta-esperanca-2-rotated.jpg",
+         "alt": "Manta Esperança",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-esperanca/",
+         "legenda": "Manta Esperança"
+        },
+        {
+         "src": "/wp-content/uploads/2024/01/Manta-esperanca-3-rotated.jpg",
+         "alt": "Manta Esperança",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-esperanca/",
+         "legenda": "Manta Esperança"
+        },
+        {
+         "src": "/wp-content/uploads/2024/01/Manta-esperanca-1-rotated.jpg",
+         "alt": "Manta Esperança",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-manta-esperanca/",
+         "legenda": "Manta Esperança"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 69,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-manta-esperanca/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-4-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-5-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-9-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-6-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-1-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-2-rotated.jpg",
+         "alt": "",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-3-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/Xale-tarragona-11-rotated.jpg",
+         "alt": "Xale Tarragona",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-tarragona/",
+         "legenda": "Xale Tarragona"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 79,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-tarragona/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-1-rotated.jpg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-2.jpeg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-3.jpeg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-9-rotated.jpg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-6-rotated.jpg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-2-rotated.jpg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-4-rotated.jpg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilka-3-rotated.jpg",
+         "alt": "Xale Lilka",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilka/",
+         "legenda": "Xale Lilka"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-lilka/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-1-1.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-2.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-3.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-4.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-5.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-6.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-7.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-theia/",
+         "legenda": "Xale Theia"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-theia/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-2.jpeg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thistle/",
+         "legenda": "Xale Thistle"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-13-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thistle/",
+         "legenda": "Xale Thistle"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-8-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thistle/",
+         "legenda": "Xale Thistle"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-15-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thistle/",
+         "legenda": "Xale Thistle"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-14-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thistle/",
+         "legenda": "Xale Thistle"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle.jpeg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-thistle/",
+         "legenda": "Xale Thistle"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 125,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-thistle/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-5-1.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/perfil.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-1.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-2.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-3.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-7.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-9.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-nika-10.jpeg",
+         "alt": "Xale Nika",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-nika/",
+         "legenda": "Xale Nika"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 99,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-nika/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira-5-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kira/",
+         "legenda": "Xale Kira"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira.jpeg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kira/",
+         "legenda": "Xale Kira"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira-2-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kira/",
+         "legenda": "Xale Kira"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira-1-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kira/",
+         "legenda": "Xale Kira"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 75,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-kira/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kicia-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kicia/",
+         "legenda": "Xale Kicia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kicia.jpeg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kicia/",
+         "legenda": "Xale Kicia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kicia-2.jpeg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kicia/",
+         "legenda": "Xale Kicia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20221230_125429-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kicia/",
+         "legenda": "Xale Kicia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20221230_125317-rotated.jpg",
+         "alt": "Xale Kicia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-kicia/",
+         "legenda": "Xale Kicia"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 45,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-kicia/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_161548-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160428-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160952-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-magnolia-3.jpeg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-magnolia-2.jpeg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160712-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160900-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-magnolia/",
+         "legenda": "Xale Magnolia"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 109,90</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-magnolia/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-36-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-41.jpeg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-33-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-17-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-21-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-23-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-39-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-26-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-29-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-september/",
+         "legenda": "Xale September"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 109,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-september/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-2-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-2.jpeg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander.jpeg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-6-1-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-5-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-8-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-15-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-outlander-14-rotated.jpg",
+         "alt": "Xale Outlander",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-outlander/",
+         "legenda": "Xale Outlander"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 89,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-outlander/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-1.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-andromeda/",
+         "legenda": "Xale Andromeda"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-andromeda-2.jpeg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-andromeda/",
+         "legenda": "Xale Andromeda"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-6-rotated.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-andromeda/",
+         "legenda": "Xale Andromeda"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-4.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-andromeda/",
+         "legenda": "Xale Andromeda"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-3.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-andromeda/",
+         "legenda": "Xale Andromeda"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-2.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-andromeda/",
+         "legenda": "Xale Andromeda"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 129,90</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-andromeda/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-citylight-foto-perfil.jpeg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-5-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-4-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-7-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-22-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-15-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-17-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-20-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-3-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-8-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-11-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Citylight-10-rotated.jpg",
+         "alt": "Xale City Lights",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-city-lights/",
+         "legenda": "Xale City Lights"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 99,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-city-lights/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Little-Ruby-6-rotated.jpg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-little-ruby/",
+         "legenda": "Xale Little Ruby"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-little-ruby.jpeg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-little-ruby/",
+         "legenda": "Xale Little Ruby"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Little-Ruby-2-rotated.jpg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-little-ruby/",
+         "legenda": "Xale Little Ruby"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Little-Ruby-3-rotated.jpg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-little-ruby/",
+         "legenda": "Xale Little Ruby"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 95,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-little-ruby/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-1-1-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-15-1-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-8-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-5-1-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-4-1-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-3-1-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null,
+         "link": "/videoaula-xale-lilla-fiore/",
+         "legenda": "Xale Lilla Fiore"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>R$ 89,00</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Comprar",
+       "link": "/videoaula-xale-lilla-fiore/"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

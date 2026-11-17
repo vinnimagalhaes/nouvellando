@@ -1,0 +1,1182 @@
+{
+ "url": "/fio-twinkle/",
+ "slug": "fio-twinkle",
+ "title": "Fio Twinkle – Nouvellando®",
+ "description": "Twinkle 795T | 1000m+Twinkle 795TU | 1000m+ Twinkle 792T | 1200m+Twinkle 792TU | 1200m+ Twinkle 785T | 1000m+Twinkle 785UT | 1000m+ Twinkle 776T | 200m+ (sem degradê) Twinkle 765T | 200m+ Twinkle 748T | 1100m+Twinkle 748UT | 1100m+ Twinkle 747T | 200m+ | (sem degradê) Twinkle 742T | 200m+ | (sem degradê) Twinkle 735T |…",
+ "og_title": "Fio Twinkle",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2025/10/Twinkle-747T-1024x1005.jpg",
+ "publicado": "2023-05-22T22:45:36+00:00",
+ "modificado": "2026-08-22T20:42:47+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Twinkle-795T.jpg",
+         "alt": "Twinkle 795T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-795t-795ut/",
+         "legenda": "Twinkle 795T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2026/08/Twinkle-795TU.jpg",
+         "alt": "Twinkle 795TU | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-795t-795ut/",
+         "legenda": "Twinkle 795TU | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Twinkle-792T.jpg",
+         "alt": "Twinkle 792T | 1200m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-792t-792t/",
+         "legenda": "Twinkle 792T | 1200m+"
+        },
+        {
+         "src": "/wp-content/uploads/2026/08/Twinkle-792TU.jpg",
+         "alt": "Twinkle 792TU | 1200m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-792t-792t/",
+         "legenda": "Twinkle 792TU | 1200m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Twinkle-785T.jpg",
+         "alt": "Twinkle 785T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-785t-785ut/",
+         "legenda": "Twinkle 785T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2026/06/Twinkle-785UT.jpg",
+         "alt": "Twinkle 785UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-785t-785ut/",
+         "legenda": "Twinkle 785UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Twinkle-776T.jpg",
+         "alt": "Twinkle 776T | 200m+ (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-776t-2/",
+         "legenda": "Twinkle 776T | 200m+ (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Twinkle-765.jpg",
+         "alt": "Twinkle 765T | 200m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-765t/",
+         "legenda": "Twinkle 765T | 200m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/10/Twinkle-748T.jpg",
+         "alt": "Twinkle 748T | 1100m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-748t-748ut/",
+         "legenda": "Twinkle 748T | 1100m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/10/Twinkle-748UT.jpg",
+         "alt": "Twinkle 748UT | 1100m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-748t-748ut/",
+         "legenda": "Twinkle 748UT | 1100m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/10/Twinkle-747T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "785"
+       },
+       "link": "/twinkle-747t-2/",
+       "legenda": "Twinkle 747T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/10/Twinkle-742T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "794"
+       },
+       "link": "/twinkle-742t-2/",
+       "legenda": "Twinkle 742T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/08/Twinkle-735T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "813"
+       },
+       "link": "/twinkle-735t-2/",
+       "legenda": "Twinkle 735T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/04/Twinkle-694T.jpeg",
+        "alt": "",
+        "w": "800",
+        "h": "795"
+       },
+       "link": "/twinkle-694t-2/",
+       "legenda": "Twinkle 694T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/03/Twinkle-690T.jpeg",
+        "alt": "",
+        "w": "800",
+        "h": "788"
+       },
+       "link": "/twinkle-690t/",
+       "legenda": "Twinkle 690T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/12/Twinkle-685T.jpeg",
+        "alt": "",
+        "w": "800",
+        "h": "831"
+       },
+       "link": "/twinkle-685t-2/",
+       "legenda": "Twinkle 685T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/05/650T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "808"
+       },
+       "link": "/twinkle-650t/",
+       "legenda": "Twinkle 650T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/05/Twinkle-649T.jpg",
+         "alt": "Twinkle 649T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-649t-649ut/",
+         "legenda": "Twinkle 649T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2024/05/Twinkle-649UT.jpg",
+         "alt": "Twinkle 649UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-649t-649ut/",
+         "legenda": "Twinkle 649UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/05/Twinkle-648T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "816"
+       },
+       "link": "/twinkle-648t-2/",
+       "legenda": "Twinkle 648T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/10/Twinkle-647T.jpeg",
+        "alt": "",
+        "w": "800",
+        "h": "805"
+       },
+       "link": "/twinkle-647t-2/",
+       "legenda": "Twinkle 647T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/05/Twinkle-646T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "820"
+       },
+       "link": "/twinkle-646t-2/",
+       "legenda": "Twinkle 646T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/05/Twinkle-645T.jpg",
+         "alt": "Twinkle 645T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-645t-645ut/",
+         "legenda": "Twinkle 645T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2024/05/Twinkle-645UT.jpg",
+         "alt": "Twinkle 645UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-645t-645ut/",
+         "legenda": "Twinkle 645UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/04/Twinkle-641T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-641t-2/",
+       "legenda": "Twinkle 641T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-614T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "776"
+       },
+       "link": "/twinkle-614t-2/",
+       "legenda": "Twinkle 614T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-613T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "811"
+       },
+       "link": "/twinkle-613t-2/",
+       "legenda": "Twinkle 613T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-612T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-612t-2/",
+       "legenda": "Twinkle 612T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-611.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "830"
+       },
+       "link": "/twinkle-611t/",
+       "legenda": "Twinkle 611T | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-610T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "782"
+       },
+       "link": "/twinkle-610t-2/",
+       "legenda": "Twinkle 610T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-609T.jpg",
+        "alt": "",
+        "w": "591",
+        "h": "591"
+       },
+       "link": "/twinkle-609t-2/",
+       "legenda": "Twinkle 609T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-608T.jpg",
+        "alt": "",
+        "w": "600",
+        "h": "600"
+       },
+       "link": "/twinkle-608t-2/",
+       "legenda": "Twinkle 608T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-607T.jpg",
+        "alt": "",
+        "w": "581",
+        "h": "581"
+       },
+       "link": "/twinkle-607t-2/",
+       "legenda": "Twinkle 607T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-606T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "797"
+       },
+       "link": "/twinkle-606t-2/",
+       "legenda": "Twinkle 606T | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/10/Twinkle-605T.jpg",
+        "alt": "",
+        "w": "600",
+        "h": "600"
+       },
+       "link": "/twinkle-605t-2/",
+       "legenda": "Twinkle 605T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/541tn-1.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-541t/",
+       "legenda": "Twinkle 541T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/540tn-1.jpg",
+         "alt": "Twinkle 540T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-540t-540ut/",
+         "legenda": "Twinkle 540T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/540utn-1.jpg",
+         "alt": "Twinkle 540UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-540t-540ut/",
+         "legenda": "Twinkle 540UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/534tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-534t/",
+       "legenda": "Twinkle 534T | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/07/Twinkle-474T.jpeg",
+        "alt": "",
+        "w": "800",
+        "h": "821"
+       },
+       "link": "/twinkle-474t/",
+       "legenda": "Twinkle 474T | 1100m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/465tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-465t/",
+       "legenda": "Twinkle 465T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/464tn.jpg",
+         "alt": "Twinkle 464T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-464t-464ut/",
+         "legenda": "Twinkle 464T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/464utn.jpg",
+         "alt": "Twinkle 464UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-464t-464ut/",
+         "legenda": "Twinkle 464UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/454tn.jpg",
+         "alt": "Twinkle 454T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-454t-454ut/",
+         "legenda": "Twinkle 454T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/454utn.jpg",
+         "alt": "Twinkle 454UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-454t-454ut/",
+         "legenda": "Twinkle 454UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/451tn.jpg",
+         "alt": "Twinkle 451T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-451t-451ut/",
+         "legenda": "Twinkle 451T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/451tun.jpg",
+         "alt": "Twinkle 451UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-451t-451ut/",
+         "legenda": "Twinkle 451UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/450vtn.jpg",
+         "alt": "Twinkle 450TV | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-450tv-450utv/",
+         "legenda": "Twinkle 450TV | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/450uvtn.jpg",
+         "alt": "Twinkle 450UTV | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-450tv-450utv/",
+         "legenda": "Twinkle 450UTV | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/450tn.jpg",
+         "alt": "Twinkle 450T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-450t-450ut/",
+         "legenda": "Twinkle 450T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/450tun.jpg",
+         "alt": "Twinkle 450UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-450t-450ut/",
+         "legenda": "Twinkle 450UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/444tn.jpg",
+         "alt": "Twinkle 444T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-444t-444ut/",
+         "legenda": "Twinkle 444T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/444utn.jpg",
+         "alt": "Twinkle 444UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-444t-444ut/",
+         "legenda": "Twinkle 444UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/433tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-433t/",
+       "legenda": "Twinkle 433T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/03/Twinkle-432T.jpeg",
+        "alt": "",
+        "w": "800",
+        "h": "827"
+       },
+       "link": "/twinkle-432t/",
+       "legenda": "Twinkle 432T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/431tn.jpg",
+         "alt": "Twinkle 431T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-431t-431ut/",
+         "legenda": "Twinkle 431T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/431utn.jpg",
+         "alt": "Twinkle 431UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-431t-431ut/",
+         "legenda": "Twinkle 431UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/430tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-430t/",
+       "legenda": "Twinkle 430T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/429tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-429t/",
+       "legenda": "Twinkle 429T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/428tn.jpg",
+         "alt": "Twinkle 428T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-428t-428ut/",
+         "legenda": "Twinkle 428T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/428utn.jpg",
+         "alt": "Twinkle 428UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-428t-428ut/",
+         "legenda": "Twinkle 428UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/427tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-427t/",
+       "legenda": "Twinkle 427T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/426tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-426t/",
+       "legenda": "Twinkle 426T | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/424tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-424t/",
+       "legenda": "Twinkle 424T | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/423tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-423t/",
+       "legenda": "Twinkle 423T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/422tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-422t/",
+       "legenda": "Twinkle 422T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/421tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-421t/",
+       "legenda": "Twinkle 421T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/419tn.jpg",
+         "alt": "Twinkle 419T | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-419t-419ut/",
+         "legenda": "Twinkle 419T | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/419utn.jpg",
+         "alt": "Twinkle 419UT | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/twinkle-419t-419ut/",
+         "legenda": "Twinkle 419UT | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/403tmn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-403tm/",
+       "legenda": "Twinkle 403TM | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/403tn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-403t/",
+       "legenda": "Twinkle 403T | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/04/Twinkle-287T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/twinkle-287t-2/",
+       "legenda": "Twinkle 287T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/10/Twinkle-286T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "806"
+       },
+       "link": "/twinkle-286t-2/",
+       "legenda": "Twinkle 286T | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/08/Twinkle-248T.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "817"
+       },
+       "link": "/twinkle-248t-2/",
+       "legenda": "Twinkle 248T | 1200m+"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

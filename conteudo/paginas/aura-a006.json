@@ -1,0 +1,101 @@
+{
+ "url": "/aura-a006/",
+ "slug": "aura-a006",
+ "title": "Aura A006 – Nouvellando®",
+ "description": "Aura A006 (sem degradê) Aura A006 (sem degradê) 4 cabos 500m | R$ 47,50 | ≅ 122g  600m | R$ 57,00 | ≅ 146g  700m | R$ 66,50 | ≅ 171g  800m | R$ 76,00 | ≅ 195g  900m | R$ 85,50 | ≅ 220g  1000m | R$ 95,00 | ≅ 244g1100m | R$ 104,50 | ≅ 268g1200m | R$…",
+ "og_title": "Aura A006",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2026/08/Aura-A006-1018x1024.jpg",
+ "publicado": "2026-03-24T22:34:23+00:00",
+ "modificado": "2026-08-22T15:11:44+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/08/Aura-A006.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "805"
+       },
+       "legenda": "Aura A006 (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Aura A006 (sem degradê)"
+        }
+       ]
+      },
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "accordion",
+             "itens": [
+              {
+               "titulo": "4 cabos",
+               "html": "<p>500m | R$ 47,50 | ≅ 122g  <br/>600m | R$ 57,00 | ≅ 146g  <br/>700m | R$ 66,50 | ≅ 171g  <br/>800m | R$ 76,00 | ≅ 195g  <br/>900m | R$ 85,50 | ≅ 220g  <br/>1000m | R$ 95,00 | ≅ 244g<br/>1100m | R$ 104,50 | ≅ 268g<br/>1200m | R$ 114,00 | ≅ 293g<br/>1300m | R$ 123,50 | ≅ 317g<br/>1400m | R$ 133,00 | ≅ 342g<br/>1500m | R$ 142,50 | ≅ 366g<br/>1600m | R$ 152,00 | ≅ 390g<br/>1700m | R$ 161,50 | ≅ 415g<br/>1800m | R$ 171,00 | ≅ 439g<br/>1900m | R$ 180,50 | ≅ 464g<br/>2000m | R$ 190,00 | ≅ 488g<br/>2100m | R$ 199,50 | ≅ 512g<br/>2200m | R$ 209,00 | ≅ 537g<br/>2300m | R$ 218,50 | ≅ 561g<br/>2400m | R$ 228,00 | ≅ 586g<br/>2500m | R$ 237,50 | ≅ 610g<br/>2600m | R$ 247,00 | ≅ 634g<br/>2700m | R$ 256,50 | ≅ 659g<br/>2800m | R$ 266,00 | ≅ 683g<br/>2900m | R$ 275,50 | ≅ 708g<br/>3000m | R$ 285,00 | ≅ 732g</p>"
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "button",
+             "texto": "Clique aqui e envie seu pedido pra mim",
+             "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "heading",
+     "tag": "h3",
+     "texto": "Informações do produto"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "text-editor",
+     "html": "<p><strong>Composição</strong>: 68% viscose / 14% algodão / 14% acrílico / 3% linho</p><p><strong>4 cabos TEX</strong>: 244<br/>Agulha 3mm a 4mm</p><p>Lavagem à mão<br/>Secar na horizontal<br/>Secar na sombra</p><p>Os novelos são feitos artesanalmente com prazo de produção de 7 a 15 dias, contados a partir do pagamento.</p><p><em>*Os novelos podem</em><em> apresentar variações de tonalidade de acordo com o equipamento onde estão sendo visualizados.</em></p><p><em>*O peso dos fios não é exato, pois pode variar de acordo com a cor escolhida (cores escuras pesam mais que cores claras, por exemplo). Por isso, dependendo do peso do novelo, pode haver uma diferença de até 10g para menos ou para mais.</em></p>"
+    }
+   ]
+  }
+ ]
+}

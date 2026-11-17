@@ -1,0 +1,167 @@
+{
+ "url": "/videoaula-xale-andromeda/",
+ "slug": "videoaula-xale-andromeda",
+ "title": "Videoaula Xale Andromeda – Nouvellando®",
+ "description": "Xale Andromeda Aprenda a criar sua conexão com o universo! Nesta videoaula, você vai tecer o lindo e leve Xale Andromeda, que foi criado pela designer russa Natalia Kupreeva. Ideal para crocheteiros e crocheteiras avançados, este projeto irá desafiar suas habilidades e te ajudar a criar um acessório único e especial.R$ 129,90 Clique aqui e…",
+ "og_title": "Videoaula Xale Andromeda",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/10/Xale-Andromeda-4.jpg",
+ "publicado": "2023-11-12T18:10:50+00:00",
+ "modificado": "2026-01-17T19:12:38+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/20230218_133019-rotated.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-andromeda-2.jpeg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-6-rotated.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-3.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-4.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Andromeda-2.jpg",
+         "alt": "Xale Andromeda",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Andromeda"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Aprenda a criar sua conexão com o universo! <br/><br/>Nesta videoaula, você vai tecer o lindo e leve Xale Andromeda, que foi criado pela designer russa Natalia Kupreeva. Ideal para crocheteiros e crocheteiras avançados, este projeto irá desafiar suas habilidades e te ajudar a criar um acessório único e especial.</p><p><strong>R$ 129,90</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-andromeda/L79352619D?sck=HOTMART_SITE&search=a8d14a62-f6dd-4daf-8b46-7702b2b3b4d6&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "divider"
+            }
+           ]
+          },
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "text-editor",
+             "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também os<strong> novelos utilizados na criação do Xale Andromeda</strong> e viva uma experiência completa.</p>"
+            }
+           ]
+          },
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "image-carousel",
+             "slides": [
+              {
+               "src": "/wp-content/uploads/2024/09/Original-558.jpeg",
+               "alt": "Original 558 | 1100m+",
+               "w": null,
+               "h": null,
+               "legenda": "Original 558 | 1100m+"
+              },
+              {
+               "src": "/wp-content/uploads/2023/05/567.jpg",
+               "alt": "Original 567 | 1000m+",
+               "w": null,
+               "h": null,
+               "legenda": "Original 567 | 1000m+"
+              }
+             ],
+             "por_tela": {
+              "desktop": 1
+             },
+             "autoplay": 5000
+            }
+           ]
+          },
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "button",
+             "texto": "Compre pelo WhatsApp",
+             "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "url": "/videoaula-xale-magnolia/",
+ "slug": "videoaula-xale-magnolia",
+ "title": "Videoaula Xale Magnolia – Nouvellando®",
+ "description": "Xale Magnolia O Xale Magnolia foi criado pela russa Irina Kortchagina. É um xale leve e apaixonante que traz em sua estrutura um relevo delicado semelhante à magnólias. Na videoaula ensino vocês a crochetarem esse padrão russo exclusivo.Para tecer esse lindo xale você vai precisar somente de um fio a partir de 1000m e uma…",
+ "og_title": "Videoaula Xale Magnolia",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/10/20230504_160900-rotated.jpg",
+ "publicado": "2023-11-12T18:01:07+00:00",
+ "modificado": "2026-01-17T19:07:56+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_161548-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160428-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-magnolia-3.jpeg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160952-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160900-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-magnolia-2.jpeg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/20230504_160712-rotated.jpg",
+         "alt": "Xale Magnolia",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Magnolia"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O Xale Magnolia foi criado pela russa Irina Kortchagina. É um xale leve e apaixonante que traz em sua estrutura um relevo delicado semelhante à magnólias. Na videoaula ensino vocês a crochetarem esse padrão russo exclusivo.</p><p>Para tecer esse lindo xale você vai precisar somente de um <a href=\"/fios-nouvellando/\" target=\"_blank\">fio</a> a partir de 1000m e uma agulha de crochê.</p><p><strong>R$ 109,90</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-magnolia/A83231204O?sck=HOTMART_SITE&search=d7640b59-b852-449e-8487-11b08115eaee&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "divider"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "text-editor",
+               "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale Magnolia</strong> e viva uma experiência completa.</p>"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "image-carousel",
+               "slides": [
+                {
+                 "src": "/wp-content/uploads/2023/02/562.jpg",
+                 "alt": "Original 562 | 1000m+",
+                 "w": null,
+                 "h": null,
+                 "legenda": "Original 562 | 1000m+"
+                }
+               ],
+               "por_tela": {
+                "desktop": 1
+               },
+               "autoplay": 5000
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "button",
+               "texto": "Compre pelo WhatsApp",
+               "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

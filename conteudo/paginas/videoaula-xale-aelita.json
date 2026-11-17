@@ -1,0 +1,171 @@
+{
+ "url": "/videoaula-xale-aelita/",
+ "slug": "videoaula-xale-aelita",
+ "title": "Videoaula Xale Aelita – Nouvellando®",
+ "description": "Xale Aelita Venha se encantar com a beleza do Xale Aelita.Neste curso, você aprenderá esta peça moderna, leve e ao mesmo tempo romântica, perfeita para complementar qualquer look. Com técnicas de nível intermediário, as aulas são detalhadas e explicam cada passo com clareza, proporcionando um aprendizado completo e acessível para quem deseja aprimorar suas habilidades…",
+ "og_title": "Videoaula Xale Aelita",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2024/10/Xale-Aelita-4.jpeg",
+ "publicado": "2024-10-16T00:19:21+00:00",
+ "modificado": "2026-01-20T23:18:05+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-3.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-4.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-1.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-2.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-5.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-6.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2024/10/Xale-Aelita-7.jpeg",
+         "alt": "Xale Aelita",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Aelita"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Venha se encantar com a beleza do Xale Aelita.</p><p>Neste curso, você aprenderá esta peça moderna, leve e ao mesmo tempo romântica, perfeita para complementar qualquer look. Com técnicas de nível intermediário, as aulas são detalhadas e explicam cada passo com clareza, proporcionando um aprendizado completo e acessível para quem deseja aprimorar suas habilidades no crochê.</p><p><strong>R$ 99,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-aelita/U95889178O"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "divider"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "text-editor",
+               "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale Aelita</strong> e viva uma experiência completa.</p>"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "image-carousel",
+               "slides": [
+                {
+                 "src": "/wp-content/uploads/2024/01/Original-633U.jpg",
+                 "alt": "Original 633U | 1000m+",
+                 "w": null,
+                 "h": null,
+                 "legenda": "Original 633U | 1000m+"
+                }
+               ],
+               "por_tela": {
+                "desktop": 1
+               },
+               "autoplay": 5000
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "button",
+               "texto": "Compre pelo WhatsApp",
+               "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

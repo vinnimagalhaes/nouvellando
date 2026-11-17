@@ -1,0 +1,130 @@
+{
+ "url": "/fio-paillettes/",
+ "slug": "fio-paillettes",
+ "title": "Fio Paillettes – Nouvellando®",
+ "description": "Paillettes 757P | 200m+ | (sem degradê) Paillettes 756P | 200m+ | (sem degradê) Paillettes 755P | 200m+ | (sem degradê) Paillettes 554P | 200m+ | (sem degradê) Paillettes 550P | 200m+ | (sem degradê) Paillettes 539P | 200m+ | (sem degradê) Paillettes 458P | 200m+ | (sem degradê)",
+ "og_title": "Fio Paillettes",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2026/01/Paillettes-757P-1014x1024.jpg",
+ "publicado": "2023-05-22T23:28:30+00:00",
+ "modificado": "2026-10-13T17:25:09+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/01/Paillettes-757P.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "808"
+       },
+       "link": "/paillettes-757p-2/",
+       "legenda": "Paillettes 757P | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/01/Paillettes-756P.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "782"
+       },
+       "link": "/paillettes-756p-2/",
+       "legenda": "Paillettes 756P | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/01/Paillettes-755P.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "806"
+       },
+       "link": "/paillettes-755p-2/",
+       "legenda": "Paillettes 755P | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/01/554P-1.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "821"
+       },
+       "link": "/paillettes-554p/",
+       "legenda": "Paillettes 554P | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/550pn-2.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "810"
+       },
+       "link": "/paillettes-550p/",
+       "legenda": "Paillettes 550P | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/539pn-1.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "818"
+       },
+       "link": "/paillettes-539p/",
+       "legenda": "Paillettes 539P | 200m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/458pn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "828"
+       },
+       "link": "/paillettes-458p/",
+       "legenda": "Paillettes 458P | 200m+ | (sem degradê)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

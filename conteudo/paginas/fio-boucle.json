@@ -1,0 +1,451 @@
+{
+ "url": "/fio-boucle/",
+ "slug": "fio-boucle",
+ "title": "Fio Bouclé – Nouvellando®",
+ "description": "Fio Bouclé Bouclé C0223 | 800m Bouclé C022 | 800m Bouclé C021 | 800m Bouclé C020 | 800m Bouclé C019 | 800m Bouclé C018 | 800m Bouclé C017 | 800m Bouclé C016 | 800m Bouclé C015 | 800m Bouclé C014 | 800m Bouclé C013 | 800m Bouclé C012 | 800m Bouclé C011 | 800m Bouclé…",
+ "og_title": "Fio Bouclé",
+ "og_type": "article",
+ "og_image": "https://s0.wp.com/_si/",
+ "publicado": "2024-10-26T19:19:26+00:00",
+ "modificado": "2026-08-22T20:31:17+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h1",
+       "texto": "Fio Bouclé"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Boucle-C023.jpg",
+         "alt": "Bouclé C0223 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c023/",
+         "legenda": "Bouclé C0223 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C022.jpg",
+         "alt": "Bouclé C022 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c022-2/",
+         "legenda": "Bouclé C022 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C021.jpg",
+         "alt": "Bouclé C021 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c021-2/",
+         "legenda": "Bouclé C021 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C020.jpg",
+         "alt": "Bouclé C020 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c020-2/",
+         "legenda": "Bouclé C020 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C019.jpg",
+         "alt": "Bouclé C019 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c019-2/",
+         "legenda": "Bouclé C019 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C018.jpg",
+         "alt": "Bouclé C018 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c018-2/",
+         "legenda": "Bouclé C018 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C017.jpg",
+         "alt": "Bouclé C017 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c017-2/",
+         "legenda": "Bouclé C017 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C016.jpg",
+         "alt": "Bouclé C016 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c016-2/",
+         "legenda": "Bouclé C016 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-05.jpg",
+         "alt": "Bouclé C015 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c015/",
+         "legenda": "Bouclé C015 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-014.jpg",
+         "alt": "Bouclé C014 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c014/",
+         "legenda": "Bouclé C014 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-013.jpg",
+         "alt": "Bouclé C013 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c013-2/",
+         "legenda": "Bouclé C013 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-012.jpg",
+         "alt": "Bouclé C012 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c012/",
+         "legenda": "Bouclé C012 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-011.jpg",
+         "alt": "Bouclé C011 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c011/",
+         "legenda": "Bouclé C011 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-010.jpg",
+         "alt": "Bouclé C010 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c010/",
+         "legenda": "Bouclé C010 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-009.jpg",
+         "alt": "Bouclé C009 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c009/",
+         "legenda": "Bouclé C009 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-008.jpg",
+         "alt": "Bouclé C008 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c008/",
+         "legenda": "Bouclé C008 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-006.jpg",
+         "alt": "Bouclé  C006 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c006/",
+         "legenda": "Bouclé C006 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Boucle-005.jpg",
+         "alt": "Bouclé C005 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c005/",
+         "legenda": "Bouclé C005 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/06/Boucle-C003.jpg",
+         "alt": "Bouclé C003 | 800m",
+         "w": null,
+         "h": null,
+         "link": "/boucle-c003/",
+         "legenda": "Bouclé C003 | 800m"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

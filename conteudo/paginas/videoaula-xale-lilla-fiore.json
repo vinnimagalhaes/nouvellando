@@ -1,0 +1,171 @@
+{
+ "url": "/videoaula-xale-lilla-fiore/",
+ "slug": "videoaula-xale-lilla-fiore",
+ "title": "Videoaula Xale Lilla Fiore – Nouvellando®",
+ "description": "Xale Lilla Fiore Na videoaula do Xale Lilla Fiore, vamos nos entregar à delicadeza das flores de lilás, ou Lilac (Syringa vulgaris). Nos inspirando nas cores e aromas da primavera que se iniciou, teceremos estas belíssimas flores em um xale encantador, de textura suave, com cordões de botões florescendo e cachinhos delicados.R$ 89,00 Clique aqui…",
+ "og_title": "Videoaula Xale Lilla Fiore",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/10/xale-lilla-fiore.jpg",
+ "publicado": "2023-11-12T18:22:35+00:00",
+ "modificado": "2026-01-17T19:05:27+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Lilla-Fiore-2-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Lilla-Fiore-1-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Lilla-Fiore-4-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Lilla-Fiore-5-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-lilla-fiore-8-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Lilla-Fiore-3-rotated.jpg",
+         "alt": "Xale Lilla Fiore",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Lilla Fiore"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Na videoaula do Xale Lilla Fiore, vamos nos entregar à delicadeza das flores de lilás, ou Lilac (Syringa vulgaris). Nos inspirando nas cores e aromas da primavera que se iniciou, teceremos estas belíssimas flores em um xale encantador, de textura suave, com cordões de botões florescendo e cachinhos delicados.</p><p><strong>R$ 89,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-lilla-fiore/C87606803N?sck=HOTMART_SITE&search=c77b2cc8-a419-46f4-934d-c6bec7569de2&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "divider"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "text-editor",
+               "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale Lilla Fiore</strong> e viva uma experiência completa.</p>"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "image-carousel",
+               "slides": [
+                {
+                 "src": "/wp-content/uploads/2023/06/Original-575.jpg",
+                 "alt": "Original 575 | 1000m+",
+                 "w": null,
+                 "h": null,
+                 "legenda": "Original 575 | 1000m+"
+                }
+               ],
+               "por_tela": {
+                "desktop": 1
+               },
+               "autoplay": 5000
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "button",
+               "texto": "Compre pelo WhatsApp",
+               "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

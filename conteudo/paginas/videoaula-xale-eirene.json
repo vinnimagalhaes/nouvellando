@@ -1,0 +1,161 @@
+{
+ "url": "/videoaula-xale-eirene/",
+ "slug": "videoaula-xale-eirene",
+ "title": "Videoaula Xale Eirene – Nouvellando®",
+ "description": "Xale Eirene Na mitologia grega, Eirene é a deusa da paz, da harmonia e do florescer natural da vida.Esse xale nasce exatamente desse espírito: um projeto que convida a desacelerar, confiar no processo e deixar o fio conduzir cada ponto.O Curso Xale Eirene é uma experiência de crochê pensada para quem busca mais do que…",
+ "og_title": "Videoaula Xale Eirene",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2025/11/Xale-Xecara-7-1.jpg",
+ "publicado": "2026-01-17T15:29:07+00:00",
+ "modificado": "2026-02-23T23:39:47+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_4_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_1_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_2_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_5_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2026/02/Xale-Eirene-_3_.jpg",
+         "alt": "Xale Eirene",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Eirene"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Na mitologia grega, <strong>Eirene é a deusa da paz</strong>, da harmonia e do florescer natural da vida.</p><p>Esse xale nasce exatamente desse espírito:<strong> um projeto que convida a desacelerar, confiar no processo e deixar o fio conduzir cada ponto</strong>.</p><p>O <strong>Curso Xale Eirene</strong> é uma experiência de crochê pensada para quem busca mais do que um padrão, ele oferece construção consciente, fluidez e beleza em cada etapa.</p><p>Aqui, você não apenas aprende a fazer um xale. Você entende <strong>por que cada ponto existe, como a forma cresce, e como o desenho se revela aos poucos</strong>, quase como um sussurro.</p><p><strong>R$ 105,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-eirene/G104323202U?sck=HOTMART_SITE&search=7ff4dbeb-8fa5-4eb2-bc6f-ae039779fd48&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "divider"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "text-editor",
+     "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Compre os<strong> novelos utilizados na criação do Xale Eirene</strong> para ter uma experiência completa.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/02/Boucle-C013.jpg",
+         "alt": "Bouclé C013",
+         "w": null,
+         "h": null,
+         "legenda": "Bouclé C013"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2024/10/Original-678U.jpeg",
+         "alt": "Original 678U | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/original-678-678u/",
+         "legenda": "Original 678U | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "button",
+     "texto": "Compre pelo WhatsApp",
+     "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+    }
+   ]
+  }
+ ]
+}

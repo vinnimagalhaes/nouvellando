@@ -1,0 +1,126 @@
+{
+ "url": "/original-003-003u/",
+ "slug": "original-003-003u",
+ "title": "Original 003 | 003U – Nouvellando®",
+ "description": "Original 003 | (foto: novelo com brilho prateado)Original 003U Previous image Next image Original 003 | 003U 4 cabos sem brilho 1000m | R$ 85,00 | ≅ 268g1100m | R$ 93,50 | ≅ 294g1200m | R$ 102,00 | ≅ 321g1300m | R$ 110,50 | ≅ 348g1400m | R$ 119,00 | ≅ 375g1500m | R$ 127,50…",
+ "og_title": "Original 003 | 003U",
+ "og_type": "article",
+ "og_image": "https://cdn-icons-png.flaticon.com/512/788/788523.png",
+ "publicado": "2023-01-21T18:52:32+00:00",
+ "modificado": "2023-04-03T22:59:52+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/003n.jpg",
+         "alt": "Original 003 | 1000m+",
+         "w": null,
+         "h": null,
+         "legenda": "Original 003 | (foto: novelo com brilho prateado)"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/003un.jpg",
+         "alt": "Original 003U | 1000m+",
+         "w": null,
+         "h": null,
+         "legenda": "Original 003U"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Original 003 | 003U"
+        }
+       ]
+      },
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "accordion",
+             "itens": [
+              {
+               "titulo": "4 cabos sem brilho",
+               "html": "<p>1000m | R$ 85,00 | ≅ 268g</p><p>1100m | R$ 93,50 | ≅ 294g</p><p>1200m | R$ 102,00 | ≅ 321g</p><p>1300m | R$ 110,50 | ≅ 348g</p><p>1400m | R$ 119,00 | ≅ 375g</p><p>1500m | R$ 127,50 | ≅ 402g</p><p>1600m | R$ 136,00 | ≅ 428g</p><p>1700m | R$ 144,50 | ≅ 455g</p><p>1800m | R$ 153,00 | ≅ 482g</p><p>1900m | R$ 161,50 | ≅ 509g</p><p>2000m | R$ 170,00 | ≅ 536g</p><p>2100m | R$ 178,50 | ≅ 562g</p><p>2200m | R$ 187,00 | ≅ 589g</p><p>2300m | R$ 195,50 | ≅ 616g</p><p>2400m | R$ 204,00 | ≅ 643g</p><p>2500m | R$ 212,50 | ≅ 670g</p><p>2600m | R$ 221,00 | ≅ 696g</p><p>2700m | R$ 229,50 | ≅ 723g</p><p>2800m | R$ 238,00 | ≅ 750g</p><p>2900m | R$ 246,50 | ≅ 777g</p><p>3000m | R$ 255,00 | ≅ 804g</p>"
+              },
+              {
+               "titulo": "4 cabos com brilho",
+               "html": "<p>1000m | R$ 90,00 | ≅ 285g</p><p>1100m | R$ 99,00 | ≅ 313g</p><p>1200m | R$ 108,00 | ≅ 342g</p><p>1300m | R$ 117,00 | ≅ 370g</p><p>1400m | R$ 126,00 |≅ 399g</p><p>1500m | R$ 135,00 | ≅ 427g</p><p>1600m | R$ 144,00 | ≅ 456g</p><p>1700m | R$ 153,00 | ≅ 484g</p><p>1800m | R$ 162,00 | ≅ 513g</p><p>1900m | R$ 171,00 | ≅ 541g</p><p>2000m | R$ 180,00 | ≅ 570g</p><p>2100m | R$ 189,00 | ≅ 598g</p><p>2200m | R$ 198,00 | ≅ 627g</p><p>2300m | R$ 207,00 | ≅ 655g</p><p>2400m | R$ 216,00 | ≅ 684g</p><p>2500m | R$ 225,00 | ≅ 712g</p><p>2600m | R$ 234,00 | ≅ 741g</p><p>2700m | R$ 243,00 | ≅ 769g</p><p>2800m | R$ 252,00 | ≅ 798g</p><p>2900m | R$ 261,00 | ≅ 826g</p><p>3000m | R$ 270,00 | ≅ 855g</p>"
+              },
+              {
+               "titulo": "3 cabos sem brilho",
+               "html": "<p>1000m | R$ 70,00 | ≅ 201g</p><p>1100m | R$ 77,00 | ≅ 221g</p><p>1200m | R$ 84,00 | ≅ 241g</p><p>1300m | R$ 91,00 | ≅ 261g</p><p>1400m | R$ 98,00 | ≅ 281g</p><p>1500m | R$ 105,00 | ≅ 301g</p><p>1600m | R$ 112,00 | ≅ 321g</p><p>1700m | R$ 119,00 | ≅ 341g</p><p>1800m | R$ 126,00 | ≅ 361g</p><p>1900m | R$ 133,00 | ≅ 381g</p><p>2000m | R$ 140,00 | ≅ 402g</p><p>2100m | R$ 147,00 | ≅ 422g</p><p>2200m | R$ 154,00 | ≅ 442g</p><p>2300m | R$ 161,00 | ≅ 462g</p><p>2400m | R$ 168,00 | ≅ 482g</p><p>2500m | R$ 175,00 | ≅ 502g</p><p>2600m | R$ 182,00 | ≅ 522g</p><p>2700m | R$ 189,00 | ≅ 542g</p><p>2800m | R$ 196,00 | ≅ 562g</p><p>2900m | R$ 203,00 | ≅ 582g</p><p>3000m | R$ 210,00 | ≅ 603g</p>"
+              },
+              {
+               "titulo": "3 cabos com brilho",
+               "html": "<p>1000m | R$ 75,00 | ≅ 216g</p><p>1100m | R$ 82,50 | ≅ 237g</p><p>1200m | R$ 90,00 | ≅ 259g</p><p>1300m | R$ 97,50 | ≅ 280g</p><p>1400m | R$ 105,00 | ≅ 302g</p><p>1500m | R$ 112,50 | ≅ 324g</p><p>1600m | R$ 120,00 | ≅ 345g</p><p>1700m | R$ 127,50 | ≅ 367g</p><p>1800m | R$ 135,00 | ≅ 388g</p><p>1900m | R$ 142,50 | ≅ 410g</p><p>2000m | R$ 150,00 | ≅ 432g</p><p>2100m | R$ 157,50 | ≅ 453g</p><p>2200m | R$ 165,00 | ≅ 475g</p><p>2300m | R$ 172,50 | ≅ 496g</p><p>2400m | R$ 180,00 | ≅ 518g</p><p>2500m | R$ 187,50 | ≅ 540g</p><p>2600m | R$ 195,00 | ≅ 561g</p><p>2700m | R$ 202,50 | ≅ 583g</p><p>2800m | R$ 210,00 | ≅ 604g</p><p>2900m | R$ 217,50 | ≅ 626g</p><p>3000m | R$ 225,00 | ≅ 648g</p>"
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "button",
+             "texto": "Compre pelo WhatsAapp",
+             "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "heading",
+     "tag": "h3",
+     "texto": "Informações do produto"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "text-editor",
+     "html": "<p><strong>SEM brilho</strong></p><p><strong>Composição</strong>: 50% algodão / 50% acrílico<br/><strong>4 cabos TEX</strong>: 268<br/><strong>Agulha</strong>: 3mm a 4mm<br/><strong>3 cabos TEX</strong>: 201<br/><strong>Agulha</strong>: 2,5mm a 3,5mm</p><p> </p><p><strong>COM brilho</strong><br/><strong>Composição</strong>: <strong>Fio tipo 1</strong>: 50% algodão / 50% acrílico – <strong>Fio tipo 2</strong>: 100 poliéster<br/><strong>4 cabos TEX</strong>: 285<br/><strong>Agulha</strong>: 3mm a 4,5mm<br/><strong>3 cabos TEX</strong>: 216<br/><strong>Agulha</strong>: 2,5mm a 4mm</p><p> </p><p><img alt=\"Ícone lavagem à mão \" height=\"23\" src=\"https://cdn-icons-png.flaticon.com/512/788/788523.png\" width=\"23\"/> Lavagem à mão</p><p><img alt=\"Etiquetas en la ropa: aprende a identificar los símbolos de lavado - TinaOrganiza.com\" height=\"23\" src=\"https://encrypted-tbn0.gstatic.com/images\" width=\"23\"/> Secar na horizontal</p><p><img alt=\"secar à sombra secar roupas símbolos de cuidados conceito de lavagem ícone de sinal de lavanderia ilustração vetorial de cor preta imagem de estilo plano 5157947 Vetor no Vecteezy\" height=\"22\" src=\"https://encrypted-tbn0.gstatic.com/images\" width=\"22\"/> Secar na sombra</p><p> </p><p>Os novelos são feitos artesanalmente com prazo de produção de 7 a 15 dias, contados a partir do pagamento.</p><p> </p><p><em>*Os novelos podem</em><em> apresentar variações de tonalidade de acordo com o equipamento onde estão sendo visualizados.</em></p><p> </p><p><em>*O peso dos fios não é exato, pois pode variar de acordo com a cor escolhida (cores escuras pesam mais que cores claras, por exemplo). Por isso, dependendo do peso do novelo, pode haver uma diferença de até 10g para menos ou para mais.</em></p>"
+    }
+   ]
+  }
+ ]
+}

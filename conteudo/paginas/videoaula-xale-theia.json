@@ -1,0 +1,183 @@
+{
+ "url": "/videoaula-xale-theia/",
+ "slug": "videoaula-xale-theia",
+ "title": "Videoaula Xale Theia – Nouvellando®",
+ "description": "Xale Theia Nesta videoaula, você encontra o passo a passo de como crochetar o Xale Theia, cujo padrão foi criado pela parceira Nouvellando e designer russa Natalia Kupreeva. R$ 95,00 Clique aqui e aprenda a crocheta-lo Quer criar uma peça exatamente como a da Videoaula?Adquira também os novelos utilizados na criação do Xale Theia e viva uma…",
+ "og_title": "Videoaula Xale Theia",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/10/xale-theia-5.jpg",
+ "publicado": "2023-11-12T17:27:59+00:00",
+ "modificado": "2026-01-17T18:48:28+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-1-1.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-2.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-3.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-4.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-5.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-7.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-theia-6.jpg",
+         "alt": "Xale Theia",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Theia"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Nesta videoaula, você encontra o passo a passo de como crochetar o Xale Theia, cujo padrão foi criado pela parceira Nouvellando e designer russa Natalia Kupreeva. </p><p><strong>R$ 95,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/video-aula-xale-theia/N69864266N?sck=HOTMART_SITE&search=a65081be-a8da-40c4-8e82-203653697b28&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "divider"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "text-editor",
+                 "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também os<strong> novelos utilizados na criação do Xale Theia</strong> e viva uma experiência completa.</p>"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "image-carousel",
+                 "slides": [
+                  {
+                   "src": "/wp-content/uploads/2022/12/428utn.jpg",
+                   "alt": "Twinkle 428UT | 1000m+",
+                   "w": null,
+                   "h": null,
+                   "legenda": "Twinkle 428UT | 1000m+"
+                  },
+                  {
+                   "src": "/wp-content/uploads/2022/12/359n.jpg",
+                   "alt": "Original 359 | 1300m+",
+                   "w": null,
+                   "h": null,
+                   "legenda": "Original 359 | 1300m+"
+                  }
+                 ],
+                 "por_tela": {
+                  "desktop": 1
+                 },
+                 "autoplay": 5000
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "button",
+                 "texto": "Compre pelo WhatsApp",
+                 "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

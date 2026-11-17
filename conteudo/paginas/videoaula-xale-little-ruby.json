@@ -1,0 +1,153 @@
+{
+ "url": "/videoaula-xale-little-ruby/",
+ "slug": "videoaula-xale-little-ruby",
+ "title": "Videoaula Xale Little Ruby – Nouvellando®",
+ "description": "Xale Little Ruby Na videoaula do Xale Little Ruby, que é um xale autêntico, romântico e super versátil, vocês vão aprender como crochetar esse modelo exclusivo, criado pela Agnieszka Reduch. A designer polonesa se inspirou na flor Butterfly Little Ruby, e com suas mãos de fada, criou esse padrão que carrega beleza e atrai todos…",
+ "og_title": "Videoaula Xale Little Ruby",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/10/Xale-Little-Ruby-3.jpeg",
+ "publicado": "2023-11-12T18:19:10+00:00",
+ "modificado": "2026-01-17T19:07:08+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Little-Ruby-3.jpeg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Little-Ruby-2-rotated.jpg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/Xale-Little-Ruby-3-rotated.jpg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-little-ruby.jpeg",
+         "alt": "Xale Little Ruby",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Little Ruby"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Na videoaula do Xale Little Ruby, que é um xale autêntico, romântico e super versátil, vocês vão aprender como crochetar esse modelo exclusivo, criado pela Agnieszka Reduch. A designer polonesa se inspirou na flor Butterfly Little Ruby, e com suas mãos de fada, criou esse padrão que carrega beleza e atrai todos os olhares para si.</p><p><strong>R$ 95,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-little-ruby/T81256436S?sck=HOTMART_SITE&search=dbb04b9a-03e6-410e-affc-a11fd542f35a&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "divider"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "text-editor",
+               "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também um dos<strong> novelos da Nouvellando</strong> e viva uma experiência completa.</p>"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "image-carousel",
+               "slides": [
+                {
+                 "src": "/wp-content/uploads/2023/02/R004.jpg",
+                 "alt": "Indisponível",
+                 "w": null,
+                 "h": null,
+                 "legenda": "Indisponível"
+                }
+               ],
+               "por_tela": {
+                "desktop": 1
+               },
+               "autoplay": 5000
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "button",
+               "texto": "Compre pelo WhatsApp",
+               "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

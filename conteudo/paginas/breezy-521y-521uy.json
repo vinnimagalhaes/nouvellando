@@ -1,0 +1,118 @@
+{
+ "url": "/breezy-521y-521uy/",
+ "slug": "breezy-521y-521uy",
+ "title": "Breezy 521Y | 521UY – Nouvellando®",
+ "description": "Breezy 521Y | 800m+Breezy 521UY | 800m+ Breezy 521Y | 521UY 4 cabos 800m | R$ 78,40 | ≅ 227g900m | R$ 88,20 | ≅ 256g1000m | R$ 98,00 | ≅ 284g1100m | R$ 107,80 | ≅ 312g1200m | R$ 117,60 | ≅ 341g1300m | R$ 127,40 | ≅ 369g1400m | R$ 137,20 | ≅…",
+ "og_title": "Breezy 521Y | 521UY",
+ "og_type": "article",
+ "og_image": "https://cdn-icons-png.flaticon.com/512/788/788523.png",
+ "publicado": "2023-01-17T01:13:20+00:00",
+ "modificado": "2026-08-22T20:52:46+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/521yn.jpg",
+         "alt": "Breezy 521Y | 800m+",
+         "w": null,
+         "h": null,
+         "legenda": "Breezy 521Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/521uyn.jpg",
+         "alt": "Breezy 521UY | 800m+",
+         "w": null,
+         "h": null,
+         "legenda": "Breezy 521UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Breezy 521Y | 521UY"
+        }
+       ]
+      },
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "accordion",
+             "itens": [
+              {
+               "titulo": "4 cabos",
+               "html": "<p>800m | R$ 78,40 | ≅ 227g</p><p>900m | R$ 88,20 | ≅ 256g</p><p>1000m | R$ 98,00 | ≅ 284g</p><p>1100m | R$ 107,80 | ≅ 312g</p><p>1200m | R$ 117,60 | ≅ 341g</p><p>1300m | R$ 127,40 | ≅ 369g</p><p>1400m | R$ 137,20 | ≅ 398g</p><p>1500m | R$ 147,00 | ≅ 426g</p><p>1600m | R$ 156,80 | ≅ 454g</p><p>1700m | R$ 166,60 | ≅ 483g</p><p>1800m | R$ 176,40 | ≅ 511g</p><p>1900m | R$ 186,20 | ≅ 540g</p><p>2000m | R$ 196,00 | ≅ 568g</p><p>2100m | R$ 205,80 | ≅ 596g</p><p>2200m | R$ 215,60 | ≅ 625g</p><p>2300m | R$ 225,40 | ≅ 653g</p><p>2400m | R$ 235,20 | ≅ 682g</p><p>2500m | R$ 245,00 | ≅ 710g</p><p>2600m | R$ 254,80 | ≅ 738g</p><p>2700m | R$ 264,60 | ≅ 767g</p><p>2800m | R$ 274,40 | ≅ 795g</p><p>2900m | R$ 284,20 | ≅ 824g</p><p>3000m | R$ 294,00 | ≅ 852g</p>"
+              },
+              {
+               "titulo": "3 cabos",
+               "html": "<p>800m | R$ 68,00 | ≅ 214g</p><p>900m | R$ 76,50 | ≅ 241g</p><p>1000m | R$ 85,00 | ≅ 268g</p><p>1100m | R$ 93,50 | ≅ 294g</p><p>1200m | R$ 102,00 | ≅ 321g</p><p>1300m | R$ 110,50 | ≅ 348g</p><p>1400m | R$ 119,00 | ≅ 375g</p><p>1500m | R$ 127,50 | ≅ 402g</p><p>1600m | R$ 136,00 | ≅ 428g</p><p>1700m | R$ 144,50 | ≅ 455g</p><p>1800m | R$ 153,00 | ≅ 482g</p><p>1900m | R$ 161,50 | ≅ 509g</p><p>2000m | R$ 170,00 | ≅ 536g</p><p>2100m | R$ 178,50 | ≅ 562g</p><p>2200m | R$ 187,00 | ≅ 589g</p><p>2300m | R$ 195,50 | ≅ 616g</p><p>2400m | R$ 204,00 | ≅ 643g</p><p>2500m | R$ 212,50 | ≅ 670g</p><p>2600m | R$ 221,00 | ≅ 696g</p><p>2700m | R$ 229,50 | ≅ 723g</p><p>2800m | R$ 238,00 | ≅ 750g</p><p>2900m | R$ 246,50 | ≅ 777g</p><p>3000m | R$ 255,00 | ≅ 804g</p>"
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "button",
+             "texto": "Envie os detalhes do seu pedido aqui",
+             "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "heading",
+     "tag": "h3",
+     "texto": "Informações do produto"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "text-editor",
+     "html": "<p><strong>Composição 3 cabos</strong>: 69% acrílico / 31% algodão<br/><strong>3 cabos TEX</strong>: 217<br/><strong>Agulha</strong>: 3mm a 4mm</p><p><strong>Composição 4 cabos</strong>: 65% acrílico / 35% algodão<br/><strong>4 cabos TEX</strong>: 284<br/><strong>Agulha</strong>: 3,5mm a 4,5mm</p><p><img alt=\"Ícone lavagem à mão \" height=\"23\" src=\"https://cdn-icons-png.flaticon.com/512/788/788523.png\" width=\"23\"/> Lavagem à mão</p><p><img alt=\"Etiquetas en la ropa: aprende a identificar los símbolos de lavado - TinaOrganiza.com\" height=\"23\" src=\"https://encrypted-tbn0.gstatic.com/images\" width=\"23\"/> Secar na horizontal</p><p><img alt=\"secar à sombra secar roupas símbolos de cuidados conceito de lavagem ícone de sinal de lavanderia ilustração vetorial de cor preta imagem de estilo plano 5157947 Vetor no Vecteezy\" height=\"22\" src=\"https://encrypted-tbn0.gstatic.com/images\" width=\"22\"/> Secar na sombra</p><p>Os novelos são feitos artesanalmente com prazo de produção de 7 a 15 dias, contados a partir do pagamento.</p><p><em>*Os novelos podem</em><em> apresentar variações de tonalidade de acordo com o equipamento onde estão sendo visualizados.</em></p><p><em>*O peso dos fios não é exato, pois pode variar de acordo com a cor escolhida (cores escuras pesam mais que cores claras, por exemplo). Por isso, dependendo do peso do novelo, pode haver uma diferença de até 10g para menos ou para mais.</em></p>"
+    }
+   ]
+  }
+ ]
+}

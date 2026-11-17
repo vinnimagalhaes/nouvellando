@@ -1,0 +1,699 @@
+{
+ "url": "/fio-aura/",
+ "slug": "fio-aura",
+ "title": "Fio Aura – Nouvellando®",
+ "description": "Fio Aura Novelos com 100% de viscose ou mistos com viscose. Encontre o seu favorito e verifique a composição e o TEX na imagem ou descrição do produto. Aura A030 | 1000m+Aura A030U | 1000m+ Aura A029 | 500m+ | (sem degradê) Aura A028 | 1000m+Aura A028U | 1000m+ Aura A027 | 500m+ | (sem…",
+ "og_title": "Fio Aura",
+ "og_type": "article",
+ "og_image": "https://s0.wp.com/_si/",
+ "publicado": "2026-03-24T22:33:59+00:00",
+ "modificado": "2026-08-22T17:54:05+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h1",
+       "texto": "Fio Aura"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Novelos com 100% de viscose ou mistos com viscose. </strong></p><p>Encontre o seu favorito e verifique a composição e o TEX na imagem ou descrição do produto.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A030.jpg",
+         "alt": "Aura A030 | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/aura-a030-a030u/",
+         "legenda": "Aura A030 | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A030U.jpg",
+         "alt": "Aura A030U | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/aura-a030-a030u/",
+         "legenda": "Aura A030U | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A029.jpg",
+         "alt": "Aura A029 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a029-2/",
+         "legenda": "Aura A029 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A028.jpg",
+         "alt": "Aura A028 | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/aura-a028-a028u/",
+         "legenda": "Aura A028 | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A028U.jpg",
+         "alt": "Aura A028U | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/aura-a028-a028u/",
+         "legenda": "Aura A028U | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A027.jpg",
+         "alt": "Aura A027 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a027-2/",
+         "legenda": "Aura A027 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A026.jpg",
+         "alt": "Aura A026 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a026-2/",
+         "legenda": "Aura A026 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A025.jpg",
+         "alt": "Aura A025 | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/aura-a025-a025u/",
+         "legenda": "Aura A025 | 1000m+"
+        },
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A025U.jpg",
+         "alt": "Aura A025U | 1000m+",
+         "w": null,
+         "h": null,
+         "link": "/aura-a025-a025u/",
+         "legenda": "Aura A025U | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A024.jpg",
+         "alt": "Aura A024 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a024-2/",
+         "legenda": "Aura A024 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A023.jpg",
+         "alt": "Aura A023 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a023-2/",
+         "legenda": "Aura A023 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A022.jpg",
+         "alt": "Aura A022 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a022-2/",
+         "legenda": "Aura A022 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A021.jpg",
+         "alt": "Aura A021 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a021-2/",
+         "legenda": "Aura A021 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A020.jpg",
+         "alt": "Aura A020 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a020-2/",
+         "legenda": "Aura A020 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A019.jpg",
+         "alt": "Aura A019 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a019-2/",
+         "legenda": "Aura A019 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A018.jpg",
+         "alt": "Aura A018 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a018-2/",
+         "legenda": "Aura A018 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A017.jpg",
+         "alt": "Aura A017 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a017/",
+         "legenda": "Aura A017 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A016.jpg",
+         "alt": "Aura A016 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a016/",
+         "legenda": "Aura A016 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A015.jpg",
+         "alt": "Aura A015 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a015/",
+         "legenda": "Aura A015 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A014.jpg",
+         "alt": "Aura A014 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a014/",
+         "legenda": "Aura A014 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A013.jpg",
+         "alt": "Aura A013 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a013/",
+         "legenda": "Aura A013 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A012.jpg",
+         "alt": "Aura A012 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a012/",
+         "legenda": "Aura A012 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A011.jpg",
+         "alt": "Aura A011 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a011/",
+         "legenda": "Aura A011 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A010.jpg",
+         "alt": "Aura A010 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a010/",
+         "legenda": "Aura A010 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A009.jpg",
+         "alt": "Aura A011 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a009/",
+         "legenda": "Aura A011 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A008T.jpg",
+         "alt": "Aura A008T | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a008t-2/",
+         "legenda": "Aura A008T | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A007.jpg",
+         "alt": "Aura A007 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a007/",
+         "legenda": "Aura A007 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A006.jpg",
+         "alt": "Aura A006 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a006/",
+         "legenda": "Aura A006 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A005.jpg",
+         "alt": "Aura A005 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a005/",
+         "legenda": "Aura A005 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A004.jpg",
+         "alt": "Aura A004 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a004/",
+         "legenda": "Aura A004 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A003.jpg",
+         "alt": "Aura A003 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a003/",
+         "legenda": "Aura A003 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/Aura-A002.jpg",
+         "alt": "Aura A002 | 500m+ | (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/aura-a002/",
+         "legenda": "Aura A002 | 500m+ | (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

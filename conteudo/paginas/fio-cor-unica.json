@@ -1,0 +1,52 @@
+{
+ "url": "/fio-cor-unica/",
+ "slug": "fio-cor-unica",
+ "title": "Fio Cor Única – Nouvellando®",
+ "description": "Fio Cor Única Escolha a sua cor preferida e faça um novelo de cor única (sem degradê), com qualquer fio que você desejar. Basta entrar em contato pelo WhatsApp e indicar a cor escolhida. Original branco Peça seu Novelo de Cor Única",
+ "og_title": "Fio Cor Única",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/11/Original-286-300x292.jpg",
+ "publicado": "2024-10-26T19:05:28+00:00",
+ "modificado": "2024-10-26T19:13:02+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h1",
+       "texto": "Fio Cor Única"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Escolha a sua cor preferida e faça um novelo de cor única (sem degradê), com qualquer fio que você desejar. Basta entrar em contato pelo WhatsApp e indicar a cor escolhida.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "image",
+     "img": {
+      "src": "/wp-content/uploads/2023/11/Original-286.jpg",
+      "alt": "",
+      "w": "300",
+      "h": "292"
+     },
+     "legenda": "Original branco"
+    },
+    {
+     "tipo": "button",
+     "texto": "Peça seu Novelo de Cor Única",
+     "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+    }
+   ]
+  }
+ ]
+}

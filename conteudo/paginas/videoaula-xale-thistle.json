@@ -1,0 +1,183 @@
+{
+ "url": "/videoaula-xale-thistle/",
+ "slug": "videoaula-xale-thistle",
+ "title": "Videoaula Xale Thistle – Nouvellando®",
+ "description": "Xale Thistle O Xale Thistle se destaca pela variedade de pontos e sua riqueza em textura, se assimilando a uma manta bordada, o que o diferencia de todas as outras peças que vocês já viram por aqui. Ele foi criado pela designer polonesa Aleksandra Gryzik, e você aprenderá a crochetá-lo nesta videoaula.Por ser um xale…",
+ "og_title": "Videoaula Xale Thistle",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/10/xale-thistle.jpeg",
+ "publicado": "2023-11-12T17:34:05+00:00",
+ "modificado": "2026-01-17T18:51:29+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-2.jpeg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-1-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-13-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-8-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-15-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle.jpeg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-thistle-14-rotated.jpg",
+         "alt": "Xale Thistle",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Thistle"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O Xale Thistle se destaca pela variedade de pontos e sua riqueza em textura, se assimilando a uma manta bordada, o que o diferencia de todas as outras peças que vocês já viram por aqui. Ele foi criado pela designer polonesa Aleksandra Gryzik, e você aprenderá a crochetá-lo nesta videoaula.</p><p>Por ser um xale com mais carreiras e cheio de detalhes, é um padrão apropriado para pessoas mais experientes. Por isso, é necessária uma familiaridade maior com conceitos de crochê, como ponto puff e relevo.</p><p><strong>R$ 125,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/xale-thistle/J75149215P?sck=HOTMART_SITE&search=818739fe-b448-4067-9f5f-15915569b48b&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "divider"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "text-editor",
+                 "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também os<strong> novelos utilizados na criação do Xale Thistle</strong> e viva uma experiência completa.</p>"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "image-carousel",
+                 "slides": [
+                  {
+                   "src": "/wp-content/uploads/2022/12/442un.jpg",
+                   "alt": "Original 442U | 1100m+",
+                   "w": null,
+                   "h": null,
+                   "legenda": "Original 442U | 1100m+"
+                  },
+                  {
+                   "src": "/wp-content/uploads/2022/12/478n.jpg",
+                   "alt": "Original 478 | 1000m+",
+                   "w": null,
+                   "h": null,
+                   "legenda": "Original 478 | 1000m+"
+                  }
+                 ],
+                 "por_tela": {
+                  "desktop": 1
+                 },
+                 "autoplay": 5000
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "button",
+                 "texto": "Compre pelo WhatsApp",
+                 "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

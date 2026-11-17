@@ -1,0 +1,86 @@
+{
+ "url": "/boucle-c020-2/",
+ "slug": "boucle-c020-2",
+ "title": "Bouclé C020 – Nouvellando®",
+ "description": "Bouclé C020 Bouclé C020 4 cabos | 800m | R$100,00 Clique aqui e envie seu pedido pra mim Informações do produto Composição: 60% acrílico / 38% algodão / 2% poliamida4 cabos TEX: 280Lavagem à mãoSecar na horizontalSecar na sombraOs novelos são feitos artesanalmente com prazo de produção de 7 a 15 dias, contados a partir…",
+ "og_title": "Bouclé C020",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2026/06/Boucle-C020-1536x1526.jpg",
+ "publicado": "2026-06-20T17:07:42+00:00",
+ "modificado": "2026-06-20T17:12:06+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/06/Boucle-C020.jpg",
+        "alt": "",
+        "w": "1536",
+        "h": "1526"
+       },
+       "legenda": "Bouclé C020"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Bouclé C020"
+        }
+       ]
+      },
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "text-editor",
+           "html": "<p>4 cabos | 800m | R$100,00</p>"
+          },
+          {
+           "tipo": "button",
+           "texto": "Clique aqui e envie seu pedido pra mim",
+           "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "heading",
+     "tag": "h3",
+     "texto": "Informações do produto"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "text-editor",
+     "html": "<p><strong>Composição</strong>: 60% acrílico / 38% algodão / 2% poliamida</p><p><strong>4 cabos TEX</strong>: 280</p><p>Lavagem à mão<br/>Secar na horizontal<br/>Secar na sombra</p><p>Os novelos são feitos artesanalmente com prazo de produção de 7 a 15 dias, contados a partir do pagamento.</p><p><em>*Os novelos podem</em><em> apresentar variações de tonalidade de acordo com o equipamento onde estão sendo visualizados.</em></p><p><em>*O peso dos fios não é exato, pois pode variar de acordo com a cor escolhida (cores escuras pesam mais que cores claras, por exemplo). Por isso, dependendo do peso do novelo, pode haver uma diferença de até 10g para menos ou para mais.</em></p>"
+    }
+   ]
+  }
+ ]
+}

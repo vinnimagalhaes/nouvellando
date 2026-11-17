@@ -1,0 +1,18 @@
+{
+ "url": "/minha-conta/",
+ "slug": "minha-conta",
+ "title": "Minha conta – Nouvellando®",
+ "description": "[woocommerce_my_account]",
+ "og_title": "Minha conta",
+ "og_type": "article",
+ "og_image": "https://s0.wp.com/_si/",
+ "publicado": "2023-08-25T02:02:57+00:00",
+ "modificado": "2023-08-25T02:02:57+00:00",
+ "h1_tema": "Minha conta",
+ "blocos": [
+  {
+   "tipo": "text-editor",
+   "html": "<h1>Minha conta</h1> \n<p>[woocommerce_my_account]</p>"
+  }
+ ]
+}

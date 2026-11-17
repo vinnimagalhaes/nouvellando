@@ -1,0 +1,97 @@
+{
+ "url": "/echarpe-wheel-of-time/",
+ "slug": "echarpe-wheel-of-time",
+ "title": "Echarpe Wheel of Time – Nouvellando®",
+ "description": "Echarpe Wheel of Time Código 0407 Tamanho da peça: -Composição: 50% algodão / 50% acrílicoR$ 500,00 Clique aqui e compre pelo WhatsApp",
+ "og_title": "Echarpe Wheel of Time",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/12/echarpe-8-rotated.jpg",
+ "publicado": "2023-12-12T03:46:07+00:00",
+ "modificado": "2024-05-31T20:14:20+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-1-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-8-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-7-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-5-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-6-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/12/echarpe-3-rotated.jpg",
+         "alt": "Xale Wheel of Time + aula bônus Echarpe",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Echarpe Wheel of Time"
+        },
+        {
+         "tipo": "heading",
+         "tag": "p",
+         "texto": "Código 0407"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Tamanho da peça: <br/><strong>–</strong></p><p>Composição: <br/><strong>50% algodão / 50% acrílico</strong></p><p><strong>R$ 500,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e compre pelo WhatsApp",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "url": "/videoaula-xale-september/",
+ "slug": "videoaula-xale-september",
+ "title": "Videoaula Xale September – Nouvellando®",
+ "description": "Xale September O Xale September te leva a um universo aconchegante e elegante. Criado pela designer Irina Kortchagina, a peça vai te envolver nas cores e sensações mágicas do outono. Inspirado nos dourados campos de trigo, ele é um verdadeiro abraço de conforto e estilo.R$ 109,00 Clique aqui e aprenda a crocheta-lo Quer criar uma…",
+ "og_title": "Videoaula Xale September",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/11/Xale-September-4.jpg",
+ "publicado": "2023-11-12T18:04:35+00:00",
+ "modificado": "2026-01-20T23:25:04+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-39-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-8-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-september-29-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-10-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-9-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-September-1-rotated.jpg",
+         "alt": "Xale September",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale September"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O Xale September te leva a um universo aconchegante e elegante. Criado pela designer Irina Kortchagina, a peça vai te envolver nas cores e sensações mágicas do outono. Inspirado nos dourados campos de trigo, ele é um verdadeiro abraço de conforto e estilo.</p><p><strong>R$ 109,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-september/C85300414S?sck=HOTMART_SITE&search=b531c44d-b3aa-4f18-b42d-6b8e1351e367&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "divider"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "text-editor",
+                 "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale September</strong> e viva uma experiência completa.</p>"
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "image-carousel",
+                 "slides": [
+                  {
+                   "src": "/wp-content/uploads/2023/01/559.jpg",
+                   "alt": "Original 559 | 1100m+",
+                   "w": null,
+                   "h": null,
+                   "legenda": "Original 559 | 1100m+"
+                  }
+                 ],
+                 "por_tela": {
+                  "desktop": 1
+                 },
+                 "autoplay": 5000
+                }
+               ]
+              },
+              {
+               "tipo": "grupo",
+               "blocos": [
+                {
+                 "tipo": "button",
+                 "texto": "Compre pelo WhatsApp",
+                 "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

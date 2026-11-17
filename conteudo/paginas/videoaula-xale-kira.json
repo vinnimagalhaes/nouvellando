@@ -1,0 +1,159 @@
+{
+ "url": "/videoaula-xale-kira/",
+ "slug": "videoaula-xale-kira",
+ "title": "Videoaula Xale Kira – Nouvellando®",
+ "description": "Xale Kira O Xale Kira é pura elegância, delicadeza, modéstia e beleza.Uma estrutura versátil com possibilidades que te levam do elegante ao mais casual. Nesta videoaula, você aprenderá a crochetar esse xale encantador e delicado que foi criado pela designer polonesa Aleksandra Gryzik.R$ 75,00 Clique aqui e aprenda a crocheta-lo Quer criar uma peça exatamente…",
+ "og_title": "Videoaula Xale Kira",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2023/11/Xale-Kira-2-rotated.jpg",
+ "publicado": "2023-11-12T17:16:11+00:00",
+ "modificado": "2026-01-17T19:01:38+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira.jpeg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/11/Xale-Kira-8-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira-5-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira-1-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        },
+        {
+         "src": "/wp-content/uploads/2023/10/xale-kira-2-rotated.jpg",
+         "alt": "Xale Kira",
+         "w": null,
+         "h": null
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "tag": "h1",
+         "texto": "Xale Kira"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O Xale Kira é pura elegância, delicadeza, modéstia e beleza.</p><p>Uma estrutura versátil com possibilidades que te levam do elegante ao mais casual. Nesta videoaula, você aprenderá a crochetar esse xale encantador e delicado que foi criado pela designer polonesa Aleksandra Gryzik.</p><p><strong>R$ 75,00</strong></p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Clique aqui e aprenda a crocheta-lo",
+       "link": "https://hotmart.com/pt-br/marketplace/produtos/videoaula-xale-kira/A77382155W?sck=HOTMART_SITE&search=9c30b6c9-97d5-4eaf-92ed-46881f427075&hotfeature=33"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "grupo",
+           "blocos": [
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "divider"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "text-editor",
+               "html": "<h2>Quer criar uma peça exatamente como a da Videoaula?</h2><p>Adquira também o<strong> novelo utilizado na criação do Xale Kira</strong> e viva uma experiência completa.</p>"
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "image-carousel",
+               "slides": [
+                {
+                 "src": "/wp-content/uploads/2022/12/453n.jpg",
+                 "alt": "Original 453 | 1100m+",
+                 "w": null,
+                 "h": null,
+                 "legenda": "Original 453 | 1100m+"
+                }
+               ],
+               "por_tela": {
+                "desktop": 1
+               },
+               "autoplay": 5000
+              }
+             ]
+            },
+            {
+             "tipo": "grupo",
+             "blocos": [
+              {
+               "tipo": "button",
+               "texto": "Compre pelo WhatsApp",
+               "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

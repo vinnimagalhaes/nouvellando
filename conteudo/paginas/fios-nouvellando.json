@@ -1,0 +1,1124 @@
+{
+ "url": "/fios-nouvellando/",
+ "slug": "fios-nouvellando",
+ "title": "Fios Nouvellando® – Nouvellando®",
+ "description": "Fios Nouvellando® Conheça a pluralidade dos fios Nouvellando, que unidos à criatividade de uma artesã apaixonada, dão vida aos nossos diversos Novelos Artesanais com e sem degradê, prontos para serem transformados em peças únicas e autênticas. Original Fio padrão NouvellandoComposição: 50% algodão / 50% acrílico4 cabos TEX: 268Agulha 3mm a 4mm3 cabos TEX: 201Agulha 2,5mm a…",
+ "og_title": "Fios Nouvellando®",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2022/12/cropped-logo-nouvellando_page-0001-1.jpg",
+ "publicado": "2022-12-12T02:20:57+00:00",
+ "modificado": "2026-08-22T17:17:09+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "heading",
+     "tag": "h1",
+     "texto": "Fios Nouvellando®"
+    },
+    {
+     "tipo": "text-editor",
+     "html": "<p>Conheça a pluralidade dos fios Nouvellando, que unidos à criatividade de uma artesã apaixonada, dão vida aos nossos diversos Novelos Artesanais com e sem degradê, prontos para serem transformados em peças únicas e autênticas.</p>"
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Original"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/552u.jpg",
+        "alt": "",
+        "w": "298",
+        "h": "300"
+       },
+       "link": "/fio-original/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio padrão Nouvellando</p><p><strong>Composição:</strong> <br/>50% algodão / 50% acrílico</p><p><strong>4 cabos TEX</strong>: 268<br/>Agulha 3mm a 4mm</p><p><strong>3 cabos TEX</strong>: 201<br/>Agulha 2,5mm a 3,5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-original/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "oculto": [
+          "desktop"
+         ],
+         "tag": "h2",
+         "texto": "Twinkle"
+        },
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/403t.jpg",
+          "alt": "",
+          "w": "295",
+          "h": "300"
+         },
+         "link": "/fio-twinkle/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Fio metalizado embutido</p><p><strong>Composição</strong>: <br/>48% acrílico / 41% algodão /<br/>7% viscose / 2% poliamida / 2% poliéster</p><p><strong>4 cabos TEX</strong>: 243<br/>Agulha 3mm a 4mm</p>"
+        },
+        {
+         "tipo": "button",
+         "texto": "Catálogo completo",
+         "link": "/fio-twinkle/"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Stardust"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/391s.jpg",
+        "alt": "",
+        "w": "300",
+        "h": "300"
+       },
+       "link": "/fio-stardust/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio tipo poeira estelar</p><p><strong>Composição</strong>: <br/>59% acrílico / 37% algodão / 4% poliamida</p><p><strong>4 cabos TEX</strong>: 268<br/>Agulha 3,5mm a 4,5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-stardust/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Fluffinho"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/475f.jpg",
+        "alt": "",
+        "w": "294",
+        "h": "300"
+       },
+       "link": "/fio-fluffinho/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio extra fofinho</p><p><strong>Composição</strong>:<br/><strong>Fio 1</strong>: 50% acrílico / 50% algodão</p><p><strong>Fio 2</strong>: 53% viscose / 37% acrílico / 10% poliamida</p><p><strong>4 cabos TEX: </strong>368<strong><br/></strong>Agulha 5mm a 7mm</p><p><strong>3 cabos TEX: </strong>301<br/>Agulha 4,5mm a 6mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-fluffinho/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Peluche"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/07/Peluche.jpeg",
+        "alt": "",
+        "w": "300",
+        "h": "300"
+       },
+       "link": "/fio-peluche/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio fofo feito pelúcia</p><p><strong>Composição</strong>:<br/><strong>Fio 1:</strong> 50% acrílico / 50% algodão</p><p><strong>Fio 2:</strong>  31% acrílico / 31% viscose / 38% poliamida</p><p><strong>4 cabos TEX</strong>: 299<br/>Agulha 3mm a 4mm</p><p><strong>5 cabos TEX</strong>: 366<br/>Agulha 4mm a 5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-peluche/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Breezy"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/532y.jpg",
+        "alt": "",
+        "w": "300",
+        "h": "300"
+       },
+       "link": "/fio-breezy/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio leve ondulado</p><p><strong>Composição 3 cabos</strong>: 69% acrílico / 31% algodão</p><p><strong>Composição 4 cabos</strong>: 65% acrílico / 35% algodão</p><p><strong>3 cabos TEX</strong>: 217<br/>Agulha 3mm a 4mm</p><p><strong>4 cabos TEX</strong>: 284<br/>Agulha 3,5mm a 4,5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-breezy/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Paillettes"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/549p.jpg",
+        "alt": "",
+        "w": "300",
+        "h": "300"
+       },
+       "link": "/fio-paillettes/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio com lantejoulas</p><p><strong>Composição:<br/></strong><strong>Fio 1</strong>: 50% acrílico / 50% algodão</p><p><strong>Fio 2:</strong> 100% poliéster </p><p><strong>4 cabos TEX</strong>: 380<br/>Agulha 4,5mm a 6mm</p><p><strong>3 cabos TEX</strong>: 313<br/>Agulha 4mm a 5,5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-paillettes/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Konfetti"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/k.jpg",
+        "alt": "",
+        "w": "300",
+        "h": "287"
+       },
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio super colorido</p><p><strong>Composição</strong>: <br/>56% acrílico / 44% algodão</p><p><strong>4 cabos TEX</strong>: 231<br/>Agulha 2,5mm a 4mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte opções",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Bouclé"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/05/Fio-Boucle.jpeg",
+        "alt": "",
+        "w": "300",
+        "h": "294"
+       },
+       "link": "/fio-boucle/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio fino elegante</p><p><strong>Composição</strong>: <br/>60% acrílico / 38% algodão /<br/>2% poliamida</p><p><strong>4 cabos TEX</strong>: 280<br/>Agulha 4mm a 5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-boucle/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Aura"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/08/Fio-Aura.jpg",
+        "alt": "",
+        "w": "300",
+        "h": "294"
+       },
+       "link": "/fio-aura/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Fio 100% natural</strong>: 95% viscose / 5% linho</p><p><strong>4 cabos TEX</strong>: 236<br/>Agulha 3mm a 4mm</p><p><strong>5 cabos TEX</strong>: 295<br/>Agulha 3,5mm a 4,5mm</p><p><strong>6 cabos TEX</strong>: 354<br/>Agulha 4mm a 5mm</p><p><strong>Atenção:</strong> outras cores mudam a composição e o TEX a depender do fio adicional.</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Catálogo completo",
+       "link": "/fio-aura/"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Ice"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2024/07/Ice.jpeg",
+        "alt": "",
+        "w": "300",
+        "h": "300"
+       },
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Fio branco e off-white</p><p><strong>Composição</strong>:<br/><strong>Fio 1:</strong> 50% acrílico / 50% algodão</p><p><strong>Fio 2:</strong>  37% acrílico / 37% poliester / 26% poliamida</p><p><strong>3 cabos TEX</strong>: 302<br/>Agulha 4mm a 5mm</p><p><strong>4 cabos TEX</strong>: 369<br/>Agulha 4,5mm a 6mm</p><p><strong>5 cabos TEX</strong>: 436<br/>Agulha 5mm a 7mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte opções",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "desktop"
+       ],
+       "tag": "h2",
+       "texto": "Cor única"
+      },
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2023/11/Original-286.jpg",
+        "alt": "",
+        "w": "300",
+        "h": "292"
+       },
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Fio de uma cor só</strong></p><p>Dentre as centenas de cores degradê da Nouvellando, é possível escolher a sua preferida e fazer um novelo de cor única (sem degradê), com qualquer fio que você desejar. </p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte opções",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "desktop"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/552u.jpg",
+        "alt": "",
+        "w": "768",
+        "h": "772"
+       },
+       "link": "/fio-original/"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Original</p>"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "oculto": [
+          "tablet",
+          "mobile"
+         ],
+         "tag": "h2",
+         "texto": "Fio Original"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Com uma variedade inimaginável de cores, o fio Original surgiu da vontade de ter novelos degrade ilimitados para possibilitar a criação de peças únicas e exclusivas.</p>"
+        }
+       ]
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição:</strong> 50% algodão / 50% acrílico</p><p><strong>4 cabos TEX</strong>: 268<br/>Agulha 3mm a 4mm</p><p><strong>3 cabos TEX</strong>: 201<br/>Agulha 2,5mm a 3,5mm</p>"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/403t.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "815"
+         },
+         "link": "/fio-twinkle/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Twinkle</p>"
+        }
+       ]
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte as opções pelo WhatsApp",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Twinkle"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Com adição de um fio metalizado embutido, o Twinkle é um dos mais queridinhos por ser um fio brilhante e cheio de vida!</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição</strong>: 48% acrílico / 41% algodão /<br/>7% viscose / 2% poliamida / 2% poliéster</p><p><strong>4 cabos TEX</strong>: 243<br/>Agulha 3mm a 4mm</p>"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/391s.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "800"
+         },
+         "link": "/fio-stardust/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Stardust</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Stardust"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Como o próprio nome já diz, o fio Stardust tem um fio adicional que se assemelha à poeira estelar, carregando um brilho sutil entre suas cores fortes.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição</strong>: 59% acrílico / 37% algodão / 4% poliamida</p><p><strong>4 cabos TEX</strong>: 268<br/>Agulha 3,5mm a 4,5mm</p>"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/475f.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "817"
+         },
+         "link": "/fio-fluffinho/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Fluffinho</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "grupo",
+         "blocos": [
+          {
+           "tipo": "heading",
+           "oculto": [
+            "tablet",
+            "mobile"
+           ],
+           "tag": "h2",
+           "texto": "Fio Fluffinho"
+          },
+          {
+           "tipo": "text-editor",
+           "html": "<p>O nosso fio fofinho! É um fio aconchegante, com opções em degrade e cores únicas, que são os mais pedidos da categoria.</p>"
+          },
+          {
+           "tipo": "text-editor",
+           "html": "<p><strong>Composição</strong>:</p><p><strong>Fio 1</strong>: 50% acrílico / 50% algodão</p><p><strong>Fio 2</strong>: 53% viscose / 37% acrílico / 10% poliamida</p><p><strong>4 cabos TEX: </strong>368<strong><br/></strong>Agulha 5mm a 7mm</p><p><strong>3 cabos TEX: </strong>301<br/>Agulha 4,5mm a 6mm</p>"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2024/07/Peluche.jpeg",
+          "alt": "",
+          "w": "800",
+          "h": "800"
+         },
+         "link": "/fio-peluche/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no fio Peluche</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Peluche"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Nosso mais atual fio fofinho, o Peluche. Muito parecido com o Fluffinho, as diferenças se encontram na composição e variedade de cores.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição</strong>:</p><p><strong>Fio 1:</strong> 50% acrílico / 50% algodão</p><p><strong>Fio 2:</strong>  31% acrílico / 31% viscose / 38% poliamida</p><p><strong>4 cabos TEX</strong>: 299<br/>Agulha 3mm a 4mm</p><p><strong>5 cabos TEX</strong>: 366<br/>Agulha 4mm a 5mm</p>"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/532y.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "802"
+         },
+         "link": "/fio-breezy/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Breezy</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Breezy"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O fio Breezy é feito com 3 ou 4 cabos que trazem ondulações em sua composição, remetendo às ondas do mar, por isso tem cores vivas e de verão.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição 3 cabos</strong>: 69% acrílico / 31% algodão</p><p><strong>Composição 4 cabos</strong>: 65% acrílico / 35% algodão</p><p><strong>3 cabos TEX</strong>: 217<br/>Agulha 3mm a 4mm</p><p><strong>4 cabos TEX</strong>: 284 <br/>Agulha 3,5mm a 4,5mm</p>"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/549p.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "800"
+         },
+         "link": "/fio-paillettes/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Paillettes</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Paillettes"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Com tantas lantejoulas, o nosso fio Paillettes é sofisticado, elegante e cheio de glamour!</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição:</strong></p><p><strong>Fio 1</strong>: 50% acrílico / 50% algodão</p><p><strong>Fio 2:</strong> 100% poliéster </p><p><strong>4 cabos TEX</strong>: 380<br/>Agulha 4,5mm a 6mm</p><p><strong>3 cabos TEX</strong>: 313<br/>Agulha 4mm a 5,5mm</p>"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2026/03/Boucle.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "800"
+         },
+         "link": "/fio-boucle/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Era pra ser passageiro, mas ele veio para ficar!</p><p>Clique no novelo para conferir todas as cores disponíveis no Fio Bouclé</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Bouclé"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O fio Bouclé traz uma textura diferenciada e um ar de elegância e particularidade, sem comprometer a leveza e vivacidade do fio.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição</strong>: 60% acrílico / 38% algodão /<br/>2% poliamida</p><p><strong>4 cabos TEX</strong>: 280<br/>Agulha 4mm a 5mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte as opções pelo WhatsApp",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2026/08/Fio-Aura.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "784"
+         },
+         "link": "/fio-aura/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis no Fio Aura</p><p>*Cor 100% natural; A002</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Aura"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O primeiro fio 100% natural da Nouvellando.<br/> Aura é a expressão máxima da suavidade: um fio incrivelmente macio, elegante e delicado ao toque.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição 100% natural</strong>: 95% viscose / 5% linho</p><p><strong>4 cabos TEX</strong>: 236<br/>Agulha 3mm a 4mm</p><p><strong>5 cabos TEX</strong>: 295<br/>Agulha 3,5mm a 4,5mm</p><p><strong>6 cabos TEX</strong>: 354<br/>Agulha 4mm a 5mm</p><p><strong>Atenção:</strong> outras cores mudam a composição e o TEX a depender do fio adicional.</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte as opções pelo WhatsApp",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2022/12/k.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "765"
+         },
+         "link": "https://www.instagram.com/novelos.pronta.entrega/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis à pronta-entrega* ou consulte as opções pelo Whatsapp</p><p>*Novelos Konfetti disponíveis somente à pronta-entrega ou sob consulta</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Konfetti"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>O nosso fio mais alegre! Trazendo diversas cores na sua composição, não tem quem não fique contente com uma peça confeccionada com ele.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição</strong>: 56% acrílico / 44% algodão</p><p><strong>4 cabos TEX</strong>: 231<br/>Agulha 2,5mm a 4mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte as opções pelo WhatsApp",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2024/07/Ice.jpeg",
+          "alt": "",
+          "w": "800",
+          "h": "800"
+         },
+         "link": "https://www.instagram.com/novelos.pronta.entrega/"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Clique no novelo para conferir todas as cores disponíveis à pronta-entrega* ou consulte as opções pelo Whatsapp</p><p>*Novelos ICE disponíveis somente à pronta-entrega ou sob consulta</p>"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "oculto": [
+        "tablet",
+        "mobile"
+       ],
+       "tag": "h2",
+       "texto": "Fio Ice"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Nas cores branco e off white, o fio ICE transmite alegria e cai super bem em mantas de bebê e na confecção de diversos tipos de blusas.</p>"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p><strong>Composição</strong>:</p><p><strong>Fio 1:</strong> 50% acrílico / 50% algodão</p><p><strong>Fio 2:</strong>  37% acrílico / 37% poliester / 26% poliamida</p><p><strong>3 cabos TEX</strong>: 302<br/>Agulha 4mm a 5mm</p><p><strong>4 cabos TEX</strong>: 369<br/>Agulha 4,5mm a 6mm</p><p><strong>5 cabos TEX</strong>: 436<br/>Agulha 5mm a 7mm</p>"
+      },
+      {
+       "tipo": "button",
+       "texto": "Consulte as opções pelo WhatsApp",
+       "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "image",
+         "img": {
+          "src": "/wp-content/uploads/2023/11/Original-286.jpg",
+          "alt": "",
+          "w": "800",
+          "h": "777"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "grupo",
+       "blocos": [
+        {
+         "tipo": "heading",
+         "oculto": [
+          "tablet",
+          "mobile"
+         ],
+         "tag": "h2",
+         "texto": "Fio Cor Única"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p>Dentre as centenas de cores degradê da Nouvellando, é possível escolher a sua preferida e fazer um novelo de cor única (sem degradê), com qualquer fio que você desejar. </p>"
+        },
+        {
+         "tipo": "text-editor",
+         "html": "<p><b>Basta acessar o catálogo do fio escolhido, definir a sua cor favorita e solicitar pelo WhatsApp.</b></p>"
+        },
+        {
+         "tipo": "button",
+         "texto": "Peça seu Novelo de Cor Única",
+         "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "oculto": [
+    "tablet",
+    "mobile"
+   ]
+  }
+ ]
+}

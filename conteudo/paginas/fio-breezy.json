@@ -1,0 +1,1034 @@
+{
+ "url": "/fio-breezy/",
+ "slug": "fio-breezy",
+ "title": "Fio Breezy – Nouvellando®",
+ "description": "Breezy 803Y | 500m+ (sem degradê) Breezy 802Y | 500m+ (sem degradê) Breezy 764Y | 500m+ (sem degradê) Breezy 705Y | 600m+Breezy 705UY | 600m+ Breezy 704Y | 500m+ | (sem degradê) Breezy 703Y | 500m+ | (sem degradê) Breezy 702Y | 600m+Breezy 702UY | 600m+ Breezy 701Y | 500m+ | (sem degradê) Breezy 691Y…",
+ "og_title": "Fio Breezy",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2026/08/BreezY-803Y-1015x1024.jpg",
+ "publicado": "2023-05-22T22:18:38+00:00",
+ "modificado": "2026-08-22T20:27:23+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/BreezY-803Y.jpg",
+         "alt": "Breezy 803Y | 500m+ (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/breezy-803y/",
+         "legenda": "Breezy 803Y | 500m+ (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/08/BreezY-802Y.jpg",
+         "alt": "Breezy 802Y | 500m+ (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/breezy-802y/",
+         "legenda": "Breezy 802Y | 500m+ (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2026/03/Breezy-764.jpg",
+         "alt": "Breezy 764Y | 500m+ (sem degradê)",
+         "w": null,
+         "h": null,
+         "link": "/breezy-764y/",
+         "legenda": "Breezy 764Y | 500m+ (sem degradê)"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-705.jpg",
+         "alt": "Breezy 705Y | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-705y-705uy/",
+         "legenda": "Breezy 705Y | 600m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-705U.jpg",
+         "alt": "Breezy 705UY | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-705y-705uy/",
+         "legenda": "Breezy 705UY | 600m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/05/BreezY-704.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/breezy-704y/",
+       "legenda": "Breezy 704Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/05/BreezY-703.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/breezy-703y/",
+       "legenda": "Breezy 703Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-702.jpg",
+         "alt": "Breezy 702Y | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-702y-702uy/",
+         "legenda": "Breezy 702Y | 600m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-702U.jpg",
+         "alt": "Breezy 702UY | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-702y-702uy/",
+         "legenda": "Breezy 702UY | 600m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/05/BreezY-701.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "795"
+       },
+       "link": "/breezy-701-y/",
+       "legenda": "Breezy 701Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-691.jpg",
+         "alt": "Breezy 691Y | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-691y-691uy-691vy-691vuy/",
+         "legenda": "Breezy 691Y | 600m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-691U.jpg",
+         "alt": "Breezy 691UY | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-691y-691uy-691vy-691vuy/",
+         "legenda": "Breezy 691UY | 600m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-691V.jpg",
+         "alt": "Breezy 691VY | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-691y-691uy-691vy-691vuy/",
+         "legenda": "Breezy 691VY | 600m+"
+        },
+        {
+         "src": "/wp-content/uploads/2025/05/BreezY-691VU.jpg",
+         "alt": "Breezy 691VUY | 600m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-691y-691uy-691vy-691vuy/",
+         "legenda": "Breezy 691VUY | 600m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/03/Breezy-533.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/breezy-533y/",
+       "legenda": "Breezy 533Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/532yn.jpg",
+         "alt": "Breezy 532Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-532y-532uy/",
+         "legenda": "Breezy 532Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/532uyn.jpg",
+         "alt": "Breezy 532UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-532y-532uy/",
+         "legenda": "Breezy 532UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/531yn.jpg",
+         "alt": "Breezy 531Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-531y-531uy/",
+         "legenda": "Breezy 531Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/531uyn.jpg",
+         "alt": "Breezy 531UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-531y-531uy/",
+         "legenda": "Breezy 531UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/03/Breezy-530.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "820"
+       },
+       "link": "/breezy-530y/",
+       "legenda": "Breezy 530Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/527yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "826"
+       },
+       "link": "/breezy-527y/",
+       "legenda": "Breezy 527Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/526yn.jpg",
+         "alt": "Breezy 526Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-526y-526uy/",
+         "legenda": "Breezy 526Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/526uyn.jpg",
+         "alt": "Breezy 526UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-526y-526uy/",
+         "legenda": "Breezy 526UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/525yn.jpg",
+         "alt": "Breezy 525Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-525y-525uy/",
+         "legenda": "Breezy 525Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/525uyn.jpg",
+         "alt": "Breezy 525UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-525y-525uy/",
+         "legenda": "Breezy 525UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/524yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "805"
+       },
+       "link": "/breezy-524y/",
+       "legenda": "Breezy 524Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/522yn.jpg",
+         "alt": "Breezy 522Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-522y-522uy/",
+         "legenda": "Breezy 522Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/522uyn.jpg",
+         "alt": "Breezy 522UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-522y-522uy/",
+         "legenda": "Breezy 522UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/521yn.jpg",
+         "alt": "Breezy 521Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-521y-521uy/",
+         "legenda": "Breezy 521Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/521uyn.jpg",
+         "alt": "Breezy 521UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-521y-521uy/",
+         "legenda": "Breezy 521UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/520yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "800"
+       },
+       "link": "/breezy-520y/",
+       "legenda": "Breezy 520Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/518yn.jpg",
+         "alt": "Breezy 518Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-518y-518uy/",
+         "legenda": "Breezy 518Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/518uyn.jpg",
+         "alt": "Breezy 518UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-518y-518uy/",
+         "legenda": "Breezy 518UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/517yn.jpg",
+         "alt": "Breezy 517Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-517y-517uy/",
+         "legenda": "Breezy 517Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/517uyn.jpg",
+         "alt": "Breezy 517UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-517y-517uy/",
+         "legenda": "Breezy 517UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/516yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "826"
+       },
+       "link": "/breezy-516y/",
+       "legenda": "Breezy 516Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/515yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "778"
+       },
+       "link": "/breezy-515y/",
+       "legenda": "Breezy 515Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/514yn.jpg",
+         "alt": "Breezy 514Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-514y-514uy/",
+         "legenda": "Breezy 514Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/514uyn.jpg",
+         "alt": "Breezy 514UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-514y-514uy/",
+         "legenda": "Breezy 514UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/513yn.jpg",
+         "alt": "Breezy 513Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-513y-513uy/",
+         "legenda": "Breezy 513Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/513yun.jpg",
+         "alt": "Breezy 513UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-513y-513uy/",
+         "legenda": "Breezy 513UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/512yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "755"
+       },
+       "link": "/breezy-512y/",
+       "legenda": "Breezy 512Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/506yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "777"
+       },
+       "link": "/breezy-506y/",
+       "legenda": "Breezy 506Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/505yn.jpg",
+         "alt": "Breezy 505Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-505y-505uy/",
+         "legenda": "Breezy 505Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/505uyn.jpg",
+         "alt": "Breezy 505UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-505y-505uy/",
+         "legenda": "Breezy 505UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/504yn.jpg",
+         "alt": "Breezy 504Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-504y-504uy/",
+         "legenda": "Breezy 504Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/504uyn.jpg",
+         "alt": "Breezy 504UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-504y-504uy/",
+         "legenda": "Breezy 504UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/503yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "791"
+       },
+       "link": "/breezy-503y/",
+       "legenda": "Breezy 503Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/500yn.jpg",
+         "alt": "Breezy 500Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-500y-500uy/",
+         "legenda": "Breezy 500Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/500uyn.jpg",
+         "alt": "Breezy 500UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-500y-500uy/",
+         "legenda": "Breezy 500UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/499yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "798"
+       },
+       "link": "/breezy-499y/",
+       "legenda": "Breezy 499Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/498yn.jpg",
+         "alt": "Breezy 498Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-498y-498uy/",
+         "legenda": "Breezy 498Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/498uyn.jpg",
+         "alt": "Breezy 498UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-498y-498uy/",
+         "legenda": "Breezy 498UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/03/497-Breezy.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "830"
+       },
+       "link": "/breezy-497y/",
+       "legenda": "Breezy 497Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/496yn.jpg",
+         "alt": "Breezy 496Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-496y-496uy/",
+         "legenda": "Breezy 496Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/496uny.jpg",
+         "alt": "Breezy 496UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-496y-496uy/",
+         "legenda": "Breezy 496UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2026/03/495-Breezy.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "783"
+       },
+       "link": "/breezy-495y/",
+       "legenda": "Breezy 495Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/492yn.jpg",
+         "alt": "Breezy 492Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-492y-492uy/",
+         "legenda": "Breezy 492Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/492uyn.jpg",
+         "alt": "Breezy 492UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-492y-492uy/",
+         "legenda": "Breezy 492UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/491yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "797"
+       },
+       "link": "/breezy-491y/",
+       "legenda": "Breezy 491Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/490yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "821"
+       },
+       "link": "/breezy-490y/",
+       "legenda": "Breezy 490Y | 500m+ | (sem degradê)"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/489yn.jpg",
+         "alt": "Breezy 489Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-489y-489-uy/",
+         "legenda": "Breezy 489Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/489uyn.jpg",
+         "alt": "Breezy 489UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-489y-489-uy/",
+         "legenda": "Breezy 489UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/488yn.jpg",
+         "alt": "Breezy 488Y | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-488y-488uy/",
+         "legenda": "Breezy 488Y | 800m+"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/488uyn.jpg",
+         "alt": "Breezy 488UY | 800m+",
+         "w": null,
+         "h": null,
+         "link": "/breezy-488y-488uy/",
+         "legenda": "Breezy 488UY | 800m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2022/12/487yn.jpg",
+        "alt": "",
+        "w": "800",
+        "h": "778"
+       },
+       "link": "/breezy-487y/",
+       "legenda": "Breezy 487Y | 500m+ | (sem degradê)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "url": "/fio-ice/",
+ "slug": "fio-ice",
+ "title": "Fio Ice – Nouvellando®",
+ "description": "Fio Ice Na coleção do fio Ice você encontra cores de novelos em branco e off white. Consulte as opções disponíveis pelo WhatsApp ou no catálogo à pronta-entrega da Nouvellando. Composição: Fio 1: 50% acrílico / 50% algodão | Fio 2: 37% acrílico / 37% poliester / 26% poliamida3 cabos TEX: 302 - Agulha 4mm…",
+ "og_title": "Fio Ice",
+ "og_type": "article",
+ "og_image": "/wp-content/uploads/2024/07/Ice-300x300.jpeg",
+ "publicado": "2024-10-26T19:14:00+00:00",
+ "modificado": "2026-06-20T17:47:42+00:00",
+ "blocos": [
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "heading",
+       "tag": "h1",
+       "texto": "Fio Ice"
+      },
+      {
+       "tipo": "text-editor",
+       "html": "<p>Na coleção do fio Ice você encontra cores de novelos em branco e off white. Consulte as opções disponíveis pelo WhatsApp ou no <a href=\"https://www.instagram.com/novelos.pronta.entrega/\" target=\"_blank\">catálogo à pronta-entrega da Nouvellando</a>.</p>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grupo",
+   "blocos": [
+    {
+     "tipo": "image",
+     "img": {
+      "src": "/wp-content/uploads/2024/07/Ice.jpeg",
+      "alt": "",
+      "w": "300",
+      "h": "300"
+     },
+     "legenda": ""
+    },
+    {
+     "tipo": "text-editor",
+     "html": "<p><strong>Composição: </strong><strong>Fio 1:</strong> 50% acrílico / 50% algodão | <strong>Fio 2:</strong> 37% acrílico / 37% poliester / 26% poliamida</p><p><strong>3 cabos TEX: 302 – </strong>Agulha 4mm a 5mm</p><p><strong>4 cabos TEX: 369 – </strong>Agulha 4,5mm a 6mm</p><p><strong>5 cabos TEX: 436 – </strong>Agulha 5mm a 7mm</p>"
+    },
+    {
+     "tipo": "button",
+     "texto": "Consulte as opções do fio Ice",
+     "link": "https://api.whatsapp.com/send?phone=%2B5516988081463&fbclid=IwAR23f8ntf8VNrXOmmZ9Hvcic2N1mTVdTx691c1LtnBwdqvNQlZN7seqZjLE"
+    }
+   ]
+  }
+ ]
+}
