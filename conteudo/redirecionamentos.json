@@ -5,5 +5,12 @@
  "/paillettes-556p/": "/fio-paillettes/",
  "/paillettes-538p/": "/fio-paillettes/",
  "/paillettes-351p/": "/fio-paillettes/",
- "/paillettes-190p/": "/fio-paillettes/"
+ "/paillettes-190p/": "/fio-paillettes/",
+ "_sobre_links_quebrados": "Links do conteúdo que já davam erro no site atual (a página nunca existiu): levam para a cor mais próxima ou para a linha.",
+ "/original-339v-339uv/": "/original-339-339u/",
+ "/fluffinho-396f/": "/fio-fluffinho/",
+ "/paillettes-546p/": "/fio-paillettes/",
+ "_sobre_sistema": "Páginas de sistema do WordPress (WooCommerce), vazias no site novo.",
+ "/loja/": "/fios-nouvellando/",
+ "/minha-conta/": "/"
 }

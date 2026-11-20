@@ -46,7 +46,9 @@
 
 /* ---------- Títulos e texto ---------- */
 .titulo{color:var(--color-ink)}
-h1.titulo{font-size:var(--text-2xl)}
+h1.titulo,p.titulo--h1{font-size:var(--text-2xl)}
+/* Subtítulo que era um segundo H1 (cada página tem um H1 só): mesma aparência */
+p.titulo--h1{font-family:var(--font-display);font-weight:var(--weight-semibold);line-height:var(--leading-tight);letter-spacing:var(--tracking-tight)}
 h2.titulo{font-size:clamp(1.6rem,3vw,2.2rem)}
 h3.titulo{font-size:var(--text-lg)}
 h4.titulo,h5.titulo,h6.titulo{font-size:var(--text-md)}
@@ -108,7 +110,7 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 .pg-home .secao:nth-child(-n+2){padding:var(--space-6) 0 0;background:none}
 .pg-home .secao--3{text-align:center;padding:var(--space-12) 0 var(--space-4);background:none}
 .pg-home .secao--3 h1.titulo{font-size:var(--text-display)}
-.pg-home .secao--3 h1.titulo+h1.titulo{font-size:var(--text-xl);font-style:italic;font-weight:var(--weight-regular);color:var(--color-brand);margin-top:var(--space-2)}
+.pg-home .secao--3 h1.titulo+.titulo--h1{font-size:var(--text-xl);font-style:italic;font-weight:var(--weight-regular);color:var(--color-brand);margin-top:var(--space-2)}
 .pg-home .secao--4{background:none}
 .pg-home .secao--4 .texto{font-size:var(--text-md)}
 .pg-home .secao--5{background:var(--color-dark)}

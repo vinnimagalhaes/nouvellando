@@ -47,6 +47,13 @@ Também mantidos iguais ao site atual: título da aba (`<title>`), meta descript
 
 Abra o JSON da página em `conteudo/paginas/` (o nome é o endereço antigo, ex.: `fio-original.json`, `original-805-805u.json`), altere o texto e rode `python3 ferramentas/gerar.py`.
 
+## SEO
+
+- Cada página tem **um H1 só** (o `gerar.py` transforma os H1 extras em parágrafo com a mesma aparência).
+- **Descrição** (texto que aparece no Google): escrita à mão em `conteudo/seo.json` para as páginas principais (dá para trocar também o título da aba ali). As demais são montadas automaticamente: produtos com nome, cabos e preço; linhas de fio com número de cores e preço.
+- Fotos sem texto alternativo usam a legenda (nome da cor).
+- Links que nunca existiram e páginas de sistema do WordPress (`/loja/`, `/minha-conta/`) estão em `conteudo/redirecionamentos.json`.
+
 ## Publicar
 
 O GitHub Actions (`.github/workflows/publicar.yml`) gera o site e publica no GitHub Pages a cada push na `main`.

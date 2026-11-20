@@ -1,0 +1,22 @@
+{
+ "_sobre": "Título (aba do navegador e Google) e descrição (texto embaixo do título no Google) escritos à mão. Páginas que não estão aqui ganham uma descrição montada automaticamente pelo gerar.py (produtos: nome, cabos e preço; linhas de fio: número de cores e preço). Ideal: descrição com até 158 caracteres.",
+ "/": {
+  "title": "Nouvellando® | Novelos artesanais degradê by Claudia Gerth",
+  "description": "Novelos artesanais degradê feitos à mão por Claudia Gerth: mais de 600 cores em fios Original, Twinkle, Peluche e outros. Escolha a sua e peça pelo WhatsApp."
+ },
+ "/cursos/": {
+  "description": "Videoaulas de xales, echarpes e mantas com Claudia Gerth: aprenda passo a passo, no seu ritmo, e crie peças lindas com os novelos degradê Nouvellando."
+ },
+ "/fios-nouvellando/": {
+  "description": "Conheça os fios Nouvellando: Original, Twinkle, Stardust, Fluffinho, Peluche, Breezy, Paillettes, Bouclé, Ice e Aura. Compare as linhas e escolha o seu."
+ },
+ "/novelos-sem-degrade/": {
+  "description": "Novelos artesanais sem degradê, em uma cor só, feitos à mão por Claudia Gerth nos fios Original, Twinkle, Stardust, Fluffinho, Breezy e Paillettes."
+ },
+ "/echarpe-wheel-of-time/": {
+  "description": "Echarpe Wheel of Time, peça pronta feita à mão com fio 50% algodão e 50% acrílico, por R$ 500,00. Compre pelo WhatsApp."
+ },
+ "/sobre-a-nouvellando/": {
+  "description": "A história da Nouvellando e de Claudia Gerth, pioneira em novelos artesanais degradê no Brasil e dona da maior coleção de fios feitos à mão."
+ }
+}

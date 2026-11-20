@@ -35,6 +35,12 @@ FOTOS = json.loads(_fotos.read_text(encoding="utf-8")) if _fotos.exists() else {
 FAVICON = "/wp-content/uploads/2022/12/cropped-logo-nouvellando_page-0001-1.jpg"
 FOTOS_FALTANDO = set()
 
+# Títulos e descrições escritos à mão para as páginas principais (o resto é montado
+# automaticamente em descricao()). Chave: endereço da página.
+_seo = CONTEUDO / "seo.json"
+SEO = {k: v for k, v in json.loads(_seo.read_text(encoding="utf-8")).items()
+       if k.startswith("/")} if _seo.exists() else {}
+
 # Prefixo do endereço antigo do produto -> página da linha
 PREFIXOS = {
     "original": "fio-original", "twinkle": "fio-twinkle", "stardust": "fio-stardust",
@@ -172,7 +178,9 @@ def img_tag(img, largura=600, classe="", lazy=True, ctx=None, sizes=None):
     if not img or not img.get("src"):
         return ""
     src = img["src"]
-    attrs = f'src="{esc(img_url(src, largura))}" alt="{esc(img.get("alt", ""))}"'
+    # Sem texto alternativo no conteúdo: usa a legenda da foto (ex.: "Original 805 | 1200m+")
+    alt = img.get("alt") or (img.get("legenda") or "").split("|")[0].strip()
+    attrs = f'src="{esc(img_url(src, largura))}" alt="{esc(alt)}"'
     if src.startswith("/wp-content/") and not foto_local(src):
         attrs += f' srcset="{esc(img_url(src, largura // 2))} {largura // 2}w, {esc(img_url(src, largura))} {largura}w, {esc(img_url(src, largura * 2))} {largura * 2}w"'
         attrs += f' sizes="{sizes or f"(max-width: 600px) 100vw, {largura}px"}"'
@@ -301,7 +309,7 @@ def r_bloco(b, ctx, opcoes=None):
     if t in ("text-editor", "html"):
         return f'<div class="{junta("texto", oc)}">{ajusta_html(b.get("html", ""), ctx)}</div>'
     if t == "image":
-        fig = img_tag(b.get("img"), 700)
+        fig = img_tag({**(b.get("img") or {}), "legenda": b.get("legenda", "")} if b.get("img") else None, 700)
         if b.get("link"):
             fig = f'<a{a_attrs(b["link"], ctx)}>{fig}</a>'
         cap = f'<figcaption>{esc(b["legenda"])}</figcaption>' if b.get("legenda") else ""
@@ -346,7 +354,7 @@ def r_bloco(b, ctx, opcoes=None):
             lis.append(f"<li>{txt}</li>")
         return f'<ul class="{junta("lista", oc)}">{"".join(lis)}</ul>'
     if t == "image-box":
-        fig = img_tag(b.get("img"), 500)
+        fig = img_tag({**(b.get("img") or {}), "legenda": b.get("titulo", "")} if b.get("img") else None, 500)
         tag = b.get("titulo_tag", "h3")
         tit = f'<{tag} class="titulo">{esc(b["titulo"])}</{tag}>' if b.get("titulo") else ""
         return f'<div class="{junta("caixa-img", oc)}">{fig}{tit}<div class="texto">{ajusta_html(b.get("descricao", ""), ctx)}</div></div>'
@@ -575,6 +583,73 @@ def nome_pagina(p):
     return html.unescape(t)
 
 
+# ---------------------------------------------------------------- SEO
+
+def corta(texto, limite=158):
+    """Texto em uma linha, com no máximo `limite` caracteres, cortado em palavra inteira."""
+    t = re.sub(r"\s+", " ", texto).strip()
+    if len(t) <= limite:
+        return t
+    t = t[:limite - 1].rsplit(" ", 1)[0].rstrip(" ,.;:–-")
+    return t + "…"
+
+
+def descricao(p, ctx, tipo):
+    """Meta description: a de conteudo/seo.json, ou montada com os dados da página."""
+    sob = SEO.get(ctx.caminho) or SEO.get(p["url"]) or {}
+    if sob.get("description"):
+        return sob["description"]
+    if tipo == "produto" and PRODUTOS.get(ctx.caminho):
+        d = PRODUTOS[ctx.caminho]
+        texto = (d["nome"] + " " + " ".join(c["legenda"] for c in d["cores"])).lower()
+        nome = re.sub(r"\s*\(sem degradê\)", "", d["nome"], flags=re.I).strip()
+        estilo = "sem degradê" if "sem degrad" in texto else "degradê"
+        cabos = sorted({v["cabos"].split()[0] for v in d["variacoes"] if v["cabos"]})
+        partes = [f"Novelo {nome}, artesanal {estilo} e feito à mão por Claudia Gerth."]
+        lista = ", ".join(cabos[:-1]) + " ou " + cabos[-1] if len(cabos) > 1 else "".join(cabos)
+        detalhe = (lista + " cabos") if cabos else ""
+        if d["preco_min"] is not None:
+            detalhe = (detalhe + ", a partir de " if detalhe else "A partir de ") + reais(d["preco_min"])
+        if detalhe:
+            partes.append(detalhe[0].upper() + detalhe[1:] + ".")
+        partes.append("Escolha a metragem e peça pelo WhatsApp.")
+        return corta(" ".join(partes))
+    if tipo == "categoria":
+        sub = SITE["menu"][1]["submenu"]
+        nome = next((m["texto"] for m in sub if m["link"] == p["url"]), nome_pagina(p))
+        prods = produtos_da_pagina(p, ctx)
+        if prods:
+            precos = [d["preco_min"] for d in prods if d["preco_min"] is not None]
+            estilo = "sem degradê" if "sem degrad" in nome.lower() else "degradê"
+            preco = f", a partir de {reais(min(precos))}" if precos else ""
+            n = len(prods)
+            return corta(f"{nome}: novelos artesanais {estilo} feitos à mão por Claudia Gerth. "
+                         f"{n} {'cor' if n == 1 else 'cores'}{preco}. Escolha a sua e peça pelo WhatsApp.")
+    # Demais páginas: o texto do site atual, sem o título repetido no começo e sem palavras grudadas
+    base = html.unescape(p.get("description", ""))
+    nome = nome_pagina(p)
+    for repetido in (nome, re.sub(r"^Videoaula\s+", "", nome)):
+        if base.startswith(repetido):
+            base = base[len(repetido):]
+            break
+    base = re.sub(r"([a-zà-ú\.!?])([A-ZÀ-Ú])", r"\1 \2", base).replace("Whats App", "WhatsApp")
+    return corta(base)
+
+
+def um_h1(corpo):
+    """Deixa só o primeiro <h1> da página; os outros viram <p> com a mesma aparência."""
+    n = 0
+
+    def troca(m):
+        nonlocal n
+        n += 1
+        if n == 1:
+            return m.group(0)
+        return f"<p{m.group(1)}>{m.group(2)}</p>"
+
+    return re.sub(r"<h1(\b[^>]*)>(.*?)</h1>", troca, corpo, flags=re.S)
+
+
 def migalhas(itens, ctx):
     partes = []
     for i, (nome, link) in enumerate(itens):
@@ -794,7 +869,8 @@ def corpo_fios(p, ctx):
         for f in fios)
     secoes = []
     for i, f in enumerate(fios):
-        foto = img_tag(f["img"], 800, sizes="(max-width: 900px) 100vw, 480px")
+        img_fio = {**f["img"], "alt": f["img"].get("alt") or f["nome"]} if f["img"] else None
+        foto = img_tag(img_fio, 800, sizes="(max-width: 900px) 100vw, 480px")
         if f["link"]:
             foto = f'<a class="fio__foto"{a_attrs(f["link"], ctx)}>{foto}</a>'
         else:
@@ -856,7 +932,8 @@ def topo_categoria(p, ctx, primeira):
     pill = ""
     if prods:
         pill = f'<span class="pill">{len(prods)} {"cor" if len(prods) == 1 else "cores"}' + (f" · a partir de {reais(min(precos))}" if precos else "") + "</span>"
-    titulo = primeira or f'<p class="cat-hero__nome">{esc(nome)}</p>'
+    # Sem título no conteúdo: o nome da linha vira o H1 da página (antes era um <p>)
+    titulo = primeira or f'<h1 class="cat-hero__nome">{esc(nome)}</h1>'
     chips = "".join(
         f'<a class="chip{" on" if m["link"] == p["url"] else ""}" href="{esc(ctx.rel(m["link"]))}">{esc(m["texto"].replace("Fio ", ""))}</a>'
         for m in sub)
@@ -1028,14 +1105,18 @@ def rodape(ctx):
 
 def documento(p, ctx, corpo, tipo, trilha, canonica):
     robots = "" if PRODUCAO else '<meta name="robots" content="noindex, nofollow">\n'
+    sob = SEO.get(ctx.caminho) or SEO.get(p["url"]) or {}
+    titulo = sob.get("title") or p["title"]
+    desc = descricao(p, ctx, tipo) if tipo != "404" else ""
+    corpo = um_h1(corpo)
     og_img = p.get("og_image") or ""
     og_img = foto_local(og_img) or og_img
     if og_img.startswith("/"):
         og_img = DOMINIO + og_img
     og = (f'<meta property="og:type" content="{esc(p.get("og_type") or "website")}">\n'
-          f'<meta property="og:title" content="{esc(p.get("og_title") or p["title"])}">\n'
+          f'<meta property="og:title" content="{esc(sob.get("title") or p.get("og_title") or p["title"])}">\n'
           f'<meta property="og:url" content="{esc(canonica)}">\n'
-          f'<meta property="og:description" content="{esc(p.get("description", ""))}">\n'
+          f'<meta property="og:description" content="{esc(desc)}">\n'
           f'<meta property="og:site_name" content="{esc(SITE["nome"])}">\n'
           f'<meta property="og:locale" content="pt_BR">\n')
     if og_img and "flaticon" not in og_img and "gstatic" not in og_img:
@@ -1045,8 +1126,8 @@ def documento(p, ctx, corpo, tipo, trilha, canonica):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{robots}<title>{esc(p['title'])}</title>
-<meta name="description" content="{esc(p.get('description', ''))}">
+{robots}<title>{esc(titulo)}</title>
+<meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{esc(canonica)}">
 {og}<link rel="icon" href="{esc(img_url(FAVICON, 32))}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1143,6 +1224,8 @@ def main():
         caminho = novo.get(p["url"], p["url"]) if tipo == "produto" else p["url"]
         if tipo == "produto" and p["url"] in duplicadas:
             continue
+        if tipo != "produto" and p["url"] in mapa:
+            continue  # página redirecionada (conteudo/redirecionamentos.json): não entra no site nem no sitemap
         ctx = Ctx(caminho, mapa)
         nome = nome_pagina(p)
         if tipo == "produto":
