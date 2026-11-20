@@ -24,8 +24,16 @@ CONTEUDO = RAIZ / "conteudo"
 SAIDA = RAIZ / "site"
 PRODUCAO = "--producao" in sys.argv
 
-SITE = json.loads((CONTEUDO / "site.json").read_text())
+SITE = json.loads((CONTEUDO / "site.json").read_text(encoding="utf-8"))
 DOMINIO = SITE["dominio"]
+
+# Fotos hospedadas no próprio site (geradas por ferramentas/otimizar-fotos.ps1 em
+# wp-content/uploads/). Endereço do WordPress -> endereço da foto otimizada.
+FOTOS_DIR = RAIZ / "wp-content"
+_fotos = CONTEUDO / "fotos.json"
+FOTOS = json.loads(_fotos.read_text(encoding="utf-8")) if _fotos.exists() else {}
+FAVICON = "/wp-content/uploads/2022/12/cropped-logo-nouvellando_page-0001-1.jpg"
+FOTOS_FALTANDO = set()
 
 # Prefixo do endereço antigo do produto -> página da linha
 PREFIXOS = {
@@ -51,7 +59,7 @@ esc = html.escape
 def carrega_paginas():
     pags = {}
     for arq in sorted((CONTEUDO / "paginas").glob("*.json")):
-        p = json.loads(arq.read_text())
+        p = json.loads(arq.read_text(encoding="utf-8"))
         pags[p["slug"]] = p
     return pags
 
@@ -140,8 +148,22 @@ def a_attrs(href, ctx, extra=""):
     return s + extra
 
 
+def foto_local(src):
+    """Endereço da foto otimizada no próprio site, ou None se ela não existir.
+    As versões redimensionadas do WordPress (foto-300x300.jpg) usam a foto única."""
+    if not src.startswith("/wp-content/"):
+        return None
+    base = re.sub(r"-\d+x\d+(\.[A-Za-z]+)$", r"\1", src)
+    return FOTOS.get(base) or FOTOS.get(src)
+
+
 def img_url(src, largura):
+    local = foto_local(src)
+    if local:
+        return local
     if src.startswith("/wp-content/"):
+        # Foto que ainda não foi otimizada: continua vindo do WordPress (avisado no fim)
+        FOTOS_FALTANDO.add(re.sub(r"-\d+x\d+(\.[A-Za-z]+)$", r"\1", src))
         return f"https://i0.wp.com/nouvellando.com.br{src}?w={largura}&ssl=1"
     return src
 
@@ -151,7 +173,7 @@ def img_tag(img, largura=600, classe="", lazy=True, ctx=None, sizes=None):
         return ""
     src = img["src"]
     attrs = f'src="{esc(img_url(src, largura))}" alt="{esc(img.get("alt", ""))}"'
-    if src.startswith("/wp-content/"):
+    if src.startswith("/wp-content/") and not foto_local(src):
         attrs += f' srcset="{esc(img_url(src, largura // 2))} {largura // 2}w, {esc(img_url(src, largura))} {largura}w, {esc(img_url(src, largura * 2))} {largura * 2}w"'
         attrs += f' sizes="{sizes or f"(max-width: 600px) 100vw, {largura}px"}"'
     if img.get("w") and img.get("h"):
@@ -935,7 +957,8 @@ def json_ld(p, ctx, trilha):
             dados = {"@context": "https://schema.org", "@graph": [
                 {k: v for k, v in dados.items() if k != "@context"},
                 {"@type": "Product", "name": prod["nome"], "url": DOMINIO + ctx.caminho,
-                 "image": [DOMINIO + c["src"] if c["src"].startswith("/") else c["src"] for c in prod["cores"]],
+                 "image": [DOMINIO + img_url(c["src"], 800) if c["src"].startswith("/") else c["src"]
+                           for c in prod["cores"]],
                  "brand": {"@type": "Brand", "name": "Nouvellando"},
                  "category": prod["linha_nome"],
                  "offers": {"@type": "AggregateOffer", "priceCurrency": "BRL",
@@ -1006,6 +1029,7 @@ def rodape(ctx):
 def documento(p, ctx, corpo, tipo, trilha, canonica):
     robots = "" if PRODUCAO else '<meta name="robots" content="noindex, nofollow">\n'
     og_img = p.get("og_image") or ""
+    og_img = foto_local(og_img) or og_img
     if og_img.startswith("/"):
         og_img = DOMINIO + og_img
     og = (f'<meta property="og:type" content="{esc(p.get("og_type") or "website")}">\n'
@@ -1024,10 +1048,9 @@ def documento(p, ctx, corpo, tipo, trilha, canonica):
 {robots}<title>{esc(p['title'])}</title>
 <meta name="description" content="{esc(p.get('description', ''))}">
 <link rel="canonical" href="{esc(canonica)}">
-{og}<link rel="icon" href="https://i0.wp.com/nouvellando.com.br/wp-content/uploads/2022/12/logo-nouvellando_page-0001-1.jpg?fit=32%2C32&amp;ssl=1" sizes="32x32">
+{og}<link rel="icon" href="{esc(img_url(FAVICON, 32))}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://i0.wp.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{ctx.asset('ds/tokens.css')}">
 <link rel="stylesheet" href="{ctx.asset('ds/base.css')}">
@@ -1074,7 +1097,7 @@ def redirecionamento(destino, ctx):
 def grava(caminho, conteudo):
     destino = SAIDA / caminho.strip("/") / "index.html" if caminho != "/" else SAIDA / "index.html"
     destino.parent.mkdir(parents=True, exist_ok=True)
-    destino.write_text(conteudo)
+    destino.write_text(conteudo, encoding="utf-8")
 
 
 def main():
@@ -1082,7 +1105,7 @@ def main():
     novo, duplicadas = mapa_produtos(pags)
     mapa = {**novo, **duplicadas}
     # Redirecionamentos que o site atual já tinha (seguindo até o endereço novo)
-    antigos = json.loads((CONTEUDO / "redirecionamentos.json").read_text())
+    antigos = json.loads((CONTEUDO / "redirecionamentos.json").read_text(encoding="utf-8"))
     for de, para in antigos.items():
         if de.startswith("/"):
             mapa[de] = mapa.get(para, para)
@@ -1094,7 +1117,9 @@ def main():
     for css in ("tokens.css", "base.css", "components.css"):
         (SAIDA / "assets" / "ds").mkdir(exist_ok=True)
         shutil.copy(RAIZ / "design-system" / css, SAIDA / "assets" / "ds" / css)
-    (SAIDA / ".nojekyll").write_text("")
+    (SAIDA / ".nojekyll").write_text("", encoding="utf-8")
+    if FOTOS_DIR.exists():
+        shutil.copytree(FOTOS_DIR, SAIDA / "wp-content")
 
     for slug, p in pags.items():
         if tipo_de(slug) == "produto" and p["url"] not in duplicadas:
@@ -1141,7 +1166,7 @@ def main():
                "p": reais(d["preco_min"]) if d["preco_min"] is not None else ""} for c, d in PRODUTOS.items()]
     indice += [{"n": m["texto"], "u": m["link"], "i": "", "l": "Linha de fio", "p": ""}
                for m in SITE["menu"][1]["submenu"]]
-    (SAIDA / "assets" / "busca.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")))
+    (SAIDA / "assets" / "busca.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     # Endereços antigos dos produtos e páginas duplicadas -> endereço novo
     for antigo, destino in mapa.items():
@@ -1154,23 +1179,28 @@ def main():
                 f'<a class="btn btn--primary" href="{ctx404.rel("/fios-nouvellando/")}">Nossos fios</a></div>')
     doc404 = documento(p404, ctx404, corpo404, "404", [("Início", "/")], DOMINIO + "/")
     # O 404 é servido em qualquer profundidade, então usa caminhos absolutos
-    (SAIDA / "404.html").write_text(doc404.replace('href="../', 'href="/').replace('src="../', 'src="/'))
+    (SAIDA / "404.html").write_text(doc404.replace('href="../', 'href="/').replace('src="../', 'src="/'), encoding="utf-8")
 
     # Lista de redirecionamentos (para configurar 301 no servidor final)
     linhas = ["endereco_antigo,endereco_novo"] + [f"{a},{d}" for a, d in sorted(mapa.items())]
-    (RAIZ / "migracao" / "redirecionamentos-produtos.csv").write_text("\n".join(linhas) + "\n")
+    (RAIZ / "migracao" / "redirecionamentos-produtos.csv").write_text("\n".join(linhas) + "\n", encoding="utf-8")
 
     if PRODUCAO:
         urls = "".join(f"<url><loc>{DOMINIO}{c}</loc>{f'<lastmod>{m[:10]}</lastmod>' if m else ''}</url>"
                        for c, m in sorted(publicadas))
         (SAIDA / "sitemap.xml").write_text(
-            f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n')
-        (SAIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMINIO}/sitemap.xml\n")
+            f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n',
+            encoding="utf-8")
+        (SAIDA / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {DOMINIO}/sitemap.xml\n", encoding="utf-8")
     else:
-        (SAIDA / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
+        (SAIDA / "robots.txt").write_text("User-agent: *\nDisallow: /\n", encoding="utf-8")
 
     print(f"{len(publicadas)} páginas geradas, {len(mapa)} redirecionamentos, em {SAIDA}"
           f" ({'produção' if PRODUCAO else 'teste, noindex'})")
+    if FOTOS_FALTANDO:
+        print(f"Atenção: {len(FOTOS_FALTANDO)} foto(s) ainda vêm do WordPress (não estão em conteudo/fotos.json):")
+        for f in sorted(FOTOS_FALTANDO):
+            print("  " + f)
 
 
 if __name__ == "__main__":

@@ -57,6 +57,6 @@ Na troca de domínio, gere com `python3 ferramentas/gerar.py --producao`: tira o
 
 ## Pendências antes da troca de domínio
 
-- **Imagens:** hoje vêm do site atual (`i0.wp.com/nouvellando.com.br/wp-content/uploads/...`). Antes de desligar o WordPress, é preciso hospedar os arquivos de `wp-content/uploads` no mesmo caminho.
+- **Imagens:** as fotos já ficam no próprio site, em `wp-content/uploads/` (mesmo caminho do WordPress), otimizadas em um arquivo por foto, no tamanho em que ela aparece no site: fotos de novelo com até 1000 px, fotos em pé (xales, videoaulas) com até 900 px de largura, os fundos de tela inteira listados em `conteudo/fotos-grandes.txt` com 1440 px de largura, e banners e artes com texto no tamanho original (até 1920 px de largura, qualidade alta). `conteudo/fotos.json` diz qual arquivo usar para cada endereço antigo. Para foto nova: `powershell -ExecutionPolicy Bypass -File ferramentas\otimizar-fotos.ps1 -Lista <tsv com endereço e arquivo original>`. O `gerar.py` avisa no fim se alguma foto ainda vem do WordPress (hoje só `149.jpg` e `287l-n.jpg`, que já estão quebradas no site atual).
 - **Redirecionamentos do WordPress:** exportar a lista completa (só 6 foram achados pelos links do site, em `conteudo/redirecionamentos.json`).
 - Detalhes do levantamento em `migracao/README.md`.

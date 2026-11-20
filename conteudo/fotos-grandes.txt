@@ -1,0 +1,8 @@
+# Fotos que aparecem na largura da tela inteira (fundo do topo da página Videoaulas).
+# O otimizar-fotos.ps1 mantém essas com até 1440 px de largura, para não ficarem borradas.
+# Um endereço por linha, como aparece no conteúdo (/wp-content/uploads/...).
+/wp-content/uploads/2025/06/Videoaula-Xale-Pomerano-4-rotated.jpg
+/wp-content/uploads/2025/07/Kastalya-8-rotated.jpg
+/wp-content/uploads/2025/11/Xale-Cytrus-5.jpg
+/wp-content/uploads/2025/11/Xale-Xecara-4.jpg
+/wp-content/uploads/2026/02/Xale-Eirene-_1_.jpg
