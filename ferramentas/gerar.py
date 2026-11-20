@@ -386,12 +386,23 @@ def r_grupo(b, ctx):
     oc = cls_oculto(b)
     if len(filhos) >= 2 and all(f["tipo"] == "grupo" for f in filhos):
         n = len(filhos)
-        if all(eh_card(f) for f in filhos):
+        cards = all(eh_card(f) for f in filhos)
+        if cards:
             classe = "linha linha--cards"
         else:
             classe = "linha linha--grade" if n > 4 else f"linha linha--{n}"
-        cols = "".join(f'<div class="{junta("col", cls_oculto(f))}">{r_blocos(f["blocos"], ctx)}</div>' for f in filhos)
-        return f'<div class="{junta(classe, oc)}">{cols}</div>'
+        # Catálogos grandes: mostra POR_PAGINA cores e um botão "Ver mais cores".
+        # Todas continuam no HTML (o Google segue os links); só ficam escondidas na tela.
+        paginar = cards and n > 2 * POR_PAGINA   # só vale a pena em catálogo bem grande (Fio Original)
+        cols = "".join(
+            f'<div class="{junta("col", "mais" if paginar and i >= POR_PAGINA else "", cls_oculto(f))}">'
+            f'{r_blocos(f["blocos"], ctx)}</div>'
+            for i, f in enumerate(filhos))
+        grade = f'<div class="{junta(classe, oc)}">{cols}</div>'
+        if paginar:
+            grade += (f'<div class="ver-mais"><button type="button" class="btn btn--ghost" data-ver-mais>'
+                      f'Ver mais cores <span data-restam>({n - POR_PAGINA})</span></button></div>')
+        return grade
     return f'<div class="{junta("pilha", oc)}">{r_blocos(filhos, ctx)}</div>'
 
 
@@ -1126,6 +1137,7 @@ def documento(p, ctx, corpo, tipo, trilha, canonica):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 {robots}<title>{esc(titulo)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{esc(canonica)}">
@@ -1182,6 +1194,7 @@ REDIRECIONA_WORDPRESS = {
     "/shop/": "/fios-nouvellando/", "/sitemap_index.xml": "/sitemap.xml",
     "/wp-sitemap.xml": "/sitemap.xml", "/image-sitemap.xml": "/sitemap.xml",
 }
+POR_PAGINA = 48           # cores mostradas por vez nos catálogos grandes ("Ver mais cores")
 LIMITE_REDIRECTS = 2000   # regras estáticas que o Cloudflare Pages aceita no _redirects
 
 

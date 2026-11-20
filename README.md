@@ -52,6 +52,7 @@ Abra o JSON da página em `conteudo/paginas/` (o nome é o endereço antigo, ex.
 - Cada página tem **um H1 só** (o `gerar.py` transforma os H1 extras em parágrafo com a mesma aparência).
 - **Descrição** (texto que aparece no Google): escrita à mão em `conteudo/seo.json` para as páginas principais (dá para trocar também o título da aba ali). As demais são montadas automaticamente: produtos com nome, cabos e preço; linhas de fio com número de cores e preço.
 - Fotos sem texto alternativo usam a legenda (nome da cor).
+- Catálogos com mais de 96 cores (Fio Original) mostram 48 por vez, com o botão "Ver mais cores" (`POR_PAGINA` no `gerar.py`). Todas as cores continuam no HTML, para o Google seguir os links; sem JavaScript, aparece tudo.
 - Links que nunca existiram e páginas de sistema do WordPress (`/loja/`, `/minha-conta/`) estão em `conteudo/redirecionamentos.json`.
 
 ## Publicar

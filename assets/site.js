@@ -297,4 +297,26 @@
     window.addEventListener('resize', marca);
     marca();
   });
+
+  // Catálogos grandes: "Ver mais cores" mostra o próximo bloco de cores (as fotos
+  // escondidas só são baixadas quando aparecem). O número por vez vem do gerar.py.
+  document.querySelectorAll('[data-ver-mais]').forEach(function (btn) {
+    var caixa = btn.closest('.ver-mais');
+    var grade = caixa.previousElementSibling;
+    var porVez = grade.querySelectorAll('.col:not(.mais)').length || 48;
+    btn.addEventListener('click', function () {
+      var escondidas = Array.prototype.slice.call(grade.querySelectorAll('.col.mais'));
+      var mostrar = escondidas.slice(0, porVez);
+      mostrar.forEach(function (c) { c.classList.remove('mais'); });
+      var restam = escondidas.length - mostrar.length;
+      if (restam > 0) {
+        btn.querySelector('[data-restam]').textContent = '(' + restam + ')';
+      } else {
+        caixa.remove();
+      }
+      // Leva o foco para a primeira cor nova (teclado e leitor de tela)
+      var link = mostrar[0] && mostrar[0].querySelector('a');
+      if (link) link.focus({ preventScroll: true });
+    });
+  });
 })();

@@ -532,3 +532,8 @@ a.fio__foto:hover img{transform:scale(1.04)}
   .fio__botoes .btn{flex:1 1 100%}
   .fios-nav__item{flex:0 0 76px}
 }
+
+/* Catálogos grandes: 48 cores por vez + "Ver mais cores" (só com JavaScript; sem ele aparece tudo) */
+.js .linha--cards>.col.mais{display:none}
+.ver-mais{display:flex;justify-content:center;margin-top:var(--space-8)}
+.ver-mais [data-restam]{opacity:.65;font-weight:var(--weight-regular)}
