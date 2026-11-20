@@ -1175,6 +1175,65 @@ def redirecionamento(destino, ctx):
 """
 
 
+# Endereços típicos do WordPress que não existem no site novo -> página mais próxima
+REDIRECIONA_WORDPRESS = {
+    "/feed/": "/", "/comments/feed/": "/", "/wp-admin/": "/", "/wp-login.php": "/",
+    "/carrinho/": "/", "/finalizar-compra/": "/", "/checkout/": "/", "/cart/": "/",
+    "/shop/": "/fios-nouvellando/", "/sitemap_index.xml": "/sitemap.xml",
+    "/wp-sitemap.xml": "/sitemap.xml", "/image-sitemap.xml": "/sitemap.xml",
+}
+LIMITE_REDIRECTS = 2000   # regras estáticas que o Cloudflare Pages aceita no _redirects
+
+
+def arquivos_cloudflare(mapa, pags):
+    """Gera site/_redirects (301 de verdade no Cloudflare) e site/_headers.
+
+    O GitHub Pages ignora esses arquivos; lá continuam valendo as páginas de
+    redirecionamento em HTML, geradas para cada endereço antigo.
+    Retorna o número de regras do _redirects."""
+    regras = {}
+
+    def regra(de, para):
+        if de != para and de not in regras:
+            regras[de] = para
+
+    # 1) Páginas: endereço antigo de cada produto, páginas duplicadas e links que
+    #    o WordPress já redirecionava. Com e sem a barra no fim, para cobrir os dois jeitos
+    #    que o link pode ter sido salvo.
+    for antigo, destino in sorted(mapa.items()):
+        regra(antigo, destino)
+        if antigo.endswith("/") and len(antigo) > 1:
+            regra(antigo.rstrip("/"), destino)
+    for antigo, destino in REDIRECIONA_WORDPRESS.items():
+        regra(antigo, destino)
+    # 2) Fotos: versões redimensionadas do WordPress (foto-1024x1024.jpg) e PNG que
+    #    virou JPG -> foto otimizada. Mantém links do Google Imagens funcionando.
+    variantes = set()
+    for p in pags.values():
+        variantes |= set(re.findall(r'/wp-content/uploads/[^"?) ]+-\d+x\d+\.[A-Za-z]+', json.dumps(p)))
+    for v in sorted(variantes):
+        local = foto_local(v)
+        if local:
+            regra(v, local)
+    for antigo, novo in sorted(FOTOS.items()):
+        regra(antigo, novo)
+
+    texto = ["# Gerado por ferramentas/gerar.py. Nao editar a mao: mude conteudo/redirecionamentos.json.",
+             "# Endereco antigo -> endereco novo, 301 (permanente)."]
+    texto += [f"{de} {para} 301" for de, para in regras.items()]
+    (SAIDA / "_redirects").write_text("\n".join(texto) + "\n", encoding="utf-8")
+
+    # Endereços *.pages.dev (teste e prévias) nunca entram no Google, mesmo na versão de
+    # produção: só o domínio oficial deve ser indexado.
+    (SAIDA / "_headers").write_text(
+        "# Gerado por ferramentas/gerar.py\n"
+        "https://:project.pages.dev/*\n  X-Robots-Tag: noindex\n"
+        "https://:version.:project.pages.dev/*\n  X-Robots-Tag: noindex\n"
+        "/wp-content/*\n  Cache-Control: public, max-age=604800\n",
+        encoding="utf-8")
+    return len(regras)
+
+
 def grava(caminho, conteudo):
     destino = SAIDA / caminho.strip("/") / "index.html" if caminho != "/" else SAIDA / "index.html"
     destino.parent.mkdir(parents=True, exist_ok=True)
@@ -1272,6 +1331,8 @@ def main():
     linhas = ["endereco_antigo,endereco_novo"] + [f"{a},{d}" for a, d in sorted(mapa.items())]
     (RAIZ / "migracao" / "redirecionamentos-produtos.csv").write_text("\n".join(linhas) + "\n", encoding="utf-8")
 
+    n_redir = arquivos_cloudflare(mapa, pags)
+
     if PRODUCAO:
         urls = "".join(f"<url><loc>{DOMINIO}{c}</loc>{f'<lastmod>{m[:10]}</lastmod>' if m else ''}</url>"
                        for c, m in sorted(publicadas))
@@ -1284,6 +1345,9 @@ def main():
 
     print(f"{len(publicadas)} páginas geradas, {len(mapa)} redirecionamentos, em {SAIDA}"
           f" ({'produção' if PRODUCAO else 'teste, noindex'})")
+    print(f"_redirects do Cloudflare: {n_redir} regras 301 (limite do Cloudflare Pages: {LIMITE_REDIRECTS})")
+    if n_redir > LIMITE_REDIRECTS:
+        print("ATENÇÃO: passou do limite; o Cloudflare ignora o que vier depois. Mover parte para Bulk Redirects.")
     if FOTOS_FALTANDO:
         print(f"Atenção: {len(FOTOS_FALTANDO)} foto(s) ainda vêm do WordPress (não estão em conteudo/fotos.json):")
         for f in sorted(FOTOS_FALTANDO):

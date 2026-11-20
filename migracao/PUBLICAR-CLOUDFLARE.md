@@ -27,8 +27,9 @@ Levantamento feito em 19/11/2026, olhando o código do repositório e o DNS atua
 2. **Os redirecionamentos não são 301 de verdade.**
    Os 801 endereços antigos de produto (`/original-805-805u/` → `/fio-original/805-805u/`) hoje são páginas HTML com `meta refresh`.
    O Google aceita esse tipo de redirecionamento, mas transfere o ranqueamento de forma mais lenta e menos garantida.
-   **Solução:** o `gerar.py --producao` passa a gerar um arquivo `_redirects`, que o Cloudflare transforma em 301.
-   O Cloudflare aceita até 2.000 linhas nesse arquivo, e são 801.
+   **Feito (20/11):** o `gerar.py` gera `site/_redirects`, que o Cloudflare transforma em 301. São cerca de 1.940 regras
+   (produtos e páginas com e sem barra no fim, fotos redimensionadas, PNG que virou JPG e endereços do WordPress),
+   para um limite de 2.000. O gerar.py avisa se passar do limite.
 
 3. **Site no ar sem o modo produção.**
    Se o build não usar `--producao`, o site entra no ar com `noindex` e `robots.txt` bloqueando tudo, e some do Google.
@@ -36,14 +37,16 @@ Levantamento feito em 19/11/2026, olhando o código do repositório e o DNS atua
 
 4. **Indexação antes da hora / conteúdo duplicado.**
    Se o build de produção rodar antes da troca, o endereço `xxx.pages.dev` fica indexável com o mesmo conteúdo do site atual.
-   **Solução:** só ligar o `--producao` no dia da troca, e criar um `_headers` com `X-Robots-Tag: noindex` para o endereço `*.pages.dev`.
+   **Solução:** só ligar o `--producao` no dia da troca. **Feito (20/11):** o `gerar.py` gera `site/_headers` com
+   `X-Robots-Tag: noindex` para os endereços `*.pages.dev`, que valem também depois da troca.
    Desligar também o GitHub Pages depois que o Cloudflare estiver funcionando.
 
 ### Importantes: prejudicam o SEO ou a operação
 
 5. **Redirecionamentos antigos do WordPress.** Só 6 são conhecidos (`conteudo/redirecionamentos.json`). O WordPress.com também redireciona sozinho as páginas que mudaram de endereço. Exportar ou levantar a lista antes de desligar.
 6. **`www` e domínio sem `www`.** O endereço oficial é `https://nouvellando.com.br`. É preciso adicionar o `www` no Cloudflare e redirecionar com 301 para o domínio sem `www`.
-7. **Endereços típicos do WordPress** (`/feed/`, `/wp-admin/`, `/loja/`, `/minha-conta/`, `/sitemap.xml` antigo). Redirecionar para a home ou para a página mais próxima, para não acumular erros 404 no Search Console.
+7. **Endereços típicos do WordPress** (`/feed/`, `/wp-admin/`, `/loja/`, `/minha-conta/`, `/sitemap.xml` antigo). **Feito (20/11):** redirecionam para a home ou a página mais próxima (`REDIRECIONA_WORDPRESS` no `gerar.py` e `conteudo/redirecionamentos.json`).
+   Fotos em tamanhos que o site não usa (o WordPress cria vários por foto) ainda dariam 404; só afeta o Google Imagens.
 8. **Ícones externos.** Há mais de 2.400 links para ícones do Google Imagens e do Flaticon no conteúdo. O `gerar.py` já troca os ícones de cuidado por arquivos locais, mas é bom conferir no site gerado se sobrou algum endereço externo.
 9. **Verificação do Google Search Console.** Se hoje a verificação é feita pelo WordPress.com, ela se perde na troca. Antes da troca, verificar o domínio por DNS (registro TXT) no Cloudflare.
 10. **Pendências de conteúdo** (de `migracao/README.md`):
@@ -86,9 +89,10 @@ Levantamento feito em 19/11/2026, olhando o código do repositório e o DNS atua
    - fotos (já servidas pelo próprio site);
    - celular;
    - página 404.
-7. **Conferir os endereços** com um rastreador (por exemplo, Screaming Frog):
-   - todas as 843 URLs da planilha `inventario-seo-nouvellando.xlsx` devem responder **200** ou **301**;
-   - nenhum endereço pode dar 404.
+7. **Conferir os endereços** com `python ferramentas/testar-redirecionamentos.py https://nouvellando.pages.dev`:
+   - testa as 843 URLs do site atual, os redirecionamentos conhecidos e uma amostra de fotos;
+   - todas devem abrir (200) ou redirecionar com **301** para uma página que existe;
+   - nenhum endereço pode dar 404. Repetir no dia da troca com `https://nouvellando.com.br`.
 
 ### Fase 3: preparar o DNS (ainda sem trocar)
 
