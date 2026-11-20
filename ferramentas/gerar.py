@@ -1097,6 +1097,10 @@ def redirecionamento(destino, ctx):
 def grava(caminho, conteudo):
     destino = SAIDA / caminho.strip("/") / "index.html" if caminho != "/" else SAIDA / "index.html"
     destino.parent.mkdir(parents=True, exist_ok=True)
+    # Fotos do próprio site com caminho relativo, para funcionar também num
+    # endereço de teste dentro de uma pasta (ex.: usuario.github.io/nouvellando/)
+    prof = caminho.strip("/").count("/") + 1 if caminho != "/" else 0
+    conteudo = conteudo.replace('="/wp-content/', '="' + "../" * prof + "wp-content/")
     destino.write_text(conteudo, encoding="utf-8")
 
 

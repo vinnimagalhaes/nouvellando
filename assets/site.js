@@ -105,6 +105,8 @@
   var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
   var brl = function (n) { return n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); };
   var url = function (caminho) { return RAIZ + caminho.replace(/^\//, ''); };
+  // Foto do próprio site (/wp-content/...) vira endereço relativo; foto externa fica como está
+  var foto = function (s) { return s && s.charAt(0) === '/' && s.charAt(1) !== '/' ? url(s) : (s || ''); };
 
   function toast(msg) {
     var t = $('[data-toast]'); if (!t) return;
@@ -133,7 +135,7 @@
     $('[data-finalizar]').href = WA + '&text=' + encodeURIComponent(mensagem(carrinho));
     $('[data-finalizar]').classList.toggle('is-disabled', !carrinho.length);
     lista.innerHTML = carrinho.length ? carrinho.map(function (i, k) {
-      return '<div class="item"><a class="item__img" href="' + url(i.url) + '"><img src="' + i.img + '" alt=""></a>' +
+      return '<div class="item"><a class="item__img" href="' + url(i.url) + '"><img src="' + foto(i.img) + '" alt=""></a>' +
         '<div><b><a href="' + url(i.url) + '">' + i.nome + '</a></b><small>' + descricao(i) + '</small>' +
         '<div class="qty qty--sm"><button data-menos="' + k + '" aria-label="Diminuir">−</button><span>' + i.q + '</span><button data-mais="' + k + '" aria-label="Aumentar">+</button></div></div>' +
         '<div class="item__p">' + brl(i.preco * i.q) + '<button class="item__rm" data-remove="' + k + '">remover</button></div></div>';
@@ -254,7 +256,7 @@
         return termos.every(function (t) { return alvo.indexOf(t) >= 0; });
       }).slice(0, 12);
       saida.innerHTML = achados.length ? achados.map(function (i) {
-        return '<a class="busca__item" href="' + url(i.u) + '">' + (i.i ? '<img src="' + i.i + '" alt="" loading="lazy">' : '<span class="busca__sem"></span>') +
+        return '<a class="busca__item" href="' + url(i.u) + '">' + (i.i ? '<img src="' + foto(i.i) + '" alt="" loading="lazy">' : '<span class="busca__sem"></span>') +
           '<span><b>' + i.n + '</b><small>' + i.l + '</small></span>' + (i.p ? '<em>a partir de ' + i.p + '</em>' : '') + '</a>';
       }).join('') : '<p class="busca__vazio">Nenhum fio encontrado para “' + campo.value + '”.</p>';
     }
