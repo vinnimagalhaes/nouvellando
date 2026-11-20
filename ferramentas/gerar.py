@@ -174,6 +174,18 @@ def img_url(src, largura):
     return src
 
 
+def foto_do_card(img, link, ctx):
+    """Card que leva a um produto mas cuja foto não existe mais (já quebrada no WordPress):
+    usa a foto do próprio produto. Ex.: card 'Original 149' com 149.jpg -> Original-149.jpg."""
+    if not img or not img.get("src", "").startswith("/wp-content/") or foto_local(img["src"]) or not link:
+        return img
+    destino = ctx.mapa.get(link, link)
+    d = PRODUTOS.get(destino)
+    if d and d.get("img") and foto_local(d["img"]):
+        return {**img, "src": d["img"], "w": None, "h": None}
+    return img
+
+
 def img_tag(img, largura=600, classe="", lazy=True, ctx=None, sizes=None):
     if not img or not img.get("src"):
         return ""
@@ -219,6 +231,10 @@ def ajusta_html(h, ctx):
                 return f'<img class="ico-cuidado" src="{ctx.asset("icones/" + arquivo)}" alt="" width="22" height="22">'
         if src.startswith("/wp-content/"):
             return img_tag({"src": src, "alt": alt}, 600)
+        if re.match(r"https?://(encrypted-tbn\d\.gstatic\.com|cdn-icons-png\.flaticon\.com)/", src):
+            # Ícone copiado do Google Imagens/Flaticon que não foi reconhecido acima: já
+            # dá erro e a página mostra os ícones de cuidado do próprio site
+            return ""
         return f'<img src="{esc(src)}" alt="{esc(alt)}" loading="lazy">'
 
     h = re.sub(r"<img\b[^>]*>", troca_img, h)
@@ -269,6 +285,7 @@ def r_carrossel(b, ctx, largura=600, variante=""):
                   f'--por-m:{por.get("mobile", 1)}"')
     itens = []
     for i, s in enumerate(slides):
+        s = foto_do_card(s, s.get("link"), ctx)
         fig = img_tag(s, largura, lazy=(i > 0 or variante != "hero"))
         if s.get("link"):
             fig = f'<a class="carrossel__img"{a_attrs(s["link"], ctx)}>{fig}</a>'
@@ -309,7 +326,8 @@ def r_bloco(b, ctx, opcoes=None):
     if t in ("text-editor", "html"):
         return f'<div class="{junta("texto", oc)}">{ajusta_html(b.get("html", ""), ctx)}</div>'
     if t == "image":
-        fig = img_tag({**(b.get("img") or {}), "legenda": b.get("legenda", "")} if b.get("img") else None, 700)
+        img = foto_do_card(b.get("img"), b.get("link"), ctx)
+        fig = img_tag({**img, "legenda": b.get("legenda", "")} if img else None, 700)
         if b.get("link"):
             fig = f'<a{a_attrs(b["link"], ctx)}>{fig}</a>'
         cap = f'<figcaption>{esc(b["legenda"])}</figcaption>' if b.get("legenda") else ""
@@ -1122,6 +1140,16 @@ def documento(p, ctx, corpo, tipo, trilha, canonica):
     corpo = um_h1(corpo)
     og_img = p.get("og_image") or ""
     og_img = foto_local(og_img) or og_img
+    if not foto_local(og_img) and not og_img.startswith("/wp-content/"):
+        # Imagem de compartilhamento (WhatsApp, Facebook) que não é do site, ex. o
+        # endereço vazio s0.wp.com/_si/ do WordPress: usa a foto do produto ou a
+        # primeira foto da página
+        prod = PRODUTOS.get(ctx.caminho)
+        primeira = re.search(r'src="(/wp-content/[^"]+)"', corpo)
+        if prod and prod.get("img") and foto_local(prod["img"]):
+            og_img = foto_local(prod["img"])
+        elif primeira:
+            og_img = primeira.group(1)
     if og_img.startswith("/"):
         og_img = DOMINIO + og_img
     og = (f'<meta property="og:type" content="{esc(p.get("og_type") or "website")}">\n'

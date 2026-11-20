@@ -22,11 +22,11 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
   - [ ] tabela de preços única por linha, confirmada pela cliente;
   - [ ] páginas duplicadas (Fio Original e Fio Original 2, cores 443, 712 e 340V);
   - [ ] descrições escritas à mão em `conteudo/seo.json`, revisadas.
-- [ ] **Imagens que ainda dependem do WordPress** (somem quando ele sair do ar):
-  - [ ] 2 fotos já quebradas hoje: `149.jpg` e `287l-n.jpg`. O `gerar.py` lista as duas no fim. Já existe `Original-149.jpg` para substituir a 149;
-  - [ ] 17 imagens `s0.wp.com/_si/...` em páginas do Fio Aura (A025, A028, A030…);
-  - [ ] 1 imagem do Google Imagens (`gstatic`) na Coleção Jeans 673.
-  - Rodar `python ferramentas/gerar.py` e confirmar que **não aparece** o aviso "foto(s) ainda vêm do WordPress".
+- [x] **Imagens que dependiam do WordPress:** resolvido em 20/11. As 6.411 imagens das páginas e as 836 imagens de compartilhamento vêm do próprio site:
+  - os cards das cores 149 e 287 usam a foto do produto;
+  - a imagem de compartilhamento vazia do WordPress foi trocada pela foto da página;
+  - os ícones do Google na Coleção Jeans 673 foram removidos.
+  - [ ] No dia, rodar `python ferramentas/gerar.py` e confirmar que **não aparece** o aviso "foto(s) ainda vêm do WordPress". Se aparecer, é uma foto nova adicionada depois.
 - [ ] **Cloudflare, domínio cadastrado sem trocar nada ainda:** Add a domain → `nouvellando.com.br` → plano Free. Conferir os registros que ele importar. **Não existe e-mail no domínio** (nenhum registro MX), então não há e-mail para perder. Anotar os **2 nameservers** que o Cloudflare informar.
 - [ ] **Search Console:** se a verificação hoje é pela tag do WordPress, ela vai se perder. Criar a propriedade **Domínio** (`nouvellando.com.br`) com verificação por **registro TXT**, que vai ser colocado no Cloudflare no dia.
 - [ ] **Teste geral no endereço de teste:**
