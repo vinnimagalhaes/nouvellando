@@ -624,3 +624,17 @@ a.fio__foto:hover img{transform:scale(1.04)}
 .linha--cards .carrossel--card>.price,.linha--cards .imagem--card>.price{margin-top:auto;padding-top:var(--space-2)}
 /* No celular o texto do topo corre normal (a quebra depois de "entrar" é só no computador) */
 @media(max-width:600px){.cat-hero__intro br{display:none}}
+/* Banner da home na largura toda da tela (computador e celular), colado no menu e sem cantos
+   arredondados; a altura acompanha a largura (a arte não é cortada) */
+.pg-home .secao--1.secao,.pg-home .secao--2.secao{padding:0}
+.pg-home .secao--1>.wrap,.pg-home .secao--2>.wrap{width:100%;max-width:none}
+.pg-home .secao--1 .carrossel__img,.pg-home .secao--2 .carrossel__img{border-radius:0}
+.pg-home .secao--1 .carrossel__img img,.pg-home .secao--2 .carrossel__img img{display:block;width:100%;height:auto}
+.pg-home .secao--1 .carrossel__pontos,.pg-home .secao--2 .carrossel__pontos{margin-top:var(--space-3)}
+/* Frase de baixo do banner bem menor */
+.pg-home .secao--3{padding:var(--space-6) 0 var(--space-2)}
+.pg-home .secao--3 h1.titulo{font-size:clamp(1.35rem,2.2vw,1.75rem)}
+.pg-home .secao--3 h1.titulo+.titulo--h1{font-size:var(--text-base);margin-top:2px}
+/* "by Claudia Gerth" na mesma linha da frase (quebra para baixo só se não couber) */
+.pg-home .secao--3 .pilha .pilha{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:baseline;column-gap:.45em;row-gap:0}
+.pg-home .secao--3 h1.titulo,.pg-home .secao--3 h1.titulo+.titulo--h1{margin:0}
