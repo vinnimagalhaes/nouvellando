@@ -1021,6 +1021,14 @@ def calcula_sem_degrade(pags, mapa):
     for c, d in PRODUTOS.items():
         if "sem degrad" in (d["nome"] + " " + " ".join(x["legenda"] for x in d["cores"])).lower():
             SEM_DEGRADE.add(c)
+    # Legenda do card no catálogo do fio (ex.: "Peluche 806PE | 500m+ | (sem degradê)")
+    for m in SITE["menu"][1]["submenu"]:
+        cat = pags.get(m["link"].strip("/"))
+        for b in folhas(cat["blocos"]) if cat else []:
+            for s in (b.get("slides") or ([b] if b.get("link") else [])):
+                l = interno(s.get("link") or "")
+                if l and "sem degrad" in (s.get("legenda") or "").lower() and mapa.get(l, l) in PRODUTOS:
+                    SEM_DEGRADE.add(mapa.get(l, l))
     SEM_DEGRADE.update(c for c in regra.get("sem_degrade", []) if c in PRODUTOS)
     SEM_DEGRADE.difference_update(regra.get("com_degrade", []))
 

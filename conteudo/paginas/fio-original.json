@@ -1268,11 +1268,11 @@
         },
         {
          "src": "/wp-content/uploads/2025/06/Original-712U.jpg",
-         "alt": "Original 712 | 1100m+",
+         "alt": "Original 712U | 1100m+",
          "w": null,
          "h": null,
          "link": "/original-712-712u-2/",
-         "legenda": "Original 712 | 1100m+"
+         "legenda": "Original 712U | 1100m+"
         }
        ],
        "por_tela": {
@@ -1546,6 +1546,22 @@
      "tipo": "grupo",
      "blocos": [
       {
+       "tipo": "image",
+       "img": {
+        "src": "/wp-content/uploads/2025/04/Original-694.jpeg",
+        "alt": "",
+        "w": null,
+        "h": null
+       },
+       "link": "/original-694-2/",
+       "legenda": "Original 694 | 1000m+"
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
        "tipo": "image-carousel",
        "slides": [
         {
@@ -1790,11 +1806,11 @@
         },
         {
          "src": "/wp-content/uploads/2024/12/Original-682U.jpeg",
-         "alt": "Original 682 | 1000m+",
+         "alt": "Original 682U | 1000m+",
          "w": null,
          "h": null,
          "link": "/original-682-682u/",
-         "legenda": "Original 682 | 1000m+"
+         "legenda": "Original 682U | 1000m+"
         }
        ],
        "por_tela": {
@@ -3832,11 +3848,11 @@
         },
         {
          "src": "/wp-content/uploads/2023/07/583U.jpg",
-         "alt": "Original 583 | 1000m+",
+         "alt": "Original 583U | 1000m+",
          "w": null,
          "h": null,
          "link": "/original-583-583u/",
-         "legenda": "Original 583 | 1000m+"
+         "legenda": "Original 583U | 1000m+"
         }
        ],
        "por_tela": {
@@ -8408,7 +8424,7 @@
         "h": "800"
        },
        "link": "/original-300x/",
-       "legenda": "Original 300 | 1000m+"
+       "legenda": "Original 300X | 1000m+"
       }
      ]
     },
@@ -8936,7 +8952,7 @@
         "h": "800"
        },
        "link": "/original-270/",
-       "legenda": "Original 270 | 200m+ | (sem degadê)"
+       "legenda": "Original 270 | 200m+ | (sem degradê)"
       }
      ]
     },
@@ -10352,6 +10368,36 @@
      "tipo": "grupo",
      "blocos": [
       {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/190n.jpg",
+         "alt": "Original 190 | 1300m+",
+         "w": null,
+         "h": null,
+         "legenda": "Original 190 | 1300m+",
+         "link": "/original-190-190u/"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/190-u-n.jpg",
+         "alt": "Original 190U | 1300m+",
+         "w": null,
+         "h": null,
+         "legenda": "Original 190U | 1300m+",
+         "link": "/original-190-190u/"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
        "tipo": "image",
        "img": {
         "src": "/wp-content/uploads/2022/12/189n.jpg",
@@ -10449,6 +10495,36 @@
          "h": null,
          "link": "/original-182-182u/",
          "legenda": "Original 182U | 1000m+"
+        }
+       ],
+       "por_tela": {
+        "desktop": 1
+       },
+       "autoplay": 5000
+      }
+     ]
+    },
+    {
+     "tipo": "grupo",
+     "blocos": [
+      {
+       "tipo": "image-carousel",
+       "slides": [
+        {
+         "src": "/wp-content/uploads/2022/12/181-n.jpg",
+         "alt": "Original 181 | 1000m+",
+         "w": null,
+         "h": null,
+         "legenda": "Original 181 | 1000m+",
+         "link": "/original-181-181u/"
+        },
+        {
+         "src": "/wp-content/uploads/2022/12/181-u-n.jpg",
+         "alt": "Original 181U | 1000m+",
+         "w": null,
+         "h": null,
+         "legenda": "Original 181U | 1000m+",
+         "link": "/original-181-181u/"
         }
        ],
        "por_tela": {
