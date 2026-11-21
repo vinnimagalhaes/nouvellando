@@ -41,6 +41,11 @@ _seo = CONTEUDO / "seo.json"
 SEO = {k: v for k, v in json.loads(_seo.read_text(encoding="utf-8")).items()
        if k.startswith("/")} if _seo.exists() else {}
 
+# Cores de cada novelo (filtro de cores dos catálogos). Chave: endereço novo do novelo.
+_cores = CONTEUDO / "cores.json"
+CORES = json.loads(_cores.read_text(encoding="utf-8")) if _cores.exists() else {"cores": [], "novelos": {}}
+SEM_COR = set()  # novelos que ainda não estão em conteudo/cores.json (avisado no fim)
+
 # Prefixo do endereço antigo do produto -> página da linha
 PREFIXOS = {
     "original": "fio-original", "twinkle": "fio-twinkle", "stardust": "fio-stardust",
@@ -316,8 +321,11 @@ def r_carrossel(b, ctx, largura=600, variante=""):
     nav = ""
     if len(slides) > 1:
         nav = ('<button class="carrossel__seta carrossel__seta--ant" aria-label="Anterior">‹</button>'
-               '<button class="carrossel__seta carrossel__seta--prox" aria-label="Próximo">›</button>'
-               '<div class="carrossel__pontos"></div>')
+               '<button class="carrossel__seta carrossel__seta--prox" aria-label="Próximo">›</button>')
+        # Cards de novelo (no máximo 2 ou 3 fotos): só as setas, sem bolinhas, para todos os
+        # cards terem a mesma altura
+        if not card:
+            nav += '<div class="carrossel__pontos"></div>'
     preco = preco_card(next(s["link"] for s in slides if s.get("link")), ctx) if card else ""
     return (f'<div class="{classe}"{estilo}{auto}><div class="carrossel__trilho">{"".join(itens)}</div>{nav}{preco}</div>')
 
@@ -421,16 +429,18 @@ def r_grupo(b, ctx):
             classe = "linha linha--cards"
         else:
             classe = "linha linha--grade" if n > 4 else f"linha linha--{n}"
-        # Tipo de cada card (com/sem degradê), para as abas do topo do fio
-        def tipo_card(f):
+        # Novelo de cada card: tipo (com/sem degradê, para as abas do topo do fio) e cores (filtro)
+        def produto_card(f):
             for bl in folhas([f]):
                 for l in links_do_bloco(bl):
                     d = PRODUTOS.get(ctx.mapa.get(l, l))
                     if d:
-                        return tipo_degrade(d)
-            return ""
+                        return d
+            return None
 
-        tipos = [tipo_card(f) if cards else "" for f in filhos]
+        prods = [produto_card(f) if cards else None for f in filhos]
+        tipos = [tipo_degrade(d) if d else "" for d in prods]
+        cores = [" ".join(cores_de(d)) if d else "" for d in prods]
         dois_tipos = "com" in tipos and "sem" in tipos
         # Catálogos grandes: mostra POR_PAGINA cores e um botão "Ver mais cores", contando
         # separado em cada aba. Todas continuam no HTML (o Google segue os links).
@@ -442,7 +452,8 @@ def r_grupo(b, ctx):
             mais.append(paginar and conta[t] > 2 * POR_PAGINA and vistos[t] > POR_PAGINA)
         cols = "".join(
             f'<div class="{junta("col", "mais" if mais[i] else "", cls_oculto(f))}"'
-            f'{f" data-tipo={chr(34)}{tipos[i]}{chr(34)}" if tipos[i] else ""}>'
+            f'{f" data-tipo={chr(34)}{tipos[i]}{chr(34)}" if tipos[i] else ""}'
+            f'{f" data-cores={chr(34)}{cores[i]}{chr(34)}" if cores[i] else ""}>'
             f'{r_blocos(f["blocos"], ctx)}</div>'
             for i, f in enumerate(filhos))
         aba = ' data-aba="com"' if dois_tipos else ""
@@ -1037,6 +1048,40 @@ def tipo_degrade(d):
     return "sem" if d["caminho"] in SEM_DEGRADE else "com"
 
 
+def cores_de(d):
+    """Cores do novelo (conteudo/cores.json). Novelo ainda não catalogado fica fora do filtro."""
+    c = CORES["novelos"].get(d["caminho"])
+    if c is None:
+        SEM_COR.add(d["caminho"])
+        return []
+    return c
+
+
+def filtro_cores(prods):
+    """Menu suspenso 'Cores' da caixa de filtros (só as cores que existem nesse fio).
+    Só aparece com JavaScript; o site.js esconde as cores que não existem na aba atual."""
+    conta = Counter(c for d in prods for c in cores_de(d))
+    if not conta:
+        return ""
+    seta = ('<svg class="filtro-cores__seta" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">'
+            '<path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m6 9 6 6 6-6"/></svg>')
+    check = ('<svg class="filtro-cor__check" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">'
+             '<path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12 5 5 9-10"/></svg>')
+    botoes = "".join(
+        f'<button type="button" class="filtro-cor" aria-pressed="false" data-cor="{esc(c["id"])}">'
+        f'<span class="filtro-cor__bola" style="background:{esc(c["hex"])}" aria-hidden="true"></span>'
+        f'<span class="filtro-cor__nome">{esc(c["nome"])}</span>{check}</button>'
+        for c in CORES["cores"] if conta[c["id"]])
+    return (f'<div class="filtro-cores" data-filtro-cores>'
+            f'<div class="filtro-cores__menu"><button type="button" class="filtro-cores__abrir" aria-expanded="false" aria-controls="lista-cores" data-abrir-cores>'
+            f'<span>Cores</span><span class="filtro-cores__conta" data-conta-cores hidden></span>{seta}</button>'
+            f'<div class="filtro-cores__painel" id="lista-cores" data-painel-cores hidden>'
+            f'<div class="filtro-cores__lista" role="group" aria-label="Filtrar por cor">{botoes}</div>'
+            f'<div class="filtro-cores__rodape"><button type="button" class="filtro-cores__limpar" data-limpar-cores hidden>Limpar cores</button>'
+            f'<button type="button" class="btn btn--primary btn--sm" data-fechar-cores>Pronto</button></div></div></div>'
+            f'<p class="filtro-cores__status" data-status-cores aria-live="polite"></p></div>')
+
+
 def resumo_cores(prods):
     """'483 cores · a partir de R$ 51,00' (preço de 4 cabos)."""
     precos = [d["preco_vitrine"] for d in prods if d["preco_vitrine"] is not None]
@@ -1053,8 +1098,24 @@ def topo_categoria(p, ctx, primeira):
     com = [d for d in prods if tipo_degrade(d) == "com"]
     sem = [d for d in prods if tipo_degrade(d) == "sem"]
     pagina_sem = p["url"] == URL_SEM_DEGRADE
+    # Linhas de fio (Original, Twinkle…): topo fixo, igual em todas, só muda o nome do fio.
+    # O texto próprio da página (ex.: Aura, Ice) vai para logo abaixo do topo (nota).
+    linha = any(m["link"] == p["url"] for m in sub)
     pill, abas = "", ""
-    if com and sem and not pagina_sem:
+    if linha and prods:
+        # Abas sempre no mesmo lugar; sem novelos de um tipo, o botão dele fica desativado
+        inicio = "com" if com else "sem"
+        def aba(tipo, texto, lista):
+            sel = "true" if tipo == inicio else "false"
+            off = "" if lista else f' disabled title="Este fio não tem novelos {texto.lower()}"'
+            return f'<button type="button" role="tab" aria-selected="{sel}" data-aba-tipo="{tipo}"{off}>{texto}</button>'
+        abas = (f'<div class="abas-degrade" role="tablist" aria-label="Tipo de novelo" data-abas-degrade>'
+                f'{aba("com", "Com degradê", com)}{aba("sem", "Sem degradê", sem)}</div>')
+        pill = (f'<span class="pill" data-pill-tipo="com"{"" if inicio == "com" else " hidden"}>{resumo_cores(com or prods)}</span>'
+                f'<span class="pill" data-pill-tipo="sem"{"" if inicio == "sem" else " hidden"}>{resumo_cores(sem or prods)}</span>')
+    elif linha:
+        pill = '<span class="pill">Cores sob consulta</span>'
+    elif com and sem and not pagina_sem:
         # Abas: a página abre em "Com degradê" (produto principal da Nouvellando)
         abas = (f'<div class="abas-degrade" role="tablist" aria-label="Tipo de novelo" data-abas-degrade>'
                 f'<button type="button" role="tab" aria-selected="true" data-aba-tipo="com">Com degradê</button>'
@@ -1067,13 +1128,24 @@ def topo_categoria(p, ctx, primeira):
             '<span class="etiqueta-degrade">Todos sem degradê</span>' if not com else
             '<span class="etiqueta-degrade">Todos com degradê</span>')
         pill = etiqueta + f'<span class="pill">{resumo_cores(prods)}</span>'
-    # Sem título no conteúdo: o nome da linha vira o H1 da página (antes era um <p>)
-    titulo = primeira or f'<h1 class="cat-hero__nome">{esc(nome)}</h1>'
+    if linha:
+        titulo = ('<div class="texto cat-hero__intro"><p>Clique no novelo para ver os detalhes, preços e para entrar<br> '
+                  'em contato e finalizar seu pedido pelo WhatsApp.</p></div>'
+                  f'<h1 class="cat-hero__nome">Novelos artesanais<br> com fio {esc(nome.replace("Fio ", ""))}</h1>')
+    else:
+        # Sem título no conteúdo: o nome da linha vira o H1 da página (antes era um <p>)
+        titulo = primeira or f'<h1 class="cat-hero__nome">{esc(nome)}</h1>'
     chips = "".join(
         f'<a class="chip{" on" if m["link"] == p["url"] else ""}" href="{esc(ctx.rel(m["link"]))}">{esc(m["texto"].replace("Fio ", ""))}</a>'
         for m in sub)
-    return (f'<section class="cat-hero"><div class="wrap">{migalhas([("Início", "/"), ("Nossos fios", "/fios-nouvellando/"), (nome, None)] if p["url"] != "/fios-nouvellando/" else [("Início", "/"), (nome, None)], ctx)}'
-            f'{titulo}{abas}{pill}</div></section>'
+    trilha = migalhas([("Início", "/"), ("Nossos fios", "/fios-nouvellando/"), (nome, None)]
+                      if p["url"] != "/fios-nouvellando/" else [("Início", "/"), (nome, None)], ctx)
+    # Caixa "Filtros" no lado direito: abas Com/Sem degradê e menu de cores
+    cores = "" if pagina_sem else filtro_cores(prods)
+    caixa = (f'<aside class="filtros{"" if abas else " filtros--so-js"}" aria-label="Filtros"><p class="filtros__titulo">Filtros</p>{abas}{cores}</aside>'
+             if abas or cores else "")
+    return (f'<section class="cat-hero"><div class="wrap{" cat-hero__grade" if caixa else ""}">'
+            f'<div class="cat-hero__texto">{trilha}{titulo}{pill}</div>{caixa}</div></section>'
             f'<div class="wrap cat-chips"><nav class="chips chips--scroll" aria-label="Linhas de fio">{chips}</nav></div>')
 
 
@@ -1117,11 +1189,17 @@ def corpo_secoes(p, ctx, tipo):
     secoes = []
     blocos = p["blocos"]
     if tipo == "categoria":
-        primeira = ""
+        primeira, nota = "", ""
         if blocos and eh_textual(blocos[0]):
-            primeira = r_bloco(blocos[0], ctx)
+            if any(m["link"] == p["url"] for m in SITE["menu"][1]["submenu"]):
+                nota = "".join(r_bloco(x, ctx) for x in folhas([blocos[0]])
+                               if x["tipo"] != "heading" and "Clique no novelo" not in x.get("html", ""))
+            else:
+                primeira = r_bloco(blocos[0], ctx)
             blocos = blocos[1:]
         secoes.append(topo_categoria(p, ctx, primeira))
+        if nota:
+            secoes.append(f'<section class="secao cat-nota"><div class="wrap">{nota}</div></section>')
     for i, b in enumerate(blocos):
         if tipo == "home" and CURSOS and secao_videoaulas(b):
             secoes.append(home_videoaulas(b, ctx))
@@ -1541,6 +1619,10 @@ def main():
     print(f"_redirects do Cloudflare: {n_redir} regras 301 (limite do Cloudflare Pages: {LIMITE_REDIRECTS})")
     if n_redir > LIMITE_REDIRECTS:
         print("ATENÇÃO: passou do limite; o Cloudflare ignora o que vier depois. Mover parte para Bulk Redirects.")
+    if SEM_COR:
+        print(f"Atenção: {len(SEM_COR)} novelo(s) sem cores em conteudo/cores.json (ficam fora do filtro de cores):")
+        for c in sorted(SEM_COR):
+            print("  " + c)
     if FOTOS_FALTANDO:
         print(f"Atenção: {len(FOTOS_FALTANDO)} foto(s) ainda vêm do WordPress (não estão em conteudo/fotos.json):")
         for f in sorted(FOTOS_FALTANDO):

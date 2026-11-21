@@ -309,8 +309,9 @@
   }
   function atualizaVerMais() {
     document.querySelectorAll('[data-ver-mais]').forEach(function (btn) {
-      var caixa = btn.closest('.ver-mais'), n = escondidas(caixa.previousElementSibling).length;
-      caixa.hidden = n === 0;
+      var caixa = btn.closest('.ver-mais'), grade = caixa.previousElementSibling, n = escondidas(grade).length;
+      // Com filtro de cor ligado aparecem todas as cores que combinam, sem "Ver mais"
+      caixa.hidden = n === 0 || grade.classList.contains('filtrando');
       btn.querySelector('[data-restam]').textContent = '(' + n + ')';
     });
   }
@@ -323,7 +324,7 @@
     });
     document.querySelectorAll('[data-pill-tipo]').forEach(function (p) { p.hidden = p.getAttribute('data-pill-tipo') !== tipo; });
     document.querySelectorAll('.linha--cards[data-aba]').forEach(function (g) { g.setAttribute('data-aba', tipo); });
-    atualizaVerMais();
+    aplicaCores();
     if (history.replaceState) history.replaceState(null, '', tipo === 'sem' ? '#sem-degrade' : location.pathname + location.search);
   }
   if (abasDegrade) {
@@ -332,9 +333,79 @@
       if (b) escolheAba(b.getAttribute('data-aba-tipo'));
     });
     abasDegrade.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') escolheAba(abaAtual() === 'com' ? 'sem' : 'com', true);
+      var outra = abaAtual() === 'com' ? 'sem' : 'com';
+      var bOutra = abasDegrade.querySelector('[data-aba-tipo="' + outra + '"]');
+      if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && bOutra && !bOutra.disabled) escolheAba(outra, true);
     });
-    if (location.hash === '#sem-degrade') escolheAba('sem');
+    var bSem = abasDegrade.querySelector('[data-aba-tipo="sem"]');
+    if (location.hash === '#sem-degrade' && bSem && !bSem.disabled) escolheAba('sem');
+  }
+
+  // Filtro por cor no topo de cada fio (cores de conteudo/cores.json, em data-cores de cada card).
+  // Várias cores marcadas = mostra os novelos que têm QUALQUER uma delas. Funciona junto com as
+  // abas Com/Sem degradê: só aparecem os botões das cores que existem na aba atual.
+  function aplicaCores() {
+    var filtro = document.querySelector('[data-filtro-cores]');
+    var grades = document.querySelectorAll('.linha--cards');
+    var tipo = abaAtual();
+    var sel = filtro ? Array.prototype.map.call(filtro.querySelectorAll('[data-cor][aria-pressed="true"]'),
+      function (b) { return b.getAttribute('data-cor'); }) : [];
+    var existem = {}, achados = 0;
+    grades.forEach(function (g) {
+      g.classList.toggle('filtrando', sel.length > 0);
+      Array.prototype.forEach.call(g.children, function (c) {
+        if (!c.classList.contains('col')) return;
+        var cores = (c.getAttribute('data-cores') || '').split(' ');
+        var naAba = !tipo || !g.hasAttribute('data-aba') || c.getAttribute('data-tipo') === tipo;
+        if (naAba) cores.forEach(function (x) { if (x) existem[x] = true; });
+        var ok = !sel.length || sel.some(function (x) { return cores.indexOf(x) >= 0; });
+        c.classList.toggle('fora-cor', !ok);
+        if (ok && naAba && sel.length) achados++;
+      });
+    });
+    if (filtro) {
+      // Cor que não existe na aba atual: botão some (e deixa de estar marcado)
+      var apagou = false;
+      filtro.querySelectorAll('[data-cor]').forEach(function (b) {
+        var tem = !!existem[b.getAttribute('data-cor')];
+        b.hidden = !tem;
+        if (!tem && b.getAttribute('aria-pressed') === 'true') { b.setAttribute('aria-pressed', 'false'); apagou = true; }
+      });
+      if (apagou) return aplicaCores();
+      filtro.querySelector('[data-limpar-cores]').hidden = !sel.length;
+      var conta = filtro.querySelector('[data-conta-cores]');
+      conta.hidden = !sel.length;
+      conta.textContent = sel.length;
+      filtro.querySelector('[data-status-cores]').textContent = !sel.length ? '' :
+        achados === 0 ? 'Nenhum novelo com essa cor aqui.' :
+        achados + (achados === 1 ? ' novelo com ' : ' novelos com ') + (sel.length === 1 ? 'essa cor' : 'essas cores');
+    }
+    atualizaVerMais();
+  }
+  var filtroCores = document.querySelector('[data-filtro-cores]');
+  if (filtroCores) {
+    var abrirCores = filtroCores.querySelector('[data-abrir-cores]');
+    var painelCores = filtroCores.querySelector('[data-painel-cores]');
+    function mostraCores(abrir, devolveFoco) {
+      painelCores.hidden = !abrir;
+      abrirCores.setAttribute('aria-expanded', abrir);
+      if (abrir) { var b = painelCores.querySelector('[data-cor]:not([hidden])'); if (b) b.focus(); }
+      else if (devolveFoco) abrirCores.focus();
+    }
+    filtroCores.addEventListener('click', function (e) {
+      if (e.target.closest('[data-abrir-cores]')) return mostraCores(painelCores.hidden);
+      if (e.target.closest('[data-fechar-cores]')) return mostraCores(false, true);
+      var b = e.target.closest('[data-cor]');
+      if (b) b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      else if (e.target.closest('[data-limpar-cores]'))
+        filtroCores.querySelectorAll('[data-cor]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      else return;
+      aplicaCores();
+    });
+    // Fecha o menu ao clicar fora ou apertar Esc
+    document.addEventListener('click', function (e) { if (!painelCores.hidden && !filtroCores.contains(e.target)) mostraCores(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !painelCores.hidden) mostraCores(false, true); });
+    aplicaCores();
   }
 
   // Catálogos grandes: "Ver mais cores" mostra o próximo bloco de cores da aba atual

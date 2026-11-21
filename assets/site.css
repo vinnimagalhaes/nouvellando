@@ -289,7 +289,6 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 
 /* Topo dos catálogos (cara de loja) */
 .cat-hero{background:linear-gradient(135deg,var(--color-brand),#c2577f 55%,var(--color-accent));color:var(--color-surface);padding:var(--space-8) 0 var(--space-12);position:relative;overflow:hidden}
-.cat-hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(35deg,rgba(255,255,255,.08) 0 3px,transparent 3px 12px);pointer-events:none}
 .cat-hero .wrap{position:relative;z-index:1}
 .cat-hero .crumbs{color:rgba(255,255,255,.8)}
 .cat-hero .titulo,.cat-hero .texto,.cat-hero .texto strong,.cat-hero .cat-hero__nome{color:var(--color-surface)}
@@ -534,7 +533,7 @@ a.fio__foto:hover img{transform:scale(1.04)}
 }
 
 /* Catálogos grandes: 48 cores por vez + "Ver mais cores" (só com JavaScript; sem ele aparece tudo) */
-.js .linha--cards>.col.mais{display:none}
+.js .linha--cards:not(.filtrando)>.col.mais{display:none}
 .ver-mais{display:flex;justify-content:center;margin-top:var(--space-8)}
 .ver-mais [data-restam]{opacity:.65;font-weight:var(--weight-regular)}
 
@@ -563,3 +562,65 @@ a.fio__foto:hover img{transform:scale(1.04)}
 [data-pill-tipo][hidden],.ver-mais[hidden],.etiqueta-degrade[hidden]{display:none!important}
 .abas-degrade button{white-space:nowrap}
 @media(max-width:420px){.abas-degrade button{padding:10px 12px;font-size:var(--text-sm)}}
+
+/* Caixa "Filtros" no lado direito do topo de cada fio: abas Com/Sem degradê + menu "Cores"
+   (cores de conteudo/cores.json). O menu de cores só aparece com JavaScript. */
+.cat-hero__grade{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--space-8);align-items:center}
+.filtros{background:var(--color-surface);color:var(--color-ink);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);padding:var(--space-5);display:flex;flex-direction:column;gap:var(--space-3)}
+.filtros--so-js{display:none}
+.js .filtros--so-js{display:flex}
+.filtros__titulo{margin:0;font-family:var(--font-display);font-size:1.25rem;font-weight:var(--weight-semibold);line-height:1.2}
+/* Com/Sem degradê dentro da caixa: controle compacto */
+.filtros .abas-degrade{display:flex;margin:0;padding:3px;gap:3px;background:var(--color-tint);backdrop-filter:none}
+.filtros .abas-degrade button{flex:1;color:var(--color-muted);font-size:var(--text-sm);padding:6px 10px;min-height:36px}
+.filtros .abas-degrade button[aria-selected="true"]{background:var(--color-surface);color:var(--color-ink);box-shadow:0 1px 3px rgba(60,30,50,.18)}
+.filtros .abas-degrade button:focus-visible{outline-color:var(--color-brand)}
+/* Menu "Cores" */
+.filtro-cores{display:none}
+.filtro-cores__menu{position:relative}
+.cat-hero:has(.filtros){overflow:visible}
+.cat-hero .wrap.cat-hero__grade{z-index:3}
+.js .filtro-cores{display:block}
+.filtro-cores__abrir{display:flex;align-items:center;gap:8px;width:100%;min-height:42px;padding:8px 12px 8px 14px;border:1px solid var(--color-line);border-radius:var(--radius-md);background:var(--color-surface);color:var(--color-ink);font:inherit;font-size:var(--text-sm);font-weight:var(--weight-semibold);cursor:pointer;text-align:left}
+.filtro-cores__abrir:hover,.filtro-cores__abrir[aria-expanded="true"]{border-color:var(--color-brand)}
+.filtro-cores__abrir:focus-visible{outline:2px solid var(--color-brand);outline-offset:2px}
+.filtro-cores__conta{min-width:20px;height:20px;padding:0 6px;border-radius:var(--radius-pill);background:var(--color-brand);color:var(--color-surface);font-size:var(--text-xs);line-height:20px;text-align:center}
+.filtro-cores__seta{margin-left:auto;transition:transform .2s}
+.filtro-cores__abrir[aria-expanded="true"] .filtro-cores__seta{transform:rotate(180deg)}
+.filtro-cores__painel{position:absolute;z-index:20;top:calc(100% + 6px);right:0;width:max(100%,330px);max-width:calc(100vw - 2 * var(--space-4));background:var(--color-surface);border:1px solid var(--color-line);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:var(--space-2)}
+.filtro-cores__lista{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.filtro-cor{display:flex;align-items:center;gap:8px;min-height:38px;padding:6px 8px;border:0;border-radius:10px;background:none;color:var(--color-ink);font:inherit;font-size:var(--text-sm);cursor:pointer;text-align:left}
+.filtro-cor:hover{background:var(--color-tint)}
+.filtro-cor[aria-pressed="true"]{background:var(--color-brand-soft);font-weight:var(--weight-semibold)}
+.filtro-cor:focus-visible{outline:2px solid var(--color-brand);outline-offset:-2px}
+.filtro-cor__bola{width:18px;height:18px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.filtro-cor__nome{flex:1;line-height:1.2}
+.filtro-cor__check{flex:none;color:var(--color-brand);visibility:hidden}
+.filtro-cor[aria-pressed="true"] .filtro-cor__check{visibility:visible}
+.filtro-cores__rodape{display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);margin-top:var(--space-2);padding:var(--space-2) 4px 2px;border-top:1px solid var(--color-line)}
+.filtro-cores__rodape .btn{margin-left:auto}
+.filtro-cores__limpar{border:0;background:none;color:var(--color-brand);font:inherit;font-size:var(--text-sm);text-decoration:underline;padding:6px 4px;cursor:pointer}
+.filtro-cores__status{margin:var(--space-2) 0 0;font-size:var(--text-sm);color:var(--color-muted)}
+.filtro-cores__status:empty{display:none}
+.filtro-cor[hidden],.filtro-cores__limpar[hidden],.filtro-cores__conta[hidden],.filtro-cores__painel[hidden]{display:none!important}
+.js .linha--cards>.col.fora-cor{display:none!important}
+@media(max-width:900px){
+  .cat-hero__grade{grid-template-columns:1fr;gap:var(--space-5)}
+  .filtros{padding:var(--space-4)}
+  .filtro-cores__painel{width:100%}
+}
+/* Topo fixo das linhas de fio: mesmo texto e mesma altura em todas, só muda o nome do fio */
+.cat-hero__intro p{margin:0 0 var(--space-3)}
+.filtros .abas-degrade button:disabled{opacity:.45;cursor:not-allowed;background:none;box-shadow:none}
+/* Texto próprio de algumas linhas (Aura, Ice), logo abaixo da barra de fios */
+.secao.cat-nota{padding:0 0 var(--space-6)}
+.cat-nota .texto{color:var(--color-muted);max-width:760px}
+.cat-nota .texto p{margin:0 0 var(--space-2)}
+/* Cards de novelo da mesma fileira com a mesma altura (nome em 2 linhas não desalinha);
+   o "a partir de" fica sempre no pé do card */
+.linha--cards{align-items:stretch}
+.linha--cards>.col>.carrossel--card,.linha--cards>.col>.imagem--card{flex:1;display:flex;flex-direction:column}
+.linha--cards .carrossel--card>.carrossel__trilho{flex:none}
+.linha--cards .carrossel--card>.price,.linha--cards .imagem--card>.price{margin-top:auto;padding-top:var(--space-2)}
+/* No celular o texto do topo corre normal (a quebra depois de "entrar" é só no computador) */
+@media(max-width:600px){.cat-hero__intro br{display:none}}

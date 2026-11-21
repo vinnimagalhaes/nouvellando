@@ -54,6 +54,20 @@ Abra o JSON da página em `conteudo/paginas/` (o nome é o endereço antigo, ex.
 - Quem é sem degradê: novelos da página Sem degradê do site antigo + os que têm "(sem degradê)" no nome + a lista `sem_degrade` de `conteudo/sem-degrade.json` (e `com_degrade` para corrigir o contrário).
 - Menu "Nossos fios" em dois grupos (`conteudo/site.json`): `submenu` = linhas de fio (também são os botões do topo de cada fio) e `extra` = "Compre também" (Sem degradê e Cor única).
 
+## Topo das linhas de fio
+
+- Todas as linhas (Original, Twinkle, Stardust…) têm o **mesmo topo**, com a mesma altura: o texto "Clique no novelo…", o título "Novelos artesanais com fio <nome>" (é o H1 da página), o total de cores e a caixa **Filtros** à direita. Só mudam o caminho (Início › Nossos fios › Fio …) e o nome do fio.
+- Na caixa Filtros, Com/Sem degradê fica sempre no mesmo lugar; se o fio não tem novelos de um dos tipos, o botão dele aparece desativado.
+- O texto próprio de algumas linhas (Aura, Ice) aparece logo abaixo da barra de fios.
+- Os cards de novelo com 2 fotos passam pelas setas (sem bolinhas), e os cards da mesma fileira têm a mesma altura.
+
+## Filtro por cor
+
+- Cada fio tem, no topo, botões de cor (Vermelho, Azul, Marrom e bege…) que funcionam junto com as abas Com/Sem degradê. Várias cores marcadas mostram os novelos que têm **qualquer uma** delas; só aparecem as cores que existem na aba atual. Com filtro ligado, aparecem todas as cores que combinam (sem "Ver mais").
+- As cores de cada novelo ficam em `conteudo/cores.json` (uma linha por novelo, da cor mais presente para a menos). Foram catalogadas olhando a foto principal de cada novelo. **Para corrigir**, edite a lista do novelo e rode o `gerar.py`.
+- **Novelo novo:** o `gerar.py` avisa no fim quais novelos ainda não têm cores; eles ficam fora do filtro até alguém acrescentar a linha deles em `cores.json`.
+- A lista `cores` do mesmo arquivo define os botões (ordem, nome e cor da bolinha).
+
 ## SEO
 
 - Cada página tem **um H1 só** (o `gerar.py` transforma os H1 extras em parágrafo com a mesma aparência).
