@@ -78,14 +78,25 @@ def folhas(blocos):
             yield b
 
 
+RE_PROPRIO = re.compile(r"^https?://(www\.)?nouvellando\.com\.br(?=/|$)", re.I)
+
+
+def interno(href):
+    """Link salvo com o endereço completo do próprio site (http, https, com ou sem www)
+    vira link interno: http://nouvellando.com.br/original-767-767u/ -> /original-767-767u/."""
+    if href and RE_PROPRIO.match(href):
+        return RE_PROPRIO.sub("", href) or "/"
+    return href
+
+
 def links_do_bloco(b):
     if b.get("link"):
-        yield b["link"]
+        yield interno(b["link"])
     for s in b.get("slides", []):
         if s.get("link"):
-            yield s["link"]
+            yield interno(s["link"])
     for h in [b.get("html", "")] + [i.get("html", "") for i in b.get("itens", [])]:
-        yield from re.findall(r'href="([^"]+)"', h)
+        yield from (interno(l) for l in re.findall(r'href="([^"]+)"', h))
 
 
 def eh_produto(slug):
@@ -147,6 +158,7 @@ def link_externo(href):
 def a_attrs(href, ctx, extra=""):
     if not href:
         return ""
+    href = interno(href)
     alvo = ctx.rel(href)
     s = f' href="{esc(alvo)}"'
     if link_externo(href):
@@ -409,17 +421,36 @@ def r_grupo(b, ctx):
             classe = "linha linha--cards"
         else:
             classe = "linha linha--grade" if n > 4 else f"linha linha--{n}"
-        # Catálogos grandes: mostra POR_PAGINA cores e um botão "Ver mais cores".
-        # Todas continuam no HTML (o Google segue os links); só ficam escondidas na tela.
-        paginar = cards and n > 2 * POR_PAGINA   # só vale a pena em catálogo bem grande (Fio Original)
+        # Tipo de cada card (com/sem degradê), para as abas do topo do fio
+        def tipo_card(f):
+            for bl in folhas([f]):
+                for l in links_do_bloco(bl):
+                    d = PRODUTOS.get(ctx.mapa.get(l, l))
+                    if d:
+                        return tipo_degrade(d)
+            return ""
+
+        tipos = [tipo_card(f) if cards else "" for f in filhos]
+        dois_tipos = "com" in tipos and "sem" in tipos
+        # Catálogos grandes: mostra POR_PAGINA cores e um botão "Ver mais cores", contando
+        # separado em cada aba. Todas continuam no HTML (o Google segue os links).
+        conta = Counter(tipos)
+        paginar = cards and max(conta.values()) > 2 * POR_PAGINA   # só em catálogo bem grande (Fio Original)
+        vistos, mais = Counter(), []
+        for t in tipos:
+            vistos[t] += 1
+            mais.append(paginar and conta[t] > 2 * POR_PAGINA and vistos[t] > POR_PAGINA)
         cols = "".join(
-            f'<div class="{junta("col", "mais" if paginar and i >= POR_PAGINA else "", cls_oculto(f))}">'
+            f'<div class="{junta("col", "mais" if mais[i] else "", cls_oculto(f))}"'
+            f'{f" data-tipo={chr(34)}{tipos[i]}{chr(34)}" if tipos[i] else ""}>'
             f'{r_blocos(f["blocos"], ctx)}</div>'
             for i, f in enumerate(filhos))
-        grade = f'<div class="{junta(classe, oc)}">{cols}</div>'
+        aba = ' data-aba="com"' if dois_tipos else ""
+        grade = f'<div class="{junta(classe, oc)}"{aba}>{cols}</div>'
         if paginar:
-            grade += (f'<div class="ver-mais"><button type="button" class="btn btn--ghost" data-ver-mais>'
-                      f'Ver mais cores <span data-restam>({n - POR_PAGINA})</span></button></div>')
+            restam = sum(1 for i, t in enumerate(tipos) if mais[i] and (t == "com" or not dois_tipos))
+            grade += (f'<div class="ver-mais"{"" if restam else " hidden"}><button type="button" class="btn btn--ghost" data-ver-mais>'
+                      f'Ver mais cores <span data-restam>({restam})</span></button></div>')
         return grade
     return f'<div class="{junta("pilha", oc)}">{r_blocos(filhos, ctx)}</div>'
 
@@ -637,9 +668,8 @@ def descricao(p, ctx, tipo):
         return sob["description"]
     if tipo == "produto" and PRODUTOS.get(ctx.caminho):
         d = PRODUTOS[ctx.caminho]
-        texto = (d["nome"] + " " + " ".join(c["legenda"] for c in d["cores"])).lower()
         nome = re.sub(r"\s*\(sem degradê\)", "", d["nome"], flags=re.I).strip()
-        estilo = "sem degradê" if "sem degrad" in texto else "degradê"
+        estilo = "sem degradê" if tipo_degrade(d) == "sem" else "degradê"
         cabos = sorted({v["cabos"].split()[0] for v in d["variacoes"] if v["cabos"]})
         partes = [f"Novelo {nome}, artesanal {estilo} e feito à mão por Claudia Gerth."]
         lista = ", ".join(cabos[:-1]) + " ou " + cabos[-1] if len(cabos) > 1 else "".join(cabos)
@@ -661,13 +691,17 @@ def descricao(p, ctx, tipo):
         sub = SITE["menu"][1]["submenu"]
         nome = next((m["texto"] for m in sub if m["link"] == p["url"]), nome_pagina(p))
         prods = produtos_da_pagina(p, ctx)
+        com = [d for d in prods if tipo_degrade(d) == "com"]
+        sem = [d for d in prods if tipo_degrade(d) == "sem"]
+        if com and sem:
+            # Preço de vitrine dos novelos com degradê (produto principal); os sem degradê são citados
+            return corta(f"{nome}: novelos artesanais feitos à mão por Claudia Gerth. "
+                         f"{resumo_cores(com).replace(' · ', ' com degradê, ')} e {len(sem)} sem degradê. "
+                         f"Peça pelo WhatsApp.")
         if prods:
-            precos = [d["preco_vitrine"] for d in prods if d["preco_vitrine"] is not None]
-            estilo = "sem degradê" if "sem degrad" in nome.lower() else "degradê"
-            preco = f", a partir de {reais(min(precos))}" if precos else ""
-            n = len(prods)
+            estilo = "sem degradê" if not com else "degradê"
             return corta(f"{nome}: novelos artesanais {estilo} feitos à mão por Claudia Gerth. "
-                         f"{n} {'cor' if n == 1 else 'cores'}{preco}. Escolha a sua e peça pelo WhatsApp.")
+                         f"{resumo_cores(prods).replace(' · ', ', ')}. Escolha a sua e peça pelo WhatsApp.")
     # Demais páginas: o texto do site atual, sem o título repetido no começo e sem palavras grudadas
     base = html.unescape(p.get("description", ""))
     nome = nome_pagina(p)
@@ -966,23 +1000,105 @@ def produtos_da_pagina(p, ctx):
     return vistos
 
 
+# ---------------------------------------------------------------- com e sem degradê
+
+SEM_DEGRADE = set()      # caminhos dos novelos sem degradê (preenchido no main)
+URL_SEM_DEGRADE = "/novelos-sem-degrade/"
+
+
+def calcula_sem_degrade(pags, mapa):
+    """Lista única de novelos sem degradê, usada nas abas de cada fio e na página Sem degradê.
+    Junta a página Sem degradê do site antigo, o '(sem degradê)' no nome/legenda e as
+    exceções de conteudo/sem-degrade.json."""
+    regra = json.loads((CONTEUDO / "sem-degrade.json").read_text(encoding="utf-8"))
+    pag = pags.get(URL_SEM_DEGRADE.strip("/"))
+    if pag:
+        bruto = json.dumps(pag["blocos"])
+        for l in re.findall(r'"link": "([^"]+)"', bruto) + re.findall(r'href=\\"([^\\"]+)', bruto):
+            l = re.sub(r"^https?://(www\.)?nouvellando\.com\.br", "", l)
+            if mapa.get(l, l) in PRODUTOS:
+                SEM_DEGRADE.add(mapa.get(l, l))
+    for c, d in PRODUTOS.items():
+        if "sem degrad" in (d["nome"] + " " + " ".join(x["legenda"] for x in d["cores"])).lower():
+            SEM_DEGRADE.add(c)
+    SEM_DEGRADE.update(c for c in regra.get("sem_degrade", []) if c in PRODUTOS)
+    SEM_DEGRADE.difference_update(regra.get("com_degrade", []))
+
+
+def tipo_degrade(d):
+    return "sem" if d["caminho"] in SEM_DEGRADE else "com"
+
+
+def resumo_cores(prods):
+    """'483 cores · a partir de R$ 51,00' (preço de 4 cabos)."""
+    precos = [d["preco_vitrine"] for d in prods if d["preco_vitrine"] is not None]
+    return (f'{len(prods)} {"cor" if len(prods) == 1 else "cores"}'
+            + (f" · a partir de {reais(min(precos))}" if precos else ""))
+
+
 def topo_categoria(p, ctx, primeira):
-    """Faixa do topo dos catálogos: caminho, nome da linha, total de cores e atalhos para as outras linhas."""
+    """Faixa do topo dos catálogos: caminho, nome da linha, abas Com/Sem degradê,
+    total de cores e atalhos para as outras linhas."""
     sub = SITE["menu"][1]["submenu"]
     nome = next((m["texto"] for m in sub if m["link"] == p["url"]), nome_pagina(p))
     prods = produtos_da_pagina(p, ctx)
-    precos = [d["preco_vitrine"] for d in prods if d["preco_vitrine"] is not None]
-    pill = ""
-    if prods:
-        pill = f'<span class="pill">{len(prods)} {"cor" if len(prods) == 1 else "cores"}' + (f" · a partir de {reais(min(precos))}" if precos else "") + "</span>"
+    com = [d for d in prods if tipo_degrade(d) == "com"]
+    sem = [d for d in prods if tipo_degrade(d) == "sem"]
+    pagina_sem = p["url"] == URL_SEM_DEGRADE
+    pill, abas = "", ""
+    if com and sem and not pagina_sem:
+        # Abas: a página abre em "Com degradê" (produto principal da Nouvellando)
+        abas = (f'<div class="abas-degrade" role="tablist" aria-label="Tipo de novelo" data-abas-degrade>'
+                f'<button type="button" role="tab" aria-selected="true" data-aba-tipo="com">Com degradê</button>'
+                f'<button type="button" role="tab" aria-selected="false" data-aba-tipo="sem">Sem degradê</button>'
+                f'</div>')
+        pill = (f'<span class="pill" data-pill-tipo="com">{resumo_cores(com)}</span>'
+                f'<span class="pill" data-pill-tipo="sem" hidden>{resumo_cores(sem)}</span>')
+    elif prods:
+        etiqueta = "" if pagina_sem else (
+            '<span class="etiqueta-degrade">Todos sem degradê</span>' if not com else
+            '<span class="etiqueta-degrade">Todos com degradê</span>')
+        pill = etiqueta + f'<span class="pill">{resumo_cores(prods)}</span>'
     # Sem título no conteúdo: o nome da linha vira o H1 da página (antes era um <p>)
     titulo = primeira or f'<h1 class="cat-hero__nome">{esc(nome)}</h1>'
     chips = "".join(
         f'<a class="chip{" on" if m["link"] == p["url"] else ""}" href="{esc(ctx.rel(m["link"]))}">{esc(m["texto"].replace("Fio ", ""))}</a>'
         for m in sub)
     return (f'<section class="cat-hero"><div class="wrap">{migalhas([("Início", "/"), ("Nossos fios", "/fios-nouvellando/"), (nome, None)] if p["url"] != "/fios-nouvellando/" else [("Início", "/"), (nome, None)], ctx)}'
-            f'{titulo}{pill}</div></section>'
+            f'{titulo}{abas}{pill}</div></section>'
             f'<div class="wrap cat-chips"><nav class="chips chips--scroll" aria-label="Linhas de fio">{chips}</nav></div>')
+
+
+def corpo_sem_degrade(p, ctx):
+    """Página /novelos-sem-degrade/: montada sozinha com TODOS os novelos sem degradê,
+    uma aba por linha de fio (assim nunca fica faltando novelo)."""
+    sub = SITE["menu"][1]["submenu"]
+    linhas = [(m, [d for d in PRODUTOS.values() if d["caminho"] in SEM_DEGRADE and f'/{d["linha"]}/' == m["link"]])
+              for m in sub]
+    # Ordem decrescente de numeração: o lançamento mais recente (número mais alto) primeiro.
+    # "Original 805 | 805U" -> 805, "Aura A030" -> 30, "Twinkle 795T" -> 795.
+    def numero(d):
+        m = re.search(r"\d+", d["nome"])
+        return int(m.group()) if m else -1
+    linhas = [(m, sorted(ds, key=numero, reverse=True)) for m, ds in linhas if ds]
+    todos = [d for _, ds in linhas for d in ds]
+    nome = "Novelos sem degradê"
+    topo = (f'<section class="cat-hero"><div class="wrap">'
+            f'{migalhas([("Início", "/"), ("Nossos fios", "/fios-nouvellando/"), ("Sem degradê", None)], ctx)}'
+            f'<h1 class="cat-hero__nome">{nome}</h1><span class="pill">{resumo_cores(todos)}</span></div></section>')
+    botoes, paineis = [], []
+    for i, (m, ds) in enumerate(linhas):
+        sel = "true" if i == 0 else "false"
+        botoes.append(f'<button role="tab" aria-selected="{sel}" class="{"on" if i == 0 else ""}">'
+                      f'{esc(m["texto"].replace("Fio ", ""))} <small>{len(ds)}</small></button>')
+        cards = "".join(card_produto(d, ctx) for d in ds)
+        paineis.append(f'<div role="tabpanel" class="abas__painel"{"" if i == 0 else " hidden"}>'
+                       f'<div class="grid">{cards}</div>'
+                       f'<p class="ver-no-fio"><a class="btn btn--ghost btn--sm" href="{esc(ctx.rel(m["link"]) + "#sem-degrade")}">'
+                       f'Ver no {esc(m["texto"])} →</a></p></div>')
+    abas = (f'<section class="secao"><div class="wrap"><div class="abas"><div class="tabs" role="tablist">{"".join(botoes)}</div>'
+            f'{"".join(paineis)}</div></div></section>')
+    return topo + abas
 
 
 def eh_textual(b):
@@ -1092,8 +1208,16 @@ def cabecalho(ctx):
     for m in SITE["menu"]:
         ativo = ' aria-current="page"' if ctx.caminho == m["link"] else ""
         if m.get("submenu"):
-            sub = "".join(f'<li><a href="{esc(ctx.rel(s["link"]))}"{" aria-current=\"page\"" if ctx.caminho == s["link"] else ""}>{esc(s["texto"])}</a></li>'
-                          for s in m["submenu"])
+            def li(s):
+                atual = ' aria-current="page"' if ctx.caminho == s["link"] else ""
+                return f'<li><a href="{esc(ctx.rel(s["link"]))}"{atual}>{esc(s["texto"])}</a></li>'
+            sub = "".join(li(s) for s in m["submenu"])
+            if m.get("extra"):
+                # Dois grupos: as linhas de fio e os atalhos que não são um fio
+                sub = (f'<li class="nav__grupo"><span class="nav__titulo">{esc(m.get("submenu_titulo", ""))}</span>'
+                       f'<ul>{sub}<li class="nav__todos"><a href="{esc(ctx.rel(m["link"]))}">Ver todos os fios →</a></li></ul></li>'
+                       f'<li class="nav__grupo"><span class="nav__titulo">{esc(m.get("extra_titulo", ""))}</span>'
+                       f'<ul>{"".join(li(s) for s in m["extra"])}</ul></li>')
             itens.append(f'<li class="nav__sub"><a href="{esc(ctx.rel(m["link"]))}"{ativo}>{esc(m["texto"])}</a>'
                          f'<button class="nav__abre" aria-label="Abrir {esc(m["texto"])}" aria-expanded="false">▾</button>'
                          f'<ul>{sub}</ul></li>')
@@ -1324,6 +1448,7 @@ def main():
         if tipo_de(slug) == "produto" and p["url"] not in duplicadas:
             caminho = novo[p["url"]]
             PRODUTOS[caminho] = dados_produto(p, caminho, caminho.split("/")[1])
+    calcula_sem_degrade(pags, mapa)
 
     carrega_cursos(pags)
     if "fio-original" in pags:
@@ -1349,6 +1474,9 @@ def main():
         elif tipo == "videoaula":
             trilha = [("Início", "/"), ("Videoaulas", "/cursos/"), (nome, None)]
             corpo = corpo_dividido(p, ctx, trilha)
+        elif p["url"] == URL_SEM_DEGRADE:
+            trilha = [("Início", "/"), ("Nossos fios", "/fios-nouvellando/"), ("Sem degradê", None)]
+            corpo = corpo_sem_degrade(p, ctx)
         elif slug == "fios-nouvellando":
             trilha = [("Início", "/"), (nome, None)]
             corpo = corpo_fios(p, ctx)
@@ -1367,6 +1495,8 @@ def main():
                "p": reais(d["preco_vitrine"]) if d["preco_vitrine"] is not None else ""} for c, d in PRODUTOS.items()]
     indice += [{"n": m["texto"], "u": m["link"], "i": "", "l": "Linha de fio", "p": ""}
                for m in SITE["menu"][1]["submenu"]]
+    indice += [{"n": m["texto"], "u": m["link"], "i": "", "l": SITE["menu"][1].get("extra_titulo", ""), "p": ""}
+               for m in SITE["menu"][1].get("extra", [])]
     (SAIDA / "assets" / "busca.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     # Endereços antigos dos produtos e páginas duplicadas -> endereço novo

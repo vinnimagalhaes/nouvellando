@@ -298,22 +298,53 @@
     marca();
   });
 
-  // Catálogos grandes: "Ver mais cores" mostra o próximo bloco de cores (as fotos
-  // escondidas só são baixadas quando aparecem). O número por vez vem do gerar.py.
+  // Abas "Com degradê / Sem degradê" no topo de cada fio + "Ver mais cores" (que conta
+  // separado em cada aba). Link direto para a aba: /fio-original/#sem-degrade
+  var POR_VEZ = 48;
+  var abasDegrade = document.querySelector('[data-abas-degrade]');
+  function abaAtual() { return abasDegrade ? (abasDegrade.querySelector('[aria-selected="true"]') || {}).getAttribute('data-aba-tipo') : ''; }
+  function escondidas(grade) {
+    var tipo = grade.getAttribute('data-aba');
+    return Array.prototype.slice.call(grade.querySelectorAll('.col.mais' + (tipo ? '[data-tipo="' + tipo + '"]' : '')));
+  }
+  function atualizaVerMais() {
+    document.querySelectorAll('[data-ver-mais]').forEach(function (btn) {
+      var caixa = btn.closest('.ver-mais'), n = escondidas(caixa.previousElementSibling).length;
+      caixa.hidden = n === 0;
+      btn.querySelector('[data-restam]').textContent = '(' + n + ')';
+    });
+  }
+  function escolheAba(tipo, foco) {
+    abasDegrade.querySelectorAll('[data-aba-tipo]').forEach(function (b) {
+      var on = b.getAttribute('data-aba-tipo') === tipo;
+      b.setAttribute('aria-selected', on);
+      b.tabIndex = on ? 0 : -1;
+      if (on && foco) b.focus();
+    });
+    document.querySelectorAll('[data-pill-tipo]').forEach(function (p) { p.hidden = p.getAttribute('data-pill-tipo') !== tipo; });
+    document.querySelectorAll('.linha--cards[data-aba]').forEach(function (g) { g.setAttribute('data-aba', tipo); });
+    atualizaVerMais();
+    if (history.replaceState) history.replaceState(null, '', tipo === 'sem' ? '#sem-degrade' : location.pathname + location.search);
+  }
+  if (abasDegrade) {
+    abasDegrade.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-aba-tipo]');
+      if (b) escolheAba(b.getAttribute('data-aba-tipo'));
+    });
+    abasDegrade.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') escolheAba(abaAtual() === 'com' ? 'sem' : 'com', true);
+    });
+    if (location.hash === '#sem-degrade') escolheAba('sem');
+  }
+
+  // Catálogos grandes: "Ver mais cores" mostra o próximo bloco de cores da aba atual
+  // (as fotos escondidas só são baixadas quando aparecem).
   document.querySelectorAll('[data-ver-mais]').forEach(function (btn) {
-    var caixa = btn.closest('.ver-mais');
-    var grade = caixa.previousElementSibling;
-    var porVez = grade.querySelectorAll('.col:not(.mais)').length || 48;
+    var grade = btn.closest('.ver-mais').previousElementSibling;
     btn.addEventListener('click', function () {
-      var escondidas = Array.prototype.slice.call(grade.querySelectorAll('.col.mais'));
-      var mostrar = escondidas.slice(0, porVez);
+      var mostrar = escondidas(grade).slice(0, POR_VEZ);
       mostrar.forEach(function (c) { c.classList.remove('mais'); });
-      var restam = escondidas.length - mostrar.length;
-      if (restam > 0) {
-        btn.querySelector('[data-restam]').textContent = '(' + restam + ')';
-      } else {
-        caixa.remove();
-      }
+      atualizaVerMais();
       // Leva o foco para a primeira cor nova (teclado e leitor de tela)
       var link = mostrar[0] && mostrar[0].querySelector('a');
       if (link) link.focus({ preventScroll: true });

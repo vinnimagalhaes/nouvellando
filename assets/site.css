@@ -537,3 +537,29 @@ a.fio__foto:hover img{transform:scale(1.04)}
 .js .linha--cards>.col.mais{display:none}
 .ver-mais{display:flex;justify-content:center;margin-top:var(--space-8)}
 .ver-mais [data-restam]{opacity:.65;font-weight:var(--weight-regular)}
+
+/* Abas "Com degradê / Sem degradê" no topo de cada fio */
+.abas-degrade{display:inline-flex;gap:4px;padding:4px;margin:var(--space-4) 0 var(--space-3);border-radius:var(--radius-pill);background:rgba(255,255,255,.18);backdrop-filter:blur(4px)}
+.abas-degrade button{border:0;background:none;color:var(--color-surface);font:inherit;font-weight:var(--weight-semibold);padding:10px 18px;min-height:44px;border-radius:var(--radius-pill);cursor:pointer}
+.abas-degrade button small{opacity:.75;font-weight:var(--weight-regular);margin-left:4px}
+.abas-degrade button[aria-selected="true"]{background:var(--color-surface);color:var(--color-ink)}
+.abas-degrade button:focus-visible{outline:2px solid var(--color-surface);outline-offset:2px}
+.cat-hero .pill+.pill{margin-left:0}
+.etiqueta-degrade{display:inline-block;margin:var(--space-3) var(--space-2) var(--space-3) 0;padding:6px 12px;border-radius:var(--radius-pill);border:1px solid rgba(255,255,255,.5);color:var(--color-surface);font-size:var(--text-sm)}
+.js .linha--cards[data-aba="com"]>.col[data-tipo="sem"],.js .linha--cards[data-aba="sem"]>.col[data-tipo="com"]{display:none}
+.ver-no-fio{display:flex;justify-content:center;margin-top:var(--space-6)}
+
+/* Menu "Nossos fios" em dois grupos: Linhas de fio e Compre também */
+.nav__sub>ul:has(.nav__grupo){display:grid;grid-template-columns:auto auto;gap:var(--space-2) var(--space-6);min-width:440px}
+.nav .nav__grupo ul{flex-direction:column;align-items:stretch;gap:0}
+.nav__titulo{display:block;padding:6px 12px 4px;font-size:var(--text-xs);font-weight:var(--weight-semibold);letter-spacing:var(--tracking-caps);text-transform:uppercase;color:var(--color-muted)}
+.nav__todos{border-top:1px solid var(--color-line);margin-top:4px;padding-top:4px}
+.pg-cursos .nav__titulo{color:var(--color-on-dark-muted)}
+@media (max-width: 900px){
+  .nav__sub>ul:has(.nav__grupo){display:none;min-width:0}
+  .nav__sub.aberto>ul:has(.nav__grupo){display:flex;flex-direction:column}
+}
+/* Garante que faixa de preço e "Ver mais" escondidos não apareçam (o display deles venceria o [hidden]) */
+[data-pill-tipo][hidden],.ver-mais[hidden],.etiqueta-degrade[hidden]{display:none!important}
+.abas-degrade button{white-space:nowrap}
+@media(max-width:420px){.abas-degrade button{padding:10px 12px;font-size:var(--text-sm)}}

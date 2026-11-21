@@ -1,0 +1,9 @@
+{
+ "_sobre": "Quais novelos são SEM degradê. O gerar.py junta: (1) os novelos da página Sem degradê do site antigo, (2) os que têm '(sem degradê)' no nome ou na legenda e (3) a lista 'sem_degrade' abaixo. 'com_degrade' força um novelo a ser com degradê. Com isso ele monta as abas Com/Sem degradê de cada fio e a página /novelos-sem-degrade/ (sempre completa). Use o endereço novo do novelo.",
+ "sem_degrade": [
+  "/fio-fluffinho/381f/",
+  "/fio-fluffinho/394f/",
+  "/fio-fluffinho/395f/"
+ ],
+ "com_degrade": []
+}

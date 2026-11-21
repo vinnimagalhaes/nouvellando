@@ -47,6 +47,13 @@ Também mantidos iguais ao site atual: título da aba (`<title>`), meta descript
 
 Abra o JSON da página em `conteudo/paginas/` (o nome é o endereço antigo, ex.: `fio-original.json`, `original-805-805u.json`), altere o texto e rode `python3 ferramentas/gerar.py`.
 
+## Com e sem degradê
+
+- Cada fio tem as abas **Com degradê / Sem degradê** no topo (abre em "Com degradê"; link direto: `/fio-original/#sem-degrade`). Cada aba tem o próprio "a partir de" (preço de 4 cabos).
+- A página `/novelos-sem-degrade/` é montada sozinha com **todos** os novelos sem degradê, uma aba por fio. Não precisa acrescentar novelo à mão.
+- Quem é sem degradê: novelos da página Sem degradê do site antigo + os que têm "(sem degradê)" no nome + a lista `sem_degrade` de `conteudo/sem-degrade.json` (e `com_degrade` para corrigir o contrário).
+- Menu "Nossos fios" em dois grupos (`conteudo/site.json`): `submenu` = linhas de fio (também são os botões do topo de cada fio) e `extra` = "Compre também" (Sem degradê e Cor única).
+
 ## SEO
 
 - Cada página tem **um H1 só** (o `gerar.py` transforma os H1 extras em parágrafo com a mesma aparência).

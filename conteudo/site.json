@@ -8,7 +8,15 @@
  "whatsapp": "https://api.whatsapp.com/send?phone=%2B5516988081463",
  "menu": [
   {"texto": "Home", "link": "/"},
-  {"texto": "Nossos fios", "link": "/fios-nouvellando/", "submenu": [
+  {"texto": "Nossos fios", "link": "/fios-nouvellando/",
+   "_sobre_submenu": "submenu = só as linhas de fio (aparecem também nos botões do topo de cada fio); extra = atalhos que não são um fio.",
+   "submenu_titulo": "Linhas de fio",
+   "extra_titulo": "Compre também",
+   "extra": [
+    {"texto": "Sem degradê (todas as linhas)", "link": "/novelos-sem-degrade/"},
+    {"texto": "Cor única sob encomenda", "link": "/fio-cor-unica/"}
+   ],
+   "submenu": [
    {"texto": "Fio Original", "link": "/fio-original/"},
    {"texto": "Fio Twinkle", "link": "/fio-twinkle/"},
    {"texto": "Fio Stardust", "link": "/fio-stardust/"},
@@ -18,9 +26,7 @@
    {"texto": "Fio Paillettes", "link": "/fio-paillettes/"},
    {"texto": "Fio Bouclé", "link": "/fio-boucle/"},
    {"texto": "Fio Ice", "link": "/fio-ice/"},
-   {"texto": "Fio Cor Única", "link": "/fio-cor-unica/"},
-   {"texto": "Fio Aura", "link": "/fio-aura/"},
-   {"texto": "Sem degradê", "link": "/novelos-sem-degrade/"}
+   {"texto": "Fio Aura", "link": "/fio-aura/"}
   ]},
   {"texto": "Videoaulas", "link": "/cursos/"},
   {"texto": "Sobre", "link": "/sobre-a-nouvellando/"}
