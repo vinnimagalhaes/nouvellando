@@ -1224,8 +1224,9 @@ def home_videoaulas(b, ctx):
     titulo = next((r_bloco(x, ctx) for x in fl if x["tipo"] == "heading"), "")
     resto = "".join(r_bloco(x, ctx) for x in fl if x["tipo"] != "heading")
     linha = fileira("", CURSOS[:12], ctx).replace('<h2 class="nf-fileira__titulo"></h2>', "")
-    return (f'<section class="nf nf--home"><div class="wrap nf-home__topo"><div>{titulo}</div>'
-            f'<div class="pilha">{resto}</div></div>{linha}</section>')
+    # Título em cima, fileira de capas no meio e o texto com o botão logo abaixo das fotos
+    return (f'<section class="nf nf--home"><div class="wrap nf-home__topo">{titulo}</div>{linha}'
+            f'<div class="wrap nf-home__texto"><div class="pilha">{resto}</div></div></section>')
 
 
 def faixa_beneficios():

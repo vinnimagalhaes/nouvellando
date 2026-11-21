@@ -315,6 +315,10 @@
       btn.querySelector('[data-restam]').textContent = '(' + n + ')';
     });
   }
+  // Ao trocar de fio (Original -> Fluffinho…), a aba Com/Sem degradê e as cores marcadas
+  // continuam: só muda a lista de novelos. Guardado só nesta aba do navegador (sessionStorage).
+  function lembra(chave, valor) { try { sessionStorage.setItem('nf-filtro-' + chave, valor); } catch (e) {} }
+  function lembrado(chave) { try { return sessionStorage.getItem('nf-filtro-' + chave); } catch (e) { return null; } }
   function escolheAba(tipo, foco) {
     abasDegrade.querySelectorAll('[data-aba-tipo]').forEach(function (b) {
       var on = b.getAttribute('data-aba-tipo') === tipo;
@@ -330,15 +334,17 @@
   if (abasDegrade) {
     abasDegrade.addEventListener('click', function (e) {
       var b = e.target.closest('[data-aba-tipo]');
-      if (b) escolheAba(b.getAttribute('data-aba-tipo'));
+      if (b) { escolheAba(b.getAttribute('data-aba-tipo')); lembra('aba', b.getAttribute('data-aba-tipo')); }
     });
     abasDegrade.addEventListener('keydown', function (e) {
       var outra = abaAtual() === 'com' ? 'sem' : 'com';
       var bOutra = abasDegrade.querySelector('[data-aba-tipo="' + outra + '"]');
-      if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && bOutra && !bOutra.disabled) escolheAba(outra, true);
+      if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && bOutra && !bOutra.disabled) { escolheAba(outra, true); lembra('aba', outra); }
     });
     var bSem = abasDegrade.querySelector('[data-aba-tipo="sem"]');
-    if (location.hash === '#sem-degrade' && bSem && !bSem.disabled) escolheAba('sem');
+    var abaSalva = location.hash === '#sem-degrade' ? 'sem' : lembrado('aba');
+    var bSalva = abaSalva && abasDegrade.querySelector('[data-aba-tipo="' + abaSalva + '"]');
+    if (bSalva && !bSalva.disabled && abaSalva !== abaAtual()) escolheAba(abaSalva);
   }
 
   // Filtro por cor no topo de cada fio (cores de conteudo/cores.json, em data-cores de cada card).
@@ -400,11 +406,17 @@
       else if (e.target.closest('[data-limpar-cores]'))
         filtroCores.querySelectorAll('[data-cor]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
       else return;
+      lembra('cores', Array.prototype.map.call(filtroCores.querySelectorAll('[data-cor][aria-pressed="true"]'),
+        function (x) { return x.getAttribute('data-cor'); }).join(' '));
       aplicaCores();
     });
     // Fecha o menu ao clicar fora ou apertar Esc
     document.addEventListener('click', function (e) { if (!painelCores.hidden && !filtroCores.contains(e.target)) mostraCores(false); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !painelCores.hidden) mostraCores(false, true); });
+    (lembrado('cores') || '').split(' ').forEach(function (c) {
+      var x = c && filtroCores.querySelector('[data-cor="' + c + '"]');
+      if (x) x.setAttribute('aria-pressed', 'true');
+    });
     aplicaCores();
   }
 

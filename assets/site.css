@@ -638,3 +638,25 @@ a.fio__foto:hover img{transform:scale(1.04)}
 /* "by Claudia Gerth" na mesma linha da frase (quebra para baixo só se não couber) */
 .pg-home .secao--3 .pilha .pilha{flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:baseline;column-gap:.45em;row-gap:0}
 .pg-home .secao--3 h1.titulo,.pg-home .secao--3 h1.titulo+.titulo--h1{margin:0}
+
+/* Home: bolinhas do banner por cima da foto, na parte de baixo */
+.pg-home .secao--1 .carrossel__pontos,.pg-home .secao--2 .carrossel__pontos{position:absolute;left:0;right:0;bottom:var(--space-4);margin:0;z-index:2;pointer-events:none}
+.pg-home .secao--1 .carrossel__pontos button,.pg-home .secao--2 .carrossel__pontos button{pointer-events:auto;background:rgba(255,255,255,.6);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.pg-home .secao--1 .carrossel__pontos button[aria-current],.pg-home .secao--2 .carrossel__pontos button[aria-current]{background:var(--color-surface)}
+/* Home: "Novelos artesanais degradê by Claudia Gerth" vira uma dobra escura (mesma cor das videoaulas) */
+.pg-home .secao--3.secao{background:var(--color-dark);padding:var(--space-8) 0}
+.pg-home .secao--3 h1.titulo{color:var(--color-surface)}
+.pg-home .secao--3 h1.titulo+.titulo--h1{color:var(--color-accent)}
+/* Home, videoaulas: título em cima, fotos, e o texto com o botão abaixo das fotos */
+.nf-home__topo{display:block}
+.nf-home__texto{margin-top:var(--space-6)}
+.nf-home__texto .pilha{flex-direction:row;align-items:center;justify-content:space-between;gap:var(--space-8)}
+.nf-home__texto .texto{max-width:720px}
+.nf-home__texto .texto p:last-child{margin-bottom:0}
+.nf--home .nf-home__texto .pilha>.btn{flex:none;background:var(--color-surface);color:var(--color-dark)}
+.nf--home .nf-home__texto .pilha>.btn:hover{background:var(--color-accent)}
+@media(max-width:900px){
+  .nf-home__texto .pilha{flex-direction:column;align-items:flex-start;gap:var(--space-4)}
+}
+/* Home: banner sem zoom ao passar o mouse */
+.pg-home .secao--1 .carrossel__img img,.pg-home .secao--2 .carrossel__img img{transform:none!important;transition:none}
