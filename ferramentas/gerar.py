@@ -503,11 +503,18 @@ def dados_produto(p, caminho, linha):
                       "legenda": legenda, "src": s.get("src", ""), "alt": s.get("alt", "")})
     h1 = next((b["texto"] for b in fl if b["tipo"] == "heading" and b.get("tag") == "h1"), nome_pagina(p))
     precos = [f["preco"] for v in variacoes for f in v["faixas"]]
+    # "A partir de" nas vitrines (páginas dos fios, cards, busca, descrição no Google): o padrão
+    # da Nouvellando é o novelo de 4 cabos. O de 3 cabos (mais barato) só aparece como opção
+    # dentro da página do novelo. Sem opção de 4 cabos, vale o menor preço.
+    precos_4 = [f["preco"] for v in variacoes if v["cabos"] == "4 cabos" for f in v["faixas"]]
+    # A página do novelo abre já na opção de 4 cabos mais barata (mesmo preço do "a partir de")
+    variacoes.sort(key=lambda v: (v["cabos"] != "4 cabos", v["faixas"][0]["preco"] if v["faixas"] else 0))
     botao = next((b for b in fl if b["tipo"] == "button"), None)
     return {
         "caminho": caminho, "linha": linha, "linha_nome": SITE["nomes_linhas"].get(linha, linha),
         "nome": h1, "cores": cores, "variacoes": variacoes,
         "preco_min": min(precos) if precos else None, "preco_max": max(precos) if precos else None,
+        "preco_vitrine": min(precos_4) if precos_4 else (min(precos) if precos else None),
         "botao": botao["texto"] if botao else "Compre pelo WhatsApp",
         "img": cores[0]["src"] if cores else "",
     }
@@ -516,9 +523,9 @@ def dados_produto(p, caminho, linha):
 def preco_card(link, ctx):
     destino = ctx.mapa.get(link, link)
     d = PRODUTOS.get(destino)
-    if not d or d["preco_min"] is None:
+    if not d or d["preco_vitrine"] is None:
         return ""
-    return f'<div class="price">a partir de {reais(d["preco_min"])}</div>'
+    return f'<div class="price">a partir de {reais(d["preco_vitrine"])}</div>'
 
 
 SVG_WA = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>'
@@ -636,19 +643,26 @@ def descricao(p, ctx, tipo):
         cabos = sorted({v["cabos"].split()[0] for v in d["variacoes"] if v["cabos"]})
         partes = [f"Novelo {nome}, artesanal {estilo} e feito à mão por Claudia Gerth."]
         lista = ", ".join(cabos[:-1]) + " ou " + cabos[-1] if len(cabos) > 1 else "".join(cabos)
-        detalhe = (lista + " cabos") if cabos else ""
-        if d["preco_min"] is not None:
-            detalhe = (detalhe + ", a partir de " if detalhe else "A partir de ") + reais(d["preco_min"])
+        if "4" in cabos and d["preco_vitrine"] is not None:
+            # Padrão da Nouvellando: preço do novelo de 4 cabos; as outras opções são citadas
+            outros = [c for c in cabos if c != "4"]
+            detalhe = f"4 cabos a partir de {reais(d['preco_vitrine'])}"
+            if outros:
+                detalhe += f" (também em {' ou '.join(outros)} cabos)"
+        else:
+            detalhe = (lista + " cabos") if cabos else ""
+            if d["preco_min"] is not None:
+                detalhe = (detalhe + ", a partir de " if detalhe else "A partir de ") + reais(d["preco_vitrine"])
         if detalhe:
             partes.append(detalhe[0].upper() + detalhe[1:] + ".")
-        partes.append("Escolha a metragem e peça pelo WhatsApp.")
+        partes.append("Peça pelo WhatsApp.")
         return corta(" ".join(partes))
     if tipo == "categoria":
         sub = SITE["menu"][1]["submenu"]
         nome = next((m["texto"] for m in sub if m["link"] == p["url"]), nome_pagina(p))
         prods = produtos_da_pagina(p, ctx)
         if prods:
-            precos = [d["preco_min"] for d in prods if d["preco_min"] is not None]
+            precos = [d["preco_vitrine"] for d in prods if d["preco_vitrine"] is not None]
             estilo = "sem degradê" if "sem degrad" in nome.lower() else "degradê"
             preco = f", a partir de {reais(min(precos))}" if precos else ""
             n = len(prods)
@@ -938,7 +952,7 @@ def card_produto(d, ctx):
             f'<div class="card__body"><span class="card__cat">{esc(d["linha_nome"])}</span>'
             f'<h3 class="card__name"><a href="{esc(ctx.rel(d["caminho"]))}">{esc(d["nome"])}</a></h3>'
             f'{f"<small class=card__cores>{cores} cores</small>" if cores > 1 else ""}'
-            f'<div class="price">a partir de {reais(d["preco_min"])}</div></div>'
+            f'<div class="price">a partir de {reais(d["preco_vitrine"])}</div></div>'
             f'<a class="card__add" href="{esc(ctx.rel(d["caminho"]))}">Escolher opções</a></article>')
 
 
@@ -957,7 +971,7 @@ def topo_categoria(p, ctx, primeira):
     sub = SITE["menu"][1]["submenu"]
     nome = next((m["texto"] for m in sub if m["link"] == p["url"]), nome_pagina(p))
     prods = produtos_da_pagina(p, ctx)
-    precos = [d["preco_min"] for d in prods if d["preco_min"] is not None]
+    precos = [d["preco_vitrine"] for d in prods if d["preco_vitrine"] is not None]
     pill = ""
     if prods:
         pill = f'<span class="pill">{len(prods)} {"cor" if len(prods) == 1 else "cores"}' + (f" · a partir de {reais(min(precos))}" if precos else "") + "</span>"
@@ -1350,7 +1364,7 @@ def main():
 
     # Índice da busca (produtos e linhas)
     indice = [{"n": d["nome"], "u": c, "i": img_url(d["img"], 120) if d["img"] else "", "l": d["linha_nome"],
-               "p": reais(d["preco_min"]) if d["preco_min"] is not None else ""} for c, d in PRODUTOS.items()]
+               "p": reais(d["preco_vitrine"]) if d["preco_vitrine"] is not None else ""} for c, d in PRODUTOS.items()]
     indice += [{"n": m["texto"], "u": m["link"], "i": "", "l": "Linha de fio", "p": ""}
                for m in SITE["menu"][1]["submenu"]]
     (SAIDA / "assets" / "busca.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
