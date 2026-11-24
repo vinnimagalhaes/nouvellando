@@ -326,7 +326,7 @@
      "blocos": [
       {
        "tipo": "text-editor",
-       "html": "<p><strong>Videoaulas com parcerias exclusivas!</strong></p><p><a href=\"/cursos/\">Aprenda</a> a crochetar Xales, Echarpes e Mantas em videoaulas produzidas com muito carinho, profissionalismo e personalidade.</p><p>Videoaulas disponíveis para compra na plataforma Hotmart.</p>"
+       "html": "<p><strong>Videoaulas com parcerias exclusivas!</strong></p><p>Aprenda a crochetar Xales, Echarpes e Mantas em videoaulas produzidas com muito carinho, profissionalismo e personalidade.</p><p>Videoaulas disponíveis para compra na plataforma Hotmart.</p>"
       },
       {
        "tipo": "button",
