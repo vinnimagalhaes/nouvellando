@@ -1451,8 +1451,8 @@ def rodape(ctx):
     <div class="drawer__head"><h3>Seu carrinho</h3><button class="icon-btn" data-fecha-carrinho aria-label="Fechar">✕</button></div>
     <div class="drawer__items" data-carrinho-itens></div>
     <div class="drawer__foot">
-      <div class="row"><span>Subtotal</span><b data-carrinho-total>R$ 0,00</b></div>
-      <small>Frete e pagamento combinados no WhatsApp</small>
+      <div class="row"><span>Subtotal <small>(sem frete)</small></span><b data-carrinho-total>R$ 0,00</b></div>
+      <small>O frete é calculado na finalização do pedido pelo WhatsApp, junto com o pagamento.</small>
       <a class="btn btn--wa btn--block" data-finalizar href="{esc(SITE['whatsapp'])}" target="_blank" rel="noopener">Finalizar pedido pelo WhatsApp</a>
     </div>
   </aside>

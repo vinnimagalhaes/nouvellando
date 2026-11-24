@@ -124,7 +124,8 @@
       return '• ' + i.q + 'x ' + i.nome + ' — ' + descricao(i) + ' — ' + brl(i.preco * i.q);
     });
     var total = itens.reduce(function (s, i) { return s + i.preco * i.q; }, 0);
-    return 'Olá! Gostaria de fazer este pedido:\n\n' + linhas.join('\n') + '\n\nTotal: ' + brl(total);
+    return 'Olá! Gostaria de fazer este pedido:\n\n' + linhas.join('\n') + '\n\nSubtotal dos novelos: ' + brl(total) +
+           '\nFrete: a calcular (me informe o valor, por favor)';
   }
   function desenhaCarrinho() {
     var n = carrinho.reduce(function (s, i) { return s + i.q; }, 0);
