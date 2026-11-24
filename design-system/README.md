@@ -26,7 +26,7 @@ O próprio site (`../index.html`) é construído em cima deste design system.
 
 ## Regras
 
-- **Nunca use valor solto.** Em vez de `#8e2f5b` ou `18px`, use `var(--color-brand)` e `var(--radius-lg)`.
+- **Nunca use valor solto.** Em vez de `#5c4628` ou `18px`, use `var(--color-brand)` e `var(--radius-lg)`.
 - **Mudar a marca = mudar `tokens.css`.** Todos os componentes e o site seguem.
 - **Componente novo?** Adicione em `components.css` usando só tokens e documente em `index.html`.
 - **Layout de seção** (hero, rodapé, grids de página) fica no CSS da página, não no design system.
@@ -35,11 +35,11 @@ O próprio site (`../index.html`) é construído em cima deste design system.
 
 | Token | Valor | Uso |
 |---|---|---|
-| `--color-brand` | `#8e2f5b` | CTA, preço, item ativo |
+| `--color-brand` | `#5c4628` | CTA, preço, item ativo (marrom do logotipo) |
 | `--color-accent` | `#e8a04c` | estrelas, destaques sobre escuro |
 | `--color-bg` | `#fbf8f4` | fundo da página |
-| `--color-ink` | `#2b2227` | texto |
-| `--color-muted` | `#7a6d73` | texto secundário |
+| `--color-ink` | `#2e251c` | texto (marrom quase preto) |
+| `--color-muted` | `#75685b` | texto secundário (taupe quente) |
 | `--font-display` | Fraunces | títulos, logo, nome de produto |
 | `--font-body` | Inter | texto e interface |
 | `--radius-lg` | `18px` | cards |

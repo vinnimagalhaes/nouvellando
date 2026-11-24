@@ -71,7 +71,7 @@ select.input{width:auto;padding:10px var(--space-4);border-radius:var(--radius-p
 .tabs{display:flex;gap:var(--space-2);margin-bottom:18px}
 .tabs button{flex:1;padding:var(--space-3);border:1.5px solid var(--color-line);border-radius:var(--radius-sm);font-weight:var(--weight-semibold);background:var(--color-surface)}
 .tabs button.on{border-color:var(--color-brand);background:var(--color-brand-soft);color:var(--color-brand)}
-.tabs small{color:var(--color-success)}
+.tabs small{color:var(--color-brand);opacity:.75}
 .panel[hidden]{display:none}
 
 /* ---------- Seletor de quantidade ---------- */

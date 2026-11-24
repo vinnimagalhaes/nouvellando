@@ -288,7 +288,7 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 .btn.is-disabled{opacity:.5}
 
 /* Topo dos catálogos (cara de loja) */
-.cat-hero{background:linear-gradient(135deg,var(--color-brand),#c2577f 55%,var(--color-accent));color:var(--color-surface);padding:var(--space-8) 0 var(--space-12);position:relative;overflow:hidden}
+.cat-hero{background:linear-gradient(135deg,var(--color-brand),#94704a 55%,var(--color-accent));color:var(--color-surface);padding:var(--space-8) 0 var(--space-12);position:relative;overflow:hidden}
 .cat-hero .wrap{position:relative;z-index:1}
 .cat-hero .crumbs{color:rgba(255,255,255,.8)}
 .cat-hero .titulo,.cat-hero .texto,.cat-hero .texto strong,.cat-hero .cat-hero__nome{color:var(--color-surface)}
@@ -348,8 +348,8 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 .nf-hero__fundo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:-1;transform:scale(1.04);transition:transform 7s linear}
 .nf-hero__slide.on .nf-hero__fundo{transform:scale(1)}
 .nf-hero__slide::before{content:"";position:absolute;inset:0;z-index:0;background:
-  linear-gradient(90deg,var(--color-dark) 0%,rgba(42,27,37,.85) 32%,rgba(42,27,37,.25) 62%,transparent 80%),
-  linear-gradient(0deg,var(--color-dark) 2%,rgba(42,27,37,0) 40%)}
+  linear-gradient(90deg,var(--color-dark) 0%,rgba(43,33,24,.85) 32%,rgba(43,33,24,.25) 62%,transparent 80%),
+  linear-gradient(0deg,var(--color-dark) 2%,rgba(43,33,24,0) 40%)}
 .nf-hero__info{position:relative;z-index:1;padding-bottom:var(--space-16)}
 .nf-hero__info>*{max-width:560px}
 .nf-selo{display:inline-block;background:var(--color-brand);color:var(--color-surface);font-size:var(--text-xs);font-weight:var(--weight-semibold);letter-spacing:var(--tracking-caps);text-transform:uppercase;padding:5px 12px;border-radius:var(--radius-pill);margin-bottom:var(--space-4)}
@@ -373,19 +373,19 @@ a.carrossel__img:hover img{transform:scale(1.04)}
   padding:var(--space-4) max(var(--gutter),calc((100% - var(--container)) / 2)) var(--space-16);margin-bottom:calc(var(--space-16) * -1 + var(--space-4));
   scroll-padding-inline:max(var(--gutter),calc((100% - var(--container)) / 2))}
 .nf-trilho::-webkit-scrollbar{display:none}
-.nf-seta{position:absolute;top:var(--space-4);bottom:var(--space-16);width:52px;z-index:4;font-size:2.4rem;color:var(--color-surface);background:linear-gradient(90deg,rgba(42,27,37,.9),transparent);opacity:0;transition:opacity var(--dur-fast)}
+.nf-seta{position:absolute;top:var(--space-4);bottom:var(--space-16);width:52px;z-index:4;font-size:2.4rem;color:var(--color-surface);background:linear-gradient(90deg,rgba(43,33,24,.9),transparent);opacity:0;transition:opacity var(--dur-fast)}
 .nf-seta--ant{left:0}
-.nf-seta--prox{right:0;background:linear-gradient(-90deg,rgba(42,27,37,.9),transparent)}
+.nf-seta--prox{right:0;background:linear-gradient(-90deg,rgba(43,33,24,.9),transparent)}
 .nf-fileira__corpo:hover .nf-seta{opacity:1}
 .nf-seta[disabled]{opacity:0!important;pointer-events:none}
 
 /* Capas */
 .nf-card{flex:0 0 clamp(150px,17vw,230px);scroll-snap-align:start;position:relative;transition:transform var(--dur) var(--ease),z-index 0s var(--dur)}
-.nf-card__capa{display:block;aspect-ratio:2/3;border-radius:var(--radius-md);overflow:hidden;position:relative;background:#3a2733;box-shadow:0 8px 24px -10px rgba(0,0,0,.6)}
+.nf-card__capa{display:block;aspect-ratio:2/3;border-radius:var(--radius-md);overflow:hidden;position:relative;background:#3b2e22;box-shadow:0 8px 24px -10px rgba(0,0,0,.6)}
 .nf-card__capa img{width:100%;height:100%;object-fit:cover}
-.nf-card__capa::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,10,16,.85) 0%,transparent 45%)}
+.nf-card__capa::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,14,9,.85) 0%,transparent 45%)}
 .nf-card__nome{position:absolute;left:var(--space-3);right:var(--space-3);bottom:var(--space-3);z-index:1;font-family:var(--font-display);font-weight:var(--weight-semibold);font-size:1.05rem;line-height:1.15;color:var(--color-surface)}
-.nf-card__info{position:absolute;left:0;right:0;top:100%;margin-top:-10px;padding:var(--space-4) var(--space-3) var(--space-3);background:#3a2733;border-radius:0 0 var(--radius-md) var(--radius-md);
+.nf-card__info{position:absolute;left:0;right:0;top:100%;margin-top:-10px;padding:var(--space-4) var(--space-3) var(--space-3);background:#3b2e22;border-radius:0 0 var(--radius-md) var(--radius-md);
   box-shadow:0 18px 30px -12px rgba(0,0,0,.7);display:flex;flex-direction:column;gap:6px;opacity:0;visibility:hidden;transition:opacity var(--dur),visibility var(--dur)}
 .nf-card__titulo{font-family:var(--font-display);font-weight:var(--weight-semibold);color:var(--color-surface);line-height:1.2}
 .nf-card__preco{color:var(--color-accent);font-weight:var(--weight-semibold);font-size:var(--text-sm)}
@@ -410,7 +410,7 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 }
 @media(max-width:900px){
   .nf-hero{min-height:82vh}
-  .nf-hero__slide::before{background:linear-gradient(0deg,var(--color-dark) 8%,rgba(42,27,37,.75) 45%,rgba(42,27,37,.1) 75%)}
+  .nf-hero__slide::before{background:linear-gradient(0deg,var(--color-dark) 8%,rgba(43,33,24,.75) 45%,rgba(43,33,24,.1) 75%)}
   .nf-hero__info{padding-bottom:var(--space-12)}
   .nf-hero__nome{font-size:clamp(2.2rem,11vw,3.2rem)}
   .nf-hero__desc{font-size:var(--text-base)}
@@ -422,7 +422,7 @@ a.carrossel__img:hover img{transform:scale(1.04)}
   .nf-trilho{padding-bottom:var(--space-6);margin-bottom:0}
   .nf-seta{bottom:var(--space-6)}
   .nf-card__info{top:auto;bottom:0;margin:0;padding:var(--space-10) var(--space-3) var(--space-3);border-radius:0 0 var(--radius-md) var(--radius-md);
-    background:linear-gradient(0deg,rgba(30,16,25,.97) 55%,rgba(30,16,25,0));box-shadow:none}
+    background:linear-gradient(0deg,rgba(30,22,14,.97) 55%,rgba(30,22,14,0));box-shadow:none}
   .nf-card:hover,.nf-card:focus-within{transform:scale(1.08)}
   .nf-card:hover .nf-card__capa,.nf-card:focus-within .nf-card__capa{border-radius:var(--radius-md);box-shadow:0 18px 40px -10px rgba(0,0,0,.8)}
   .nf-card:hover .nf-card__nome,.nf-card:focus-within .nf-card__nome{opacity:0}
@@ -433,7 +433,7 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 .nf-hero__pontos{bottom:var(--space-8)}
 
 /* Cabeçalho escuro na página de videoaulas */
-.pg-cursos .header{background:rgba(42,27,37,.92);border-bottom-color:rgba(255,255,255,.08)}
+.pg-cursos .header{background:rgba(43,33,24,.92);border-bottom-color:rgba(255,255,255,.08)}
 .pg-cursos .logo{color:var(--color-on-dark)}
 .pg-cursos .nav a,.pg-cursos .nav__abre,.pg-cursos .header .icon-btn{color:var(--color-on-dark-muted)}
 .pg-cursos .nav a:hover,.pg-cursos .nav a[aria-current]{color:var(--color-accent)}
@@ -573,7 +573,7 @@ a.fio__foto:hover img{transform:scale(1.04)}
 /* Com/Sem degradê dentro da caixa: controle compacto */
 .filtros .abas-degrade{display:flex;margin:0;padding:3px;gap:3px;background:var(--color-tint);backdrop-filter:none}
 .filtros .abas-degrade button{flex:1;color:var(--color-muted);font-size:var(--text-sm);padding:6px 10px;min-height:36px}
-.filtros .abas-degrade button[aria-selected="true"]{background:var(--color-surface);color:var(--color-ink);box-shadow:0 1px 3px rgba(60,30,50,.18)}
+.filtros .abas-degrade button[aria-selected="true"]{background:var(--color-surface);color:var(--color-ink);box-shadow:0 1px 3px rgba(60,42,25,.18)}
 .filtros .abas-degrade button:focus-visible{outline-color:var(--color-brand)}
 /* Menu "Cores" */
 .filtro-cores{display:none}
@@ -660,3 +660,18 @@ a.fio__foto:hover img{transform:scale(1.04)}
 }
 /* Home: banner sem zoom ao passar o mouse */
 .pg-home .secao--1 .carrossel__img img,.pg-home .secao--2 .carrossel__img img{transform:none!important;transition:none}
+
+/* Logotipo (assets/marca, gerado por ferramentas/logo.ps1) */
+.logo--img{display:flex;align-items:center;flex:none;line-height:0}
+.logo__img{height:30px;width:auto;display:block}
+.logo__img--claro{display:none}
+.pg-cursos .logo__img{display:none}
+.pg-cursos .logo__img--claro{display:block}
+.logo--rodape{display:inline-block;margin-bottom:var(--space-4);line-height:0}
+.logo--rodape img{width:150px;height:auto;display:block}
+@media(max-width:900px){.logo__img{height:26px}}
+@media(max-width:380px){.logo__img{height:23px}}
+/* Rodapé: logotipo completo centralizado numa faixa própria, acima das colunas */
+.footer__marca{display:flex;justify-content:center;padding-bottom:var(--space-10);margin-bottom:var(--space-10);border-bottom:1px solid rgba(255,255,255,.1)}
+.footer__marca .logo--rodape{margin-bottom:0}
+.footer__grid>div:first-child p{margin-top:0}

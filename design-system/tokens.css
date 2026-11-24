@@ -5,23 +5,23 @@
    ========================================================= */
 :root{
   /* ---- Cor · marca ---- */
-  --color-brand:#8e2f5b;          /* ameixa: CTAs, preços, links ativos */
-  --color-brand-strong:#6f2347;   /* hover de CTA */
-  --color-brand-soft:#fdf3f7;     /* fundo de opção selecionada */
-  --color-accent:#e8a04c;         /* âmbar: estrelas, destaques sobre escuro */
+  --color-brand:#5c4628;          /* marrom do logotipo: CTAs, preços, links ativos */
+  --color-brand-strong:#45341d;   /* hover de CTA (marrom mais escuro) */
+  --color-brand-soft:#f6f0e8;     /* fundo de opção selecionada (marrom bem claro) */
+  --color-accent:#d9a962;         /* mel dourado: estrelas, destaques sobre escuro */
 
   /* ---- Cor · neutros ---- */
   --color-bg:#fbf8f4;             /* fundo da página (creme) */
   --color-surface:#ffffff;        /* cards, campos, caixas */
   --color-tint:#f4ede4;           /* seções alternadas, fundos de mídia */
-  --color-ink:#2b2227;            /* texto principal */
-  --color-muted:#7a6d73;          /* texto secundário */
+  --color-ink:#2e251c;            /* texto principal (marrom quase preto) */
+  --color-muted:#75685b;          /* texto secundário (taupe quente) */
   --color-line:#e6dcd2;           /* bordas e divisórias */
   --color-line-strong:#e0d4c8;    /* trilhos (barra de progresso) */
-  --color-dark:#2a1b25;           /* rodapé, faixa de aviso, seção escura */
+  --color-dark:#2b2118;           /* rodapé, faixa de aviso, seção escura (marrom bem escuro) */
   --color-on-dark:#f6e7d8;        /* texto sobre escuro */
-  --color-on-dark-muted:#cdbcc4;  /* texto secundário sobre escuro */
-  --color-overlay:rgba(30,15,25,.55);
+  --color-on-dark-muted:#d2c4b3;  /* texto secundário sobre escuro (bege) */
+  --color-overlay:rgba(30,22,14,.55);
 
   /* ---- Cor · feedback ---- */
   --color-success:#2c8a4a;
@@ -67,9 +67,9 @@
   --radius-pill:999px;
 
   /* ---- Sombras ---- */
-  --shadow-md:0 10px 30px -12px rgba(60,30,50,.25);
+  --shadow-md:0 10px 30px -12px rgba(60,42,25,.25);
   --shadow-inset-yarn:inset -18px -18px 40px rgba(0,0,0,.18);
-  --focus-ring:0 0 0 3px rgba(142,47,91,.35);
+  --focus-ring:0 0 0 3px rgba(92,70,40,.35);
 
   /* ---- Layout ---- */
   --container:1200px;

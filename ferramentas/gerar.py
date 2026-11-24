@@ -32,7 +32,6 @@ DOMINIO = SITE["dominio"]
 FOTOS_DIR = RAIZ / "wp-content"
 _fotos = CONTEUDO / "fotos.json"
 FOTOS = json.loads(_fotos.read_text(encoding="utf-8")) if _fotos.exists() else {}
-FAVICON = "/wp-content/uploads/2022/12/cropped-logo-nouvellando_page-0001-1.jpg"
 FOTOS_FALTANDO = set()
 
 # Títulos e descrições escritos à mão para as páginas principais (o resto é montado
@@ -1264,7 +1263,7 @@ def json_ld(p, ctx, trilha):
     if p["url"] == "/":
         dados = {"@context": "https://schema.org", "@graph": [
             {"@type": "Organization", "name": SITE["nome"], "url": DOMINIO + "/",
-             "logo": DOMINIO + "/wp-content/uploads/2022/12/cropped-novo-logo-espero-que-esse-esteja-certo.png",
+             "logo": DOMINIO + "/assets/marca/logo-completo.png",
              "sameAs": [r["link"] for r in SITE["rodape"]["redes"][:2]]},
             {"@type": "WebSite", "name": SITE["nome"], "url": DOMINIO + "/"}]}
     else:
@@ -1314,7 +1313,9 @@ def cabecalho(ctx):
     return f"""<div class="announce"><b>{esc(aviso['titulo'])}</b> {esc(aviso['texto'])}</div>
 <header class="header">
   <div class="wrap header__row">
-    <a href="{ctx.rel('/')}" class="logo">Nouvellando<sup>®</sup></a>
+    <a href="{ctx.rel('/')}" class="logo logo--img" aria-label="Nouvellando® by Claudia Gerth – início">
+      <img class="logo__img" src="{ctx.asset('marca/logo-nome.png')}" alt="Nouvellando® by Claudia Gerth" width="900" height="152">
+      <img class="logo__img logo__img--claro" src="{ctx.asset('marca/logo-nome-claro.png')}" alt="" width="900" height="152" aria-hidden="true"></a>
     <button class="icon-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
     <nav class="nav" id="nav" aria-label="Menu principal"><ul>{''.join(itens)}</ul></nav>
     <div class="header__actions">
@@ -1334,8 +1335,9 @@ def rodape(ctx):
     redes = "".join(f'<a href="{esc(x["link"])}" target="_blank" rel="noopener">{esc(x["texto"])}</a>' for x in r["redes"])
     produtos = "".join(f"<span>{esc(x)}</span>" for x in r["produtos"])
     return f"""<footer class="footer">
+  <div class="wrap footer__marca"><a href="{ctx.rel('/')}" class="logo logo--rodape"><img src="{ctx.asset('marca/logo-completo-claro.png')}" alt="Nouvellando® by Claudia Gerth" width="600" height="451" loading="lazy"></a></div>
   <div class="wrap footer__grid">
-    <div><a href="{ctx.rel('/')}" class="logo">Nouvellando<sup>®</sup></a><p>{esc(r['sobre'])}</p><div class="footer__redes">{redes}</div></div>
+    <div><h4>Sobre a Nouvellando</h4><p>{esc(r['sobre'])}</p><div class="footer__redes">{redes}</div></div>
     <div><h4>{esc(r['produtos_titulo'])}</h4>{produtos}</div>
     <div><h4>{esc(r['contato_titulo'])}</h4><span>{esc(r['cidade'])}</span><a href="mailto:{r['email']}">Email: {esc(r['email'])}</a></div>
   </div>
@@ -1394,7 +1396,9 @@ def documento(p, ctx, corpo, tipo, trilha, canonica):
 {robots}<title>{esc(titulo)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{esc(canonica)}">
-{og}<link rel="icon" href="{esc(img_url(FAVICON, 32))}">
+{og}<link rel="icon" type="image/png" href="{ctx.asset('marca/favicon.png')}">
+<link rel="apple-touch-icon" href="{ctx.asset('marca/apple-touch-icon.png')}">
+<meta name="theme-color" content="#5c4628">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
