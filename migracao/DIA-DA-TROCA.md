@@ -27,9 +27,9 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
   - Com isso, caiu de 1.995 para cerca de 1.160 regras. O `gerar.py` mostra a conta no fim.
   - Se um dia faltar espaço de novo: **Bulk Redirects** do Cloudflare (no domínio, plano Free).
 - [ ] **Conteúdo:**
-  - [ ] aviso do topo (`conteudo/site.json`): hoje fala em "pedidos retomados em 01/12";
+  - [x] aviso do topo (`conteudo/site.json`): "pedidos retomados em 01/12", confirmado pela Amanda em 24/11;
   - [ ] tabela de preços única por linha, confirmada pela cliente;
-  - [ ] páginas duplicadas (Fio Original e Fio Original 2, cores 443, 712 e 340V);
+  - [x] páginas duplicadas: a Fio Original 2 redireciona para a Fio Original (24/11); as cores 443, 712 e 340V já redirecionam para a versão principal;
   - [ ] descrições escritas à mão em `conteudo/seo.json`, revisadas.
 - [x] **Imagens que dependiam do WordPress:** resolvido em 20/11. As 6.411 imagens das páginas e as 836 imagens de compartilhamento vêm do próprio site:
   - os cards das cores 149 e 287 usam a foto do produto;
