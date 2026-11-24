@@ -36,8 +36,17 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
   - a imagem de compartilhamento vazia do WordPress foi trocada pela foto da página;
   - os ícones do Google na Coleção Jeans 673 foram removidos.
   - [ ] No dia, rodar `python ferramentas/gerar.py` e confirmar que **não aparece** o aviso "foto(s) ainda vêm do WordPress". Se aparecer, é uma foto nova adicionada depois.
-- [ ] **Cloudflare, domínio cadastrado sem trocar nada ainda:** Add a domain → `nouvellando.com.br` → plano Free. Conferir os registros que ele importar. **Não existe e-mail no domínio** (nenhum registro MX), então não há e-mail para perder. Anotar os **2 nameservers** que o Cloudflare informar.
-- [ ] **Search Console:** se a verificação hoje é pela tag do WordPress, ela vai se perder. Criar a propriedade **Domínio** (`nouvellando.com.br`) com verificação por **registro TXT**, que vai ser colocado no Cloudflare no dia.
+- [x] **Cloudflare, domínio cadastrado sem trocar nada ainda:** feito em 24/11, no plano Free.
+  - Registros importados: 2 A do WordPress (192.0.78.151 e .233), `www` e `*` (CNAME), SPF e DMARC (TXT). **Não existe e-mail no domínio** (nenhum MX).
+  - Os registros do site ficaram em **DNS only** (nuvem cinza). Assim, até ligar o site novo, o WordPress responde direto, com o certificado dele, e não há erro de HTTPS na transição.
+  - "Bot Preference Sync" desligado, para o Cloudflare não mexer no `robots.txt`.
+  - DNSSEC: desligado no Registro.br (não há registro DS), então não há nada a fazer.
+  - **Nameservers do Cloudflare: `carioca.ns.cloudflare.com` e `ganz.ns.cloudflare.com`.**
+- [x] **Search Console:** conferido em 24/11.
+  - A propriedade `https://nouvellando.com.br/` era verificada pelo **Google Tag Manager** (GTM-MFH2VBXM, instalado no WordPress).
+  - Para não perder a verificação, o registro TXT dela (`google-site-verification=Ns4Z9u…`) já foi colocado no DNS do Cloudflare.
+  - Depois que o domínio ficar "Active": Search Console → Configurações → Verificação de propriedade → **Provedor de nome de domínio → Verificar**. Assim fica a mesma propriedade, com o histórico.
+- [x] **Google Tag Manager (GTM-MFH2VBXM):** decidido em 24/11 manter. O site novo carrega o mesmo código do WordPress, **só no domínio oficial**: os endereços de teste não entram nas estatísticas. No passo 4, conferir que ele carrega em `https://nouvellando.com.br`.
 - [ ] **Teste geral no endereço de teste:**
   ```bash
   python ferramentas/testar-redirecionamentos.py https://nouvellando.pages.dev

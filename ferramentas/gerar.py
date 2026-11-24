@@ -1461,6 +1461,17 @@ def rodape(ctx):
 <a class="wa-float" href="{esc(SITE['whatsapp'])}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg></a>"""
 
 
+# Google Tag Manager, o mesmo do WordPress (Analytics e outras ferramentas configuradas
+# dentro dele). Só carrega no domínio oficial: visitas aos endereços de teste
+# (pages.dev, GitHub Pages, computador) não entram nas estatísticas.
+GTM_ID = "GTM-MFH2VBXM"
+GTM = ("<script>if(/(^|\\.)nouvellando\\.com\\.br$/.test(location.hostname)){"
+       "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});"
+       "var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';"
+       "j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);"
+       f"}})(window,document,'script','dataLayer','{GTM_ID}')}}</script>\n")
+
+
 def documento(p, ctx, corpo, tipo, trilha, canonica):
     robots = "" if PRODUCAO else '<meta name="robots" content="noindex, nofollow">\n'
     sob = SEO.get(ctx.caminho) or SEO.get(p["url"]) or {}
@@ -1493,7 +1504,7 @@ def documento(p, ctx, corpo, tipo, trilha, canonica):
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+{GTM}<meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add('js')</script>
 {robots}<title>{esc(titulo)}</title>
 <meta name="description" content="{esc(desc)}">
