@@ -3,7 +3,7 @@
 Roteiro completo para o dia em que o nouvellando.com.br passar a apontar para o site novo, no Cloudflare.
 Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qualquer cuidado novo que aparecer.
 
-Última atualização: 20/11/2026.
+Última atualização: 24/11/2026.
 
 ---
 
@@ -16,7 +16,16 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
   - [ ] Google Search Console do domínio;
   - [ ] GitHub (repositório `vinnimagalhaes/nouvellando`).
 - [ ] **Backup do WordPress.com:** Ferramentas → Exportar → exportar todo o conteúdo **e** a biblioteca de mídia. Guardar fora do WordPress (Google Drive, HD…).
-- [ ] **Redirecionamentos que só o WordPress conhece:** ver no painel se há plugin ou lista de redirecionamentos e, se houver, acrescentar em `conteudo/redirecionamentos.json`. Hoje o site novo conhece 6, mais os 3 links quebrados já tratados.
+- [x] **Redirecionamentos que só o WordPress conhece:** feito em 24/11. A Amanda exportou os 33 do painel, e todos estão em `conteudo/redirecionamentos.json`:
+  - Ruby → Nossos fios;
+  - Novelos mesclados → Sem degradê;
+  - xales prontos → Instagram do Recanto dos Xales;
+  - Paillettes antigos → Fio Paillettes.
+- [x] **Limite de 2.000 redirecionamentos do Cloudflare Pages:** resolvido em 24/11.
+  - O teste mostrou que o Cloudflare **não** acha a regra quando falta a barra no fim (`/carrinho` dava 404, `/carrinho/` dava 301).
+  - Agora só existe a regra com a barra. A página 404 acrescenta a barra sozinha e manda de novo, aí o 301 leva para a página nova.
+  - Com isso, caiu de 1.995 para cerca de 1.160 regras. O `gerar.py` mostra a conta no fim.
+  - Se um dia faltar espaço de novo: **Bulk Redirects** do Cloudflare (no domínio, plano Free).
 - [ ] **Conteúdo:**
   - [ ] aviso do topo (`conteudo/site.json`): hoje fala em "pedidos retomados em 01/12";
   - [ ] tabela de preços única por linha, confirmada pela cliente;

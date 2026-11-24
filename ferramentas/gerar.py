@@ -1536,13 +1536,14 @@ def tipo_de(slug):
 
 def redirecionamento(destino, ctx):
     alvo = ctx.rel(destino)
+    completo = destino if destino.startswith("http") else DOMINIO + destino  # destino pode ser fora do site (Instagram)
     return f"""<!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8">
 <title>Nouvellando®</title>
-<link rel="canonical" href="{DOMINIO}{destino}">
+<link rel="canonical" href="{completo}">
 <meta http-equiv="refresh" content="0; url={alvo}">
 <script>location.replace("{alvo}"+location.search+location.hash)</script>
-</head><body><a href="{alvo}">{DOMINIO}{destino}</a></body></html>
+</head><body><a href="{alvo}">{completo}</a></body></html>
 """
 
 
@@ -1570,12 +1571,10 @@ def arquivos_cloudflare(mapa, pags):
             regras[de] = para
 
     # 1) Páginas: endereço antigo de cada produto, páginas duplicadas e links que
-    #    o WordPress já redirecionava. Com e sem a barra no fim, para cobrir os dois jeitos
-    #    que o link pode ter sido salvo.
+    #    o WordPress já redirecionava. Só a versão com a barra no fim: a sem barra cai na
+    #    página 404, que acrescenta a barra e chega nesta regra (economiza ~840 regras).
     for antigo, destino in sorted(mapa.items()):
         regra(antigo, destino)
-        if antigo.endswith("/") and len(antigo) > 1:
-            regra(antigo.rstrip("/"), destino)
     for antigo, destino in REDIRECIONA_WORDPRESS.items():
         regra(antigo, destino)
     # 2) Fotos: versões redimensionadas do WordPress (foto-1024x1024.jpg) e PNG que
@@ -1702,6 +1701,13 @@ def main():
     corpo404 = (f'<div class="wrap vazio"><h1>Página não encontrada</h1>'
                 f'<a class="btn btn--primary" href="{ctx404.rel("/fios-nouvellando/")}">Nossos fios</a></div>')
     doc404 = documento(p404, ctx404, corpo404, "404", [("Início", "/")], DOMINIO + "/")
+    # Endereço sem a barra no fim (/original-805-805u): o Cloudflare não acha a regra 301,
+    # que só existe com a barra, e cai aqui. Acrescenta a barra e tenta de novo; aí o 301
+    # leva para a página nova. Assim não precisamos de uma regra para cada versão sem barra
+    # (o Cloudflare Pages aceita no máximo 2.000 regras).
+    barra = ('<script>(function(){var p=location.pathname;'
+             'if(!/\\/$/.test(p)&&!/\\.[A-Za-z0-9]+$/.test(p))location.replace(p+"/"+location.search+location.hash)})()</script>')
+    doc404 = doc404.replace("<head>", "<head>\n" + barra, 1)
     # O 404 é servido em qualquer profundidade, então usa caminhos absolutos
     (SAIDA / "404.html").write_text(doc404.replace('href="../', 'href="/').replace('src="../', 'src="/'), encoding="utf-8")
 
