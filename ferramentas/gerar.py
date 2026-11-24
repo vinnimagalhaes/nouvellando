@@ -33,6 +33,7 @@ FOTOS_DIR = RAIZ / "wp-content"
 _fotos = CONTEUDO / "fotos.json"
 FOTOS = json.loads(_fotos.read_text(encoding="utf-8")) if _fotos.exists() else {}
 FOTOS_FALTANDO = set()
+FICHA_FORA_DO_PADRAO = []  # produtos cujo texto não deu para organizar em ficha técnica
 
 # Títulos e descrições escritos à mão para as páginas principais (o resto é montado
 # automaticamente em descricao()). Chave: endereço da página.
@@ -572,6 +573,103 @@ def preco_card(link, ctx):
 SVG_WA = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>'
 
 
+CUIDADOS = [  # (como aparece no texto antigo, nome padronizado, ícone)
+    (re.compile(r"^lava(gem|r) (à|a) m[ãa]o$", re.I), "Lavar à mão", "lavagem-mao.svg"),
+    (re.compile(r"^secar na horizontal$", re.I), "Secar na horizontal", "secar-horizontal.svg"),
+    (re.compile(r"^secar (na|à) sombra$", re.I), "Secar à sombra", "secar-sombra.svg"),
+]
+AVISOS_PADRAO = [  # avisos que se repetem em todos os produtos, reescritos em tópicos curtos
+    ("[checar disponibilidade]", "Consulte a disponibilidade pelo WhatsApp antes de comprar."),  # Fluffinho e Paillettes
+    ("variações de tonalidade", "A cor pode variar um pouco conforme a tela em que você vê a foto."),
+    ("o peso dos fios não é exato", "O peso pode variar até 10 g para mais ou para menos: cores escuras pesam um pouco mais que as claras."),
+]
+
+
+def linhas_texto(html_txt):
+    """Texto de um bloco de texto do WordPress, uma linha por parágrafo ou quebra."""
+    t = re.sub(r"<br\s*/?>|</p>|</h\d>|</li>|</div>", "\n", html_txt)
+    t = html.unescape(re.sub(r"<[^>]+>", "", t))
+    return [l for l in (re.sub(r"\s+", " ", x).strip() for x in t.split("\n")) if l]
+
+
+def ficha_produto(blocos, d, ctx):
+    """Reorganiza as 'Informações do produto' em Ficha técnica (só a opção escolhida),
+    Cuidados e Bom saber. Devolve None se o texto fugir do padrão (aí fica como antes)."""
+    if not blocos or any(b["tipo"] != "text-editor" for b in blocos):
+        return None
+    linhas = [l for b in blocos for l in linhas_texto(b.get("html", ""))]
+    ficha, cuidados, avisos = [], [], []   # ficha: (rótulo, valor_html, cabos, brilho)
+    brilho = cabos = None
+    for l in linhas:
+        m_b = re.fullmatch(r"(sem|com) brilho", l, re.I)
+        m_c = re.fullmatch(r"Composição\s*(\d cabos)?\s*(100% natural)?\s*:\s*(.+)", l)
+        m_t = re.fullmatch(r"(\d) cabos TEX\s*:?\s*(\d+)", l)
+        m_a = re.fullmatch(r"Agulha\s*:?\s*(.+)", l)
+        m_o = re.fullmatch(r"Observação\s*:\s*(.+)", l)
+        cuid = next((c for c in CUIDADOS if c[0].match(l)), None)
+        if m_b:
+            brilho = m_b.group(1).capitalize() + " brilho"
+        elif m_c:
+            val = m_c.group(3).replace("100 poliéster", "100% poliéster")
+            partes = [esc(x.strip()) for x in re.split(r"\s+[–-]\s+(?=Fio tipo)", val)]
+            v = "<br>".join(partes) + (" <small>(100% natural)</small>" if m_c.group(2) else "")
+            ficha.append(("Composição", v, m_c.group(1), brilho))
+        elif m_t:
+            cabos = f"{m_t.group(1)} cabos"
+            ficha.append(("Espessura", f"TEX {m_t.group(2)} ({cabos})", cabos, brilho))
+        elif m_a:
+            ficha.append(("Agulha", esc(re.sub(r"(\d)\s*mm", r"\1 mm", m_a.group(1))), cabos, brilho))
+        elif m_o:
+            obs = m_o.group(1)
+            ficha.append(("Observação", esc(obs[:1].upper() + obs[1:]), None, None))
+        elif cuid:
+            if cuid not in cuidados:
+                cuidados.append(cuid)
+        elif "prazo de produção" in l.lower():
+            continue  # já aparece perto do botão de compra
+        else:
+            padrao = next((n for chave, n in AVISOS_PADRAO if chave in l.lower()), None)
+            txt = padrao or l.lstrip("*").strip()
+            if not txt.endswith((".", "!", "?", "]")):
+                txt += "."  # todas as frases do Bom saber terminam com ponto final
+            avisos.append(txt[:1].upper() + txt[1:])
+    if not ficha:
+        return None
+
+    # Opção que aparece primeiro (a mesma que vem marcada nos botões)
+    v0 = d["variacoes"][0] if d["variacoes"] else {}
+    brilhos_ficha = list(dict.fromkeys(f[3] for f in ficha if f[3]))
+    brilho_padrao = v0.get("brilho") or ("Sem brilho" if "Sem brilho" in brilhos_ficha else (brilhos_ficha or [""])[0])
+    cabos0 = v0.get("cabos")
+
+    def visivel(c, b):
+        return (not c or not cabos0 or c == cabos0) and (not b or b == brilho_padrao)
+    def attrs(c, b):
+        a = ""
+        if c:
+            a += ' data-f-cabos="%s"' % esc(c)
+        if b:
+            a += ' data-f-brilho="%s"' % esc(b)
+        return a + ("" if visivel(c, b) else " hidden")
+    linhas_html = "".join(
+        f'<div class="ficha__linha" data-ficha-linha{attrs(c, b)}><dt>{rot}</dt><dd>{val}</dd></div>'
+        for rot, val, c, b in ficha)
+    f0 = v0["faixas"][0] if v0 and v0.get("faixas") else None
+    if f0:
+        linhas_html += (f'<div class="ficha__linha"><dt>Peso aprox.</dt>'
+                        f'<dd data-ficha-peso>{str(f0["g"]) + " g · " if f0["g"] else ""}{f0["m"]} m</dd></div>')
+    out = (f'<details class="pdp__detalhes" open><summary>Ficha técnica</summary>'
+           f'<dl class="ficha" data-ficha data-brilho-padrao="{esc(brilho_padrao)}">{linhas_html}</dl></details>')
+    if cuidados:
+        itens = "".join(f'<li><img src="{ctx.asset("icones/" + ico)}" alt="" width="28" height="28">{nome}</li>'
+                        for _, nome, ico in cuidados)
+        out += f'<details class="pdp__detalhes"><summary>Cuidados</summary><ul class="cuidados">{itens}</ul></details>'
+    if avisos:
+        itens = "".join(f"<li>{esc(a)}</li>" for a in dict.fromkeys(avisos))
+        out += f'<details class="pdp__detalhes"><summary>Bom saber</summary><ul class="bom-saber">{itens}</ul></details>'
+    return out
+
+
 def corpo_produto(p, ctx, trilha, d):
     """Página de produto com cara de loja: cor, cabos, brilho, metragem, quantidade e carrinho."""
     fl = list(folhas(p["blocos"]))
@@ -632,7 +730,11 @@ def corpo_produto(p, ctx, trilha, d):
         preco = ""
         compra = f'<a class="btn btn--wa btn--block" href="{esc(SITE["whatsapp"])}" target="_blank" rel="noopener">{SVG_WA}{esc(d["botao"])}</a>'
 
-    info = r_blocos(resto, ctx)
+    info = ficha_produto(resto, d, ctx)
+    if info is None:
+        FICHA_FORA_DO_PADRAO.append(d["caminho"])
+        info = (f'<details class="pdp__detalhes" open><summary>Informações do produto</summary>'
+                f'<div class="pilha">{r_blocos(resto, ctx)}</div></details>') if resto else ""
     dados_js = {"nome": d["nome"], "url": d["caminho"], "linha": d["linha_nome"],
                 "cores": [{"nome": c["nome"], "img": img_url(c["src"], 200)} for c in d["cores"]],
                 "variacoes": d["variacoes"]}
@@ -646,7 +748,7 @@ def corpo_produto(p, ctx, trilha, d):
     <div class="opcoes">{opcoes}</div>
     {compra}
     <ul class="trust"><li>🧶 Feito à mão, novelo a novelo</li><li>⏱ Produção de 7 a 15 dias após o pagamento</li><li>💬 Pedido finalizado pelo WhatsApp</li></ul>
-    <details class="pdp__detalhes" open><summary>Informações do produto</summary><div class="pilha">{info}</div></details>
+    {info}
   </div>
 </div>
 <script type="application/json" id="produto-dados">{json.dumps(dados_js, ensure_ascii=False).replace("</", "<\\/")}</script>
@@ -1631,6 +1733,10 @@ def main():
     if FOTOS_FALTANDO:
         print(f"Atenção: {len(FOTOS_FALTANDO)} foto(s) ainda vêm do WordPress (não estão em conteudo/fotos.json):")
         for f in sorted(FOTOS_FALTANDO):
+            print("  " + f)
+    if FICHA_FORA_DO_PADRAO:
+        print(f"Atenção: {len(FICHA_FORA_DO_PADRAO)} produto(s) com informações fora do padrão (ficaram no formato antigo):")
+        for f in sorted(FICHA_FORA_DO_PADRAO):
             print("  " + f)
 
 

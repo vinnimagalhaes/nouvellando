@@ -194,6 +194,17 @@
         var on = b.dataset.brilho === sel.brilho; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on);
         b.disabled = !P.variacoes.some(function (x) { return x.cabos === sel.cabos && x.brilho === b.dataset.brilho; });
       });
+      // Ficha técnica: só os dados dos cabos e do acabamento escolhidos
+      var ficha = $('[data-ficha]', pdp);
+      if (ficha) {
+        var bri = v.brilho || ficha.dataset.brilhoPadrao;
+        $$('[data-ficha-linha]', ficha).forEach(function (l) {
+          var c = l.dataset.fCabos, b = l.dataset.fBrilho;
+          l.hidden = !!((c && c !== v.cabos) || (b && b !== bri));
+        });
+        var pf = $('[data-ficha-peso]', ficha);
+        if (pf) pf.textContent = (fx.g ? fx.g + ' g · ' : '') + fx.m + ' m';
+      }
       $$('.swatch', pdp).forEach(function (b) { var on = +b.dataset.cor === sel.cor; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); });
       $$('.galeria__foto', pdp).forEach(function (f) { f.hidden = +f.dataset.cor !== sel.cor; });
       var r;

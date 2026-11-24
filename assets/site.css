@@ -280,6 +280,16 @@ a.carrossel__img:hover img{transform:scale(1.04)}
 .pdp__detalhes summary{font-family:var(--font-display);font-size:var(--text-lg)}
 .pdp__detalhes>.pilha{margin-top:var(--space-3);gap:var(--space-3)}
 .pdp__detalhes .texto{font-size:var(--text-sm)}
+.pdp__detalhes+.pdp__detalhes{margin-top:calc(-1 * var(--space-2))}
+.ficha{display:grid;gap:8px;margin:var(--space-3) 0 0;font-size:var(--text-sm)}
+.ficha__linha{display:grid;grid-template-columns:7.5em 1fr;gap:16px}
+.ficha__linha[hidden]{display:none}
+.ficha dt{color:var(--color-muted)}
+.ficha dd{margin:0;font-weight:600}
+.ficha dd small{font-weight:400;color:var(--color-muted)}
+.cuidados{list-style:none;padding:0;margin:var(--space-3) 0 0;display:flex;flex-wrap:wrap;gap:12px 24px;font-size:var(--text-sm)}
+.cuidados li{display:flex;align-items:center;gap:8px}
+.bom-saber{margin:var(--space-3) 0 0;padding-left:1.1em;font-size:var(--text-sm);color:var(--color-muted);display:grid;gap:6px}
 .trust{list-style:none;display:grid;gap:6px;font-size:var(--text-sm);color:var(--color-muted);padding:var(--space-4);background:var(--color-tint);border-radius:var(--radius-md)}
 
 /* Carrinho */
