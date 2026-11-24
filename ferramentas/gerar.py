@@ -1229,7 +1229,7 @@ def home_videoaulas(b, ctx):
 
 
 def faixa_beneficios():
-    itens = [("🧶", "Mais de 600 cores degradê", "Novelos artesanais por Claudia Gerth"),
+    itens = [("🧶", "Mais de 800 cores degradê", "Novelos artesanais por Claudia Gerth"),
              ("✋", "Feito à mão", "Produção de 7 a 15 dias"),
              ("🎨", "Cor única sob encomenda", "Qualquer cor, em qualquer fio"),
              ("💬", "Pedido pelo WhatsApp", "Atendimento direto com a artesã")]
