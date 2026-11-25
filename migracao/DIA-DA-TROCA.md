@@ -47,7 +47,7 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
   - Para não perder a verificação, o registro TXT dela (`google-site-verification=Ns4Z9u…`) já foi colocado no DNS do Cloudflare.
   - Depois que o domínio ficar "Active": Search Console → Configurações → Verificação de propriedade → **Provedor de nome de domínio → Verificar**. Assim fica a mesma propriedade, com o histórico.
 - [x] **Google Tag Manager (GTM-MFH2VBXM):** decidido em 24/11 manter. O site novo carrega o mesmo código do WordPress, **só no domínio oficial**: os endereços de teste não entram nas estatísticas. No passo 4, conferir que ele carrega em `https://nouvellando.com.br`.
-- [ ] **Teste geral no endereço de teste:**
+- [x] **Teste geral no endereço de teste:**
   ```bash
   python ferramentas/testar-redirecionamentos.py https://nouvellando.pages.dev
   ```
@@ -59,50 +59,50 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
 ## B. No dia, em ordem
 
 ### 1. Projeto atualizado
-- [ ] `git status` e `git pull`, para pegar tudo o que o primo subiu.
-- [ ] Gerar localmente com `python ferramentas/gerar.py --producao`. Conferir:
+- [x] `git status` e `git pull`, para pegar tudo o que o primo subiu.
+- [x] Gerar localmente com `python ferramentas/gerar.py --producao`. Conferir:
   - "836 páginas geradas" (ou o número atual);
   - nenhum aviso de foto vindo do WordPress;
   - `_redirects` dentro do limite de 2.000 regras.
 
 ### 2. Ligar o modo produção no Cloudflare
-- [ ] Cloudflare → Workers & Pages → `nouvellando` → Settings → Build → Build configuration.
+- [x] Cloudflare → Workers & Pages → `nouvellando` → Settings → Build → Build configuration.
   Trocar o comando para `python3 ferramentas/gerar.py --producao`.
-- [ ] Deployments → **Retry deployment** (ou fazer um push) e esperar terminar.
-- [ ] Conferir em `https://nouvellando.pages.dev`:
-  - [ ] `/robots.txt` mostra `Allow: /` e a linha `Sitemap:`;
-  - [ ] `/sitemap.xml` abre e lista as páginas;
-  - [ ] o código da home **não** tem `<meta name="robots" content="noindex`;
-  - [ ] o pages.dev continua com o cabeçalho `X-Robots-Tag: noindex`. **É o esperado**: só o domínio oficial deve entrar no Google.
-- [ ] Rodar de novo `python ferramentas/testar-redirecionamentos.py https://nouvellando.pages.dev`, que deve dar 0 erros.
+- [x] Deployments → **Retry deployment** (ou fazer um push) e esperar terminar.
+- [x] Conferir em `https://nouvellando.pages.dev`:
+  - [x] `/robots.txt` mostra `Allow: /` e a linha `Sitemap:`;
+  - [x] `/sitemap.xml` abre e lista as páginas;
+  - [x] o código da home **não** tem `<meta name="robots" content="noindex`;
+  - [x] o pages.dev continua com o cabeçalho `X-Robots-Tag: noindex`. **É o esperado**: só o domínio oficial deve entrar no Google.
+- [x] Rodar de novo `python ferramentas/testar-redirecionamentos.py https://nouvellando.pages.dev`, que deve dar 0 erros. Feito em 24/11: 879 endereços, 0 erros, 0 com mais de um salto.
 
 ### 3. Apontar o domínio para o Cloudflare
-- [ ] Registro.br → domínio `nouvellando.com.br` → DNS → **alterar servidores DNS**.
-  Trocar `ns1/ns2/ns3.wordpress.com` pelos 2 nameservers do Cloudflare.
-- [ ] Cloudflare → o domínio → esperar o aviso **"Active"**. Leva de minutos a algumas horas.
-- [ ] Cloudflare → Workers & Pages → `nouvellando` → **Custom domains**:
-  - [ ] adicionar `nouvellando.com.br`;
-  - [ ] adicionar `www.nouvellando.com.br`.
-  - O HTTPS é emitido sozinho.
-- [ ] **`www` → domínio sem `www` (301):** Cloudflare → o domínio → Rules → Redirect Rules → modelo "Redirect from WWW to root", com status 301 e mantendo o caminho.
-- [ ] Cloudflare → o domínio → SSL/TLS → Edge Certificates → **Always Use HTTPS**: ligado.
-- [ ] Colocar no DNS do Cloudflare o **registro TXT** do Search Console, preparado na etapa A.
+- [x] Registro.br → domínio `nouvellando.com.br` → DNS → **alterar servidores DNS**.
+  Trocar `ns1/ns2/ns3.wordpress.com` pelos 2 nameservers do Cloudflare. (Amanda, 24/11; o .br publicou às 20:51.)
+- [x] Cloudflare → o domínio → esperar o aviso **"Active"**. (Ativo minutos depois.)
+- [x] Cloudflare → Workers & Pages → `nouvellando` → **Custom domains**:
+  - [x] adicionar `nouvellando.com.br`. O Cloudflare trocou os 2 registros A do WordPress por um CNAME para `nouvellando.pages.dev`;
+  - `www.nouvellando.com.br` **não** foi ligado ao projeto, de propósito. O registro `www` ficou "Proxied" e a regra abaixo leva tudo para o endereço sem www. A Amanda decidiu manter sem www, como o Google já conhece.
+  - O HTTPS foi emitido sozinho.
+- [x] **`www` → domínio sem `www` (301):** regra "Redirect from WWW to root" ativa (`https://www.*` → `https://${1}`, 301, mantendo o `?…`).
+- [x] Cloudflare → o domínio → SSL/TLS → Edge Certificates → **Always Use HTTPS**: ligado.
+- [x] Colocar no DNS do Cloudflare o **registro TXT** do Search Console, preparado na etapa A. (Feito em 24/11.)
 
 ### 4. Testar no domínio de verdade
-- [ ] Abrir `https://nouvellando.com.br`: aparece o site novo, com o cadeado do HTTPS.
-- [ ] `http://nouvellando.com.br` e `https://www.nouvellando.com.br` levam para `https://nouvellando.com.br`.
-- [ ] Um produto antigo, por exemplo `https://nouvellando.com.br/original-805-805u/`, leva para `/fio-original/805-805u/`.
-- [ ] Teste completo:
+- [x] Abrir `https://nouvellando.com.br`: aparece o site novo, com o cadeado do HTTPS.
+- [x] `http://nouvellando.com.br` e `https://www.nouvellando.com.br` levam para `https://nouvellando.com.br`.
+- [x] Um produto antigo, por exemplo `https://nouvellando.com.br/original-805-805u/`, leva para `/fio-original/805-805u/`.
+- [x] Teste completo (24/11: 879 endereços, 0 erros, 0 sem 301, 0 com mais de um salto):
   ```bash
   python ferramentas/testar-redirecionamentos.py https://nouvellando.com.br
   ```
   Tem que dar **0 erros** e **0 sem 301**. Se aparecer erro, o script lista o endereço exato.
-- [ ] Fotos carregando, carrinho e botão do WhatsApp funcionando, celular ok.
-- [ ] `https://nouvellando.com.br/robots.txt` com `Allow: /` e sem `noindex` nas páginas.
+- [ ] Fotos carregando, carrinho e botão do WhatsApp funcionando, celular ok. (Em 24/11: fotos, ficha técnica e Tag Manager conferidos no domínio, sem erros. Falta a Amanda testar um pedido pelo celular.)
+- [x] `https://nouvellando.com.br/robots.txt` com `Allow: /` e sem `noindex` nas páginas.
 
 ### 5. Google
-- [ ] Search Console → verificar a propriedade Domínio (pelo TXT).
-- [ ] Sitemaps → enviar `https://nouvellando.com.br/sitemap.xml`. Remover o sitemap antigo do WordPress, se estiver lá.
+- [x] Search Console → verificar pelo TXT. Feito na **mesma propriedade** `https://nouvellando.com.br/`, pelo método "Provedor de nome de domínio" (24/11). Assim o histórico continua.
+- [x] Sitemaps → enviado `https://nouvellando.com.br/sitemap.xml` (24/11). Não havia sitemap antigo do WordPress cadastrado.
 - [ ] Inspeção de URL → pedir indexação da home, de 2 ou 3 linhas de fio e de alguns produtos.
 - [ ] **Não** usar a ferramenta "Mudança de endereço": o domínio continua o mesmo.
 
@@ -112,8 +112,11 @@ Ele junta todos os avisos levantados até agora. **Vá acrescentando aqui** qual
 - [ ] **Não cancelar o WordPress.com ainda** (ver o item 8).
 
 ### 7. Se der errado: como voltar atrás
-- No Registro.br, colocar de volta `ns1.wordpress.com`, `ns2.wordpress.com` e `ns3.wordpress.com`.
-- O WordPress volta a responder pelo domínio, depois da propagação.
+- **Jeito rápido (minutos), pelo Cloudflare:**
+  1. Cloudflare → o domínio → DNS → Records: apagar o CNAME `nouvellando.com.br → nouvellando.pages.dev`.
+  2. Criar de novo os 2 registros A, em **DNS only**: `nouvellando.com.br → 192.0.78.151` e `nouvellando.com.br → 192.0.78.233`.
+  3. O WordPress volta a responder.
+- **Jeito completo (horas):** no Registro.br, colocar de volta `ns1.wordpress.com`, `ns2.wordpress.com` e `ns3.wordpress.com`.
 - Por isso o plano do WordPress.com só pode ser cancelado depois que tudo estabilizar.
 
 ### 8. Depois da troca (4 a 8 semanas)
